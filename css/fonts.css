@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Bw Modelica SS02 Black';
+    src: url('../fonts/BwModelicaCyrillicSS02DEMO-Black.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bw Modelica SS02 Bold';
+    src: url('../fonts/BwModelicaCyrillicSS02DEMO-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bw Modelica SS02 Medium';
+    src: url('../fonts/BwModelicaCyrillicSS02DEMO-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bw Modelica SS02 Light';
+    src: url('../fonts/BwModelicaCyrillicSS02DEMO-Light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
