@@ -24,6 +24,18 @@
                     </li>
                     <li class="has-dropdown">
                         <a href="#">Продукты для здоровья</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Косметические средства и бады</a>
+                            </li>
+                            <li>
+                                <a href="#">Средства санитарной обработки широкого спектра</a>
+                            </li>
+                            <li>
+                                <a href="#">Не химические средства пролонгации срока годности продуктов</a>
+                            </li>
+                        </ul>
+
                     </li>
                     <li class="has-dropdown">
                         <a href="#">Коллоиды</a>
@@ -130,7 +142,7 @@
 
         <section class="section-block">
             <div class="container">
-                <div class="spacer-block"></div>
+                <div class="spacer-block pb-20"></div>
                 <h2 class="block-section-title pb-60">Направления</h2>
             </div>
 
@@ -220,10 +232,15 @@
 
         <section class="section-block">
             <div class="container">
-                <div class="spacer-block"></div>
+                <div class="spacer-block pb-20"></div>
                 <h2 class="block-section-title pb-24">Медицинское <br>оборудование</h2>
 
-                <div class="d-flex d-flex flex-col gap-20">
+                <div class="med-ob d-flex d-flex flex-col gap-20">
+                    <div class="med-ob-item-dec">
+                        <img src="images/icons/Plus.svg" alt="">
+                        <img src="images/icons/Plus.svg" alt="">
+                        <img src="images/icons/Plus.svg" alt="">
+                    </div>
                     <div class="med-ob-item d-flex">
                         <div class="med-ob-blur-text">
                             <div class="med-ob-wrap">
@@ -279,7 +296,7 @@
 
         <section class="section-block">
             <div class="container">
-                <div class="spacer-block"></div>
+                <div class="spacer-block pb-20"></div>
                 <h2 class="block-section-title pb-60">Продукты <br>для здоровья</h2>
                 <div class="d-flex d-flex flex-col gap-20">
                     <a href="#" class="health-item">
@@ -325,7 +342,7 @@
 
         <section class="section-block">
             <div class="container">
-                <div class="spacer-block"></div>
+                <div class="spacer-block pb-20"></div>
                 <h2 class="block-section-title pb-60">Продукты с атомарными
                     <br>коллоидами металлов
                 </h2>
@@ -376,7 +393,7 @@
 
         <section class="section-block">
             <div class="container">
-                <div class="spacer-block"></div>
+                <div class="spacer-block pb-20"></div>
                 <h2 class="block-section-title pb-60">Si14 Life packs</h2>
                 <div class="s-114-inner d-flex gap-20">
                     <div class="s-114 txt bodrer-round-block">
@@ -477,7 +494,7 @@
 
         <section class="section-block">
             <div class="container">
-                <div class="spacer-block"></div>
+                <div class="spacer-block pb-20"></div>
                 <h2 class="block-section-title pb-60">Гомеопатия</h2>
                 <div class="gomeopaty-block">
                     <img class="gomeopaty-bg" src="images/main-page/gomeopaty.png" alt="">
@@ -508,32 +525,32 @@
 
         <section class="section-block">
             <div class="container">
-                <div class="spacer-block"></div>
+                <div class="spacer-block pb-20"></div>
                 <h2 class="block-section-title pb-20">Медиацентр</h2>
                 <a href="#" class="media-more bodrer-round-block more-btn text-a-center">Все публикации</a>
-                <div class="media-wrapper pb-60">
-                    <a href="#" class="media-item p-40">
+                <div class="media-wrapper">
+                    <a href="#" class="media-item">
                         <img src="images/main-page/media-1.png" alt="">
                         <div class="media-flex">
                             <p>Патент на выработку атомарных коллоидов</p>
                             <div class="arr-right"></div>
                         </div>
                     </a>
-                    <a href="#" class="media-item p-40">
+                    <a href="#" class="media-item">
                         <img src="images/main-page/media-2.png" alt="">
                         <div class="media-flex">
                             <p>Строительство медицинского центра Si14 Pharma в Черногории</p>
                             <div class="arr-right"></div>
                         </div>
                     </a>
-                    <a href="#" class="media-item p-40">
+                    <a href="#" class="media-item">
                         <img src="images/main-page/media-3.png" alt="">
                         <div class="media-flex">
                             <p>Франшиза оборудования сферы Копылова</p>
                             <div class="arr-right"></div>
                         </div>
                     </a>
-                    <a href="#" class="media-item p-40">
+                    <a href="#" class="media-item">
                         <img src="images/main-page/media-4.png" alt="">
                         <div class="media-flex">
                             <p>Открытие представительства в Лос-Анжелесе</p>
@@ -544,18 +561,118 @@
             </div>
         </section>
 
-
-        <section class="section-block">
+        <section class="section-block form">
             <div class="container">
-                
-
+                <form class="d-flex flex-col form-subscribe bodrer-round-block gap-20">
+                    <h2 class="block-section-title form-title">
+                        Подписка на Si14 Pharma
+                    </h2>
+                    <div class="form-fields">
+                        <div class="form-field d-flex flex-col gap-20 pb-16">
+                            <input class="form-input" type="email" name="email" placeholder="Email">
+                            <button class="form-submit" type="submit">Подписаться</button>
+                        </div>
+                        <div class="confidencial">
+                            Нажимая кнопку, вы соглашаетесь с условиями <a href="#" class="">политики
+                                конфиденциальности</a>
+                        </div>
+                    </div>
+                    <div class="response"></div>
+                </form>
             </div>
         </section>
 
     </main>
 
-    <footer>
+    <footer class="footer section-block">
+        <div class="container">
+            <div class="wrap-footer">
+                <div class="top-footer pb-60">
+                    <div class="footer-list-item">
+                        <h3 class="footer-title-item pb-20">Медицинское оборудование</h3>
+                        <ul>
+                            <li class="pb-20">
+                                <a href="#">Сфера Копылова</a>
+                            </li>
+                            <li class="pb-20">
+                                <a href="#">Маммограф Копылова</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-list-item">
+                        <h3 class="footer-title-item pb-20">Продукты для здоровья</h3>
+                        <ul>
+                            <li class="pb-20">
+                                <a href="#">Черногорские спреи для носа</a>
+                            </li>
+                            <li class="pb-20">
+                                <a href="#">Спирулина</a>
+                            </li>
+                        </ul>
+                    </div>
 
+                    <div class="footer-list-item">
+                        <h3 class="footer-title-item pb-20">Продукты с атомарными коллоидами металлов</h3>
+                        <ul>
+                            <li class="pb-20">
+                                <a href="#">СКосметические средства и бады</a>
+                            </li>
+                            <li class="pb-20">
+                                <a href="#">Средства санитарной обработки широкого спектра</a>
+                            </li>
+                            <li class="pb-20">
+                                <a href="#">Не химические средства пролонгации срока годности продуктов</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="title-items-link">
+                    <div class="footer-list-item">
+                        <h3 class="footer-title-item pb-20">
+                            <a href="#">Life Packs</a>
+                        </h3>
+                        <h3 class="footer-title-item pb-20">
+                            <a href="#">
+                                Наука
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="footer-list-item">
+                        <h3 class="footer-title-item pb-20">
+                            <a href="#">Гомеопатия</a>
+                        </h3>
+                        <h3 class="footer-title-item pb-20">
+                            <a href="#">
+                                Медиацентр
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="footer-list-item">
+                        <h3 class="footer-title-item pb-20">
+                            <a href="#">Контакты</a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-footer">
+                <p class="pb-20">Si14 Pharma, 2025</p>
+                <div class="d-flex wrap-wrap bottom-footer inner">
+                    <a href="">
+                        Si14 AG Aktiengesellschaft "Si14 AG", Si14 AG Law AG, Baarerstrasse 11, 6300 Zug, Schweiz
+                    </a>
+                    <a href="#">
+                        IBAN: ME25 5804 20000000 1400 14
+                    </a>
+                    <a href="#">
+                        BIC/Swift der Bank: AZMNMEPGXXX
+                    </a>
+                    <a href="#">
+                        Bank: ADRIATIC BANK AD PODGORICA
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="js/jquery.min.js"></script>

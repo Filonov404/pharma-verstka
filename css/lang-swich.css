@@ -20,6 +20,8 @@
     margin-top: 3px;
     border-radius: 20px;
     left: -24px;
+    z-index: 3;
+    background: var(--white);
 }
 
 .dropdown__box ul {
