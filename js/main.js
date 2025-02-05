@@ -86,4 +86,11 @@ $("form").submit(function (event) {
         $('.response').append('<div class="sucscess"><div class="modal_title">Заявка принята!</div></div>');
 
     });
+
+
+    const items = $('.star-decor-el');
+    const half = Math.ceil(items.length / 2);
+    items.slice(half).hide();
+    console.log(items);
+
 });
