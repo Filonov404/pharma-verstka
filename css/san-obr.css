@@ -1,0 +1,577 @@
+.top-section-inner.san {
+    gap: 20px;
+}
+
+.form-submit.san {
+    max-width: 354px;
+}
+
+.top-san-mask {
+    position: relative;
+    mask-image: url(../images/mask/top-san-mask.png);
+    mask-repeat: no-repeat;
+    mask-size: 98% 98%;
+    mask-position: center;
+}
+
+.top-san-dec {
+    position: relative;
+}
+
+.top-san-dec::after {
+    position: absolute;
+    content: '';
+    background: center / contain no-repeat url(../images/icons/Plus.svg);
+    left: 12%;
+    top: 12%;
+    width: 48px;
+    height: 48px;
+}
+
+.top-san-dec::before {
+    position: absolute;
+    content: '';
+    background: center / contain no-repeat url(../images/icons/Plus.svg);
+    right: 12%;
+    bottom: 12%;
+    width: 48px;
+    height: 48px;
+}
+
+.top-san-mask img {
+    height: 640px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.top-san-d1 {
+    position: absolute;
+    width: 272px;
+    height: 32px;
+    content: '';
+    right: -22%;
+    top: 44px;
+    font-size: 12px;
+    z-index: 2;
+    border-radius: 80px;
+    font-family: var(--font-bold);
+    background: #ffffff5c;
+}
+
+.top-san-d2 {
+    position: absolute;
+    height: 32px;
+    content: '';
+    right: -71px;
+    top: 60%;
+    font-size: 12px;
+    z-index: 2;
+    border-radius: 80px;
+    font-family: var(--font-bold);
+    background: #ffffff5c;
+}
+
+.top-san-img {
+    position: relative;
+}
+
+.top-san-cert img {
+    border-radius: 80px;
+    height: 100%;
+    width: 100%;
+}
+
+.top-section-grid span {
+    padding: 23px 40px;
+    background: var(--White-32);
+    font-size: clamp(12px, 3vw, 16px);
+    border-radius: 40px;
+    font-family: var(--font-medium);
+}
+
+.top-section-grid,
+.top-section-text {
+    width: 50%;
+}
+
+.section-border {
+    border: 1px solid var(--gray-200);
+}
+
+.top-section.san {
+    padding-top: clamp(20px, 3vw, 80px);
+    padding-bottom: clamp(20px, 3vw, 80px);
+}
+
+.silver-item {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+
+.silver-item.small {
+    max-width: 425px;
+}
+
+.silver-item.silver-item1::after {
+    width: 280px;
+    height: 280px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.silver-item.big {
+    width: 574px;
+    height: 574px;
+    background: center / contain no-repeat url(../images/san-obr/silver-big-min.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.silver-wrapper {
+    padding: 25px 0;
+    border-radius: 800px;
+    position: relative;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.silver-border {
+    width: calc(100% - 700px / 2);
+    border-radius: 800px;
+    position: absolute;
+    height: 100%;
+    right: 153px;
+    background: repeating-linear-gradient(32deg, #1a1a1a 0, #1a1a1a 7px, transparent 7px, transparent 11px);
+}
+
+.silver-border::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #eee;
+    border-radius: 800px;
+}
+
+.silver-item.big .blur-block,
+.silver-item.small .blur-block {
+    padding: 32px 40px;
+    border: 1px solid var(--white);
+    border-radius: clamp(32px, 3vw, 40px);
+}
+
+.silver-item.small {
+    width: 425px;
+    height: 280px;
+}
+
+.silver-item.small img {
+    position: absolute;
+    content: '';
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.silver-item.small span {
+    font-size: clamp(12px, 1vw, 16px);
+    font-family: var(--font-medium);
+    line-height: 110% !important;
+    display: block;
+}
+
+.blur-radius-40 {
+    border: 1px solid var(--white);
+    border-radius: clamp(40px, 3vw, 60px);
+}
+
+
+.silver-item.big .blur-block {
+    padding: 23px 40px;
+    max-width: 414px;
+    line-height: 32.4px;
+}
+
+.abs-top-l {
+    position: absolute;
+    content: '';
+    left: 14%;
+    bottom: 72%;
+}
+
+.abs-bot-l {
+    position: absolute;
+    content: '';
+    left: 9%;
+    top: 77%;
+}
+
+.abs-bot-r {
+    position: absolute;
+    content: '';
+    right: 13%;
+    top: 77%;
+}
+
+.abs-top-r {
+    position: absolute;
+    content: '';
+    right: 10%;
+    bottom: 72%;
+}
+
+.border-pad-40 {
+    padding: clamp(24px, 3vw, 40px);
+    border-radius: clamp(40px, 3vw, 60px);
+    border: 1px solid var(--gray-200);
+}
+
+.silver-item-top {
+    display: grid;
+    grid-template-columns: 1fr 128px 128px;
+    gap: 8px;
+}
+
+.silver-item-top img {
+    height: 240px;
+    width: -webkit-fill-available;
+    object-fit: cover;
+    border-radius: clamp(32px, 3vw, 40px);
+}
+
+.silver-grid {
+    display: grid;
+    grid-template-columns: minmax(150px, 100%) 1fr;
+}
+
+.silver-item-mask-big {
+    position: relative;
+    mask-image: url(../images/mask/san-obr-mask.png);
+    mask-repeat: no-repeat;
+    mask-size: 98% 98%;
+    mask-position: center;
+    display: flex;
+    justify-content: end;
+    height: 100%;
+}
+
+.silver-item-mask-sm {
+    position: relative;
+    mask-image: url(../images/mask/silver-mask1.png);
+    mask-repeat: no-repeat;
+    mask-size: 98% 98%;
+    mask-position: center;
+    display: flex;
+    justify-content: end;
+    height: 100%;
+}
+
+.silver-item-mask-sm img {
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+}
+
+.silver-item-mask-big img {
+    object-fit: cover;
+    height: 460px;
+    width: 100%;
+}
+
+.star-decor-el.el {
+    border-radius: 80px;
+    font-family: var(--font-bold);
+    background: #ffffff5c;
+    position: relative;
+    font-size: 11px;
+}
+
+.star-decor-el.el::after {
+    content: '';
+    right: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.0411 5H12.9589L13.1144 5.81193C13.6049 8.37373 15.6263 10.3951 18.1881 10.8856L19 11.0411V12.9589L18.1881 13.1144C15.6263 13.6049 13.6049 15.6263 13.1144 18.1881L12.9589 19H11.0411L10.8856 18.1881C10.3951 15.6263 8.37373 13.6049 5.81193 13.1144L5 12.9589V11.0411L5.81193 10.8856C8.37373 10.3951 10.3951 8.37373 10.8856 5.81193L11.0411 5ZM12 8.57806C11.2197 10.0268 10.0268 11.2197 8.57806 12C10.0268 12.7803 11.2197 13.9732 12 15.4219C12.7803 13.9732 13.9732 12.7803 15.4219 12C13.9732 11.2197 12.7803 10.0268 12 8.57806Z' fill='%231A1A1E'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.silver-bt {
+    border-radius: clamp(48px, 3vw, 80px);
+    padding: 80px 50px 50px 50px;
+    background: center / cover no-repeat url(../images/san-obr/obl-prim-bg.png);
+}
+
+.silver-bt-bullets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+ul li {
+    position: relative;
+}
+
+ul li::after {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 3px;
+    left: -10px;
+    top: 13px;
+    background: #000;
+    border-radius: 100%;
+}
+
+.media-more.san {
+    max-width: fit-content;
+    padding: 10px 60px 10px 28px;
+}
+
+
+@media (max-width: 1500px) {
+    .top-san-mask img {
+        height: initial;
+    }
+
+    .top-san-dec::after,
+    .top-san-dec::before {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.section-block.san {
+    padding: 208px 0;
+}
+
+.san-patent-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.san-patent-inner div{
+    flex: 1;
+}
+
+.san-patent-inner h3 {
+    text-align: center;
+}
+
+.san-more.more-btn {
+    position: relative;
+}
+
+.san-more.more-btn::after {
+    position: absolute;
+    content: '';
+    background: center / contain no-repeat url(../images/icons/download.svg);
+    right: 16px;
+    top: 12px;
+    width: 18px;
+    height: 24px;
+}
+
+.san.gomeopaty-block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 80px;
+    min-height: 720px;
+}
+
+
+.san.gomeopaty-block img {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+}
+
+.san-patent-inner h3 {
+    margin: 0 auto;
+    text-align: center;
+    width: max-content;
+}
+
+@media (max-width: 1200px) {
+
+    .section-block.san {
+        padding: 96px 0;
+    }
+
+    .top-section-inner {
+        flex-direction: column;
+    }
+
+    .top-section-grid {
+        width: 100%;
+    }
+
+    .top-section-text.san {
+        width: 100%;
+    }
+
+    .start {
+        margin-left: -30%;
+    }
+
+    .end {
+        margin-right: -30%;
+    }
+
+    .silver-wrapper {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .silver-item.big,
+    .silver-item.small {
+        max-width: 100%;
+    }
+
+    .silver-border {
+        width: 50%;
+        right: initial;
+        background: repeating-linear-gradient(318deg, #1a1a1a 0, #1a1a1a 7px, transparent 7px, transparent 11px);
+        height: 92%;
+        top: 50px;
+    }
+
+
+    .silver-item.small {
+        width: 240px;
+        height: 104px;
+    }
+
+    .silver-item.big .blur-block,
+    .silver-item.small .blur-block {
+        padding: 20px 24px;
+    }
+
+    .abs-top-l,
+    .abs-top-r,
+    .abs-bot-l,
+    .abs-bot-r {
+        position: inherit;
+    }
+
+    .silver-item.small .blur-block {
+        width: inherit;
+    }
+
+    .silver-item.small img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .abs-top-l {
+        margin-left: -75%;
+    }
+
+    .end {
+        margin-right: -50%;
+    }
+
+    .abs-bot-l {
+        margin-left: -69%;
+    }
+
+    .silver-item.big {
+        height: 480px;
+    }
+
+    .abs-bot-r {
+        margin-left: 74%;
+    }
+
+    .start {
+        margin-right: 22%;
+    }
+
+    .abs-top-r {
+        margin-left: 68%;
+    }
+
+    .silver-item.big {
+        position: relative;
+    }
+
+    .silver-item.big .blur-block {
+        position: absolute;
+        width: 74%;
+    }
+
+    .silver-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .media-more.san {
+        font-size: 0;
+        border: none;
+    }
+
+    .table-text-b ul {
+        display: none;
+    }
+
+    .media-more.san {
+        margin: 0;
+        background: transparent;
+    }
+}
+
+@media (max-width: 860px) {
+    .top-san-d2 {
+        right: 50%;
+        top: 97%;
+    }
+
+    .top-san-d1 {
+        right: 28%;
+        top: 68%;
+    }
+
+    .abs-top-l {
+        margin-left: -74%;
+    }
+
+    .star-decor-el.el:nth-child(2n) {
+        display: none;
+    }
+
+    .silver-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .silver-item-top img:last-child {
+        display: none;
+    }
+
+    .silver-item-top {
+        grid-template-columns: 1fr 128px;
+    }
+
+    .silver-bt {
+        padding: 48px 24px 24px 24px;
+        background: center / cover no-repeat url(../images/san-obr/obl-prim-bg.png);
+    }
+
+    .table-i-san {
+        width: 48px;
+        height: 48px;
+    }
+    .san.gomeopaty-block {
+        padding: 40px 60px;
+    }
+
+}

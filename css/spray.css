@@ -1,0 +1,45 @@
+.form-submit.sp {
+    max-width: 172px;
+}
+
+.top-sp-mask {
+    position: relative;
+    mask-image: url(../images/mask/top-sp-mask1.png);
+    mask-repeat: no-repeat;
+    mask-size: 98% 98%;
+    mask-position: center;
+}
+
+.top-sp-dec::after {
+    position: absolute;
+    content: '';
+    background: center / contain no-repeat url(../images/icons/Plus.svg);
+    left: 75%;
+    top: 9%;
+    width: 48px;
+    height: 48px;
+}
+
+.top-sp-dec::before {
+    position: absolute;
+    content: '';
+    background: center / contain no-repeat url(../images/icons/Plus.svg);
+    right: 75%;
+    bottom: 9%;
+    width: 48px;
+    height: 48px;
+}
+
+.top-sp-d1 {
+    position: absolute;
+    width: 126px;
+    height: 32px;
+    content: '';
+    right: -22%;
+    top: 44px;
+    font-size: 12px;
+    z-index: 2;
+    border-radius: 80px;
+    font-family: var(--font-bold);
+    background: #ffffff5c;
+}

@@ -1,6 +1,7 @@
 @import "fonts.css";
 @import "lang-swich.css";
 @import "san-obr.css";
+@import "spray.css";
 
 /* colors */
 
@@ -115,6 +116,11 @@ ul.header-menu li a {
     transition: all .3s ease;
 }
 
+.dropdown__box li::after,
+ul.header-menu li::after {
+    display: none;
+}
+
 .has-dropdown {
     position: relative;
     padding-right: 25px;
@@ -188,12 +194,14 @@ ul.header-menu li a {
     transition: all .3s ease;
 }
 
-.dropdown-menu.open + .dropdown-icon svg path {
+.dropdown-menu.open+.dropdown-icon svg path {
     fill: var(--primary-100);
 }
-.dropdown-menu.open + .dropdown-icon {
+
+.dropdown-menu.open+.dropdown-icon {
     transform: rotate(180deg);
 }
+
 @media (max-width: 1550px) {
     .burger {
         display: flex;
@@ -276,6 +284,7 @@ ul.header-menu li a {
 .pb-20 {
     padding-bottom: clamp(16px, 3vw, 20px);
 }
+
 .pt-20 {
     padding-top: clamp(16px, 3vw, 20px);
 }
@@ -299,6 +308,7 @@ ul.header-menu li a {
 .gap-48 {
     gap: 48px;
 }
+
 .pb-32 {
     padding-bottom: clamp(24px, 3vw, 32px);
 }
@@ -318,6 +328,7 @@ ul.header-menu li a {
 .lh-20 {
     line-height: 20px;
 }
+
 .d-flex {
     display: flex;
 }
@@ -383,7 +394,7 @@ ul.header-menu li a {
     transform: rotate(180deg);
 }
 
-.back-img  {
+.back-img {
     width: clamp(23px, 3vw, 40px);
     height: clamp(23px, 3vw, 40px);
     border-radius: 100%;
@@ -694,6 +705,7 @@ h3.subtitle {
     flex-direction: column;
     gap: 24px;
 }
+
 .med-ob {
     position: relative;
 }
@@ -1008,7 +1020,7 @@ h3.subtitle {
     padding: 80px;
 }
 
-.footer-list-item ul li::after{
+.footer-list-item ul li::after {
     display: none;
 }
 
@@ -1018,7 +1030,7 @@ h3.subtitle {
 }
 
 
-.top-footer{
+.top-footer {
     width: 50%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1039,6 +1051,7 @@ h3.subtitle {
     font-size: clamp(12px, 3vw, 16px);
     gap: clamp(16px, 3vw, 28px);
 }
+
 .title-items-link {
     flex-grow: 1;
     display: flex;
@@ -1061,6 +1074,7 @@ h3.subtitle {
 .burger .open-burger::before {
     height: 0;
 }
+
 @media (max-width: 1550px) {
 
     .dropdown-menu {
@@ -1073,24 +1087,27 @@ h3.subtitle {
         z-index: 4;
         background: transparent;
     }
+
     .has-dropdown {
         display: block;
     }
+
     .dropdown-icon {
         position: absolute;
         right: 40px;
         top: 0;
     }
-    
+
     .header-menu li {
         padding-bottom: 32px;
     }
-    .has-dropdown ul li {
-        
-    }
-    .dropdown-menu.open li:last-child{
+
+    .has-dropdown ul li {}
+
+    .dropdown-menu.open li:last-child {
         padding-bottom: 0;
     }
+
     .dropdown-menu.open li a {
         font-family: var(--font-light);
     }
@@ -1116,27 +1133,32 @@ h3.subtitle {
         line-height: 120%;
         align-self: flex-start;
     }
+
     .wrap-footer {
         flex-direction: column;
     }
+
     .top-footer {
         width: 100%;
     }
+
     .med-ob-item-dec {
         display: none;
     }
 
-  
+
 }
 
 @media (max-width: 1200px) {
     .health-top-wrap img {
         border-radius: 18px;
     }
+
     .form-submit {
         padding: 17px 19px;
         font-size: 16px;
     }
+
     .form-input {
         padding: 16px;
         font-size: 16px;
@@ -1147,6 +1169,7 @@ h3.subtitle {
     .footer {
         padding: 32px 20px;
     }
+
     .top-section-inner {
         flex-direction: column;
     }
@@ -1266,9 +1289,11 @@ h3.subtitle {
     .footer-list-item:last-child {
         grid-column: initial;
     }
+
     .top-footer {
         gap: 32px;
     }
+
     .title-items-link {
         flex-direction: column;
         padding-bottom: 40px;
@@ -1279,6 +1304,7 @@ h3.subtitle {
     main {
         padding-top: 10px;
     }
+
     .media-wrapper {
         display: block;
     }
@@ -1292,24 +1318,31 @@ h3.subtitle {
     .subs-btn {
         max-width: 179px;
     }
+
     .top-section-items {
         gap: 16px;
     }
+
     .top-section-inner {
         gap: 32px;
     }
+
     .med-ob-blur-text {
         gap: 20px;
     }
+
     .med-ob-blur-text ul {
         padding-left: 24px;
     }
+
     .star-decor.atomar {
         left: 78px;
     }
+
     .media-wrapper {
         padding-top: 9px;
     }
+
     .media-item {
         padding: 23px 0 23px;
     }
@@ -1318,4 +1351,3 @@ h3.subtitle {
         padding: 60px 0 60px;
     }
 }
-
