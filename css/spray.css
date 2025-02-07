@@ -10,6 +10,19 @@
     mask-position: center;
 }
 
+.top-sp-mask img,
+.top-sp-mask2 img {
+    object-fit: cover;
+    height: 640px;
+    width: 100%;
+}
+
+.bottom-l-sp-mask img {
+    object-fit: cover;
+    height: 640px;
+    width: 100%;
+}
+
 .top-sp-dec::after {
     position: absolute;
     content: '';
@@ -42,4 +55,181 @@
     border-radius: 80px;
     font-family: var(--font-bold);
     background: #ffffff5c;
+}
+
+.top-sp-mask2 {
+    position: relative;
+    mask-image: url(../images/mask/spray-mask2.png);
+    mask-repeat: no-repeat;
+    mask-size: 98% 98%;
+    mask-position: center;
+}
+
+.top-sp-dec.decor-none::after {
+    display: none;
+}
+
+.star-decor-el.top-sp-d1.d2 {
+    width: fit-content;
+    right: 10%;
+}
+
+.star-decor-el.top-sp-d1.d1 {
+    width: fit-content;
+    top: 31%;
+    right: -17%;
+}
+
+.atomar-item-text.sp {
+    width: calc(100% - 65px);
+}
+
+.spray-list {
+    text-align: center;
+}
+
+.spray-list li {
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: clamp(20px, 3vh, 24px);
+}
+
+.spray-list li:not:last-child {
+    padding: 0;
+}
+
+.form-submit.sp.sp-btn {
+    margin: 0 auto;
+    max-width: fit-content;
+    padding: 24px 48px;
+}
+
+.spray-text {
+    max-width: 793px;
+    margin: 0 auto;
+}
+
+.spray-gred_4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.silver-item-top.spray img {
+    height: 240px;
+    width: -webkit-fill-available;
+    object-fit: none;
+    border-radius: clamp(32px, 3vw, 40px);
+}
+
+.spray-text2 {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.cnt-flags {
+    max-width: 1165px;
+    margin: 0 auto;
+}
+
+.flag-img {
+    max-width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.cnt-flags {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.flag-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flag-sub {
+    max-width: 250px;
+}
+
+.form-submit.sp-kp {
+    width: 100%;
+    max-width: 100%;
+}
+
+.bottom-l-sp-mask {
+    position: relative;
+    mask-image: url(../images/mask/mask-spray-bottom.png);
+    mask-repeat: no-repeat;
+    mask-size: 98% 98%;
+    mask-position: center;
+}
+
+.top-sp-dec.bottom-l img,
+.top-sp-mask2 img {
+    object-fit: cover;
+    height: 720px;
+    width: 100%;
+}
+
+.top-sp-dec.bottom-l::after {
+    display: none;
+}
+
+
+@media (max-width: 860px) {
+
+    .top-sp-mask img,
+    .top-sp-mask2 img {
+        height: 440px;
+    }
+
+    .top-sp-dec::before,
+    .top-sp-dec::after {
+        width: 24px;
+        height: 24px;
+    }
+
+    .top-sp-dec::after {
+        left: 77%;
+        top: 14%;
+    }
+
+    .top-sp-dec::before {
+        right: 72%;
+        bottom: 13%;
+    }
+
+    .star-decor-el.top-sp-d1.d2 {
+        right: 2%;
+    }
+
+    .star-decor.atomar.sp {
+        left: 15%;
+        top: 19%;
+    }
+
+    .spray-gred_4 {
+        grid-template-columns: 1fr;
+    }
+
+    .flag-img {
+        max-width: 60px;
+        height: 60px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .flex-sp {
+        flex-direction: column;
+    }
+
+    .star-decor-el.top-sp-d1.d1 {
+        top: 10%;
+        left: 10%;
+    }
 }

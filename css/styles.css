@@ -1214,8 +1214,8 @@ h3.subtitle {
     }
 
     .star-decor.atomar {
-        left: 48px;
-        top: 48px;
+        left: 13%;
+        top: 9%;
     }
 
     .s-114.txt {
@@ -1335,9 +1335,7 @@ h3.subtitle {
         padding-left: 24px;
     }
 
-    .star-decor.atomar {
-        left: 78px;
-    }
+
 
     .media-wrapper {
         padding-top: 9px;

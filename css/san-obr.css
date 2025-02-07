@@ -405,6 +405,10 @@ ul li::after {
 
 @media (max-width: 1200px) {
 
+    .d-grid-3.silver-application-item {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .section-block.san {
         padding: 96px 0;
     }
@@ -572,6 +576,13 @@ ul li::after {
     }
     .san.gomeopaty-block {
         padding: 40px 60px;
+    }
+
+    .d-grid-3.silver-application-item {
+        grid-template-columns: 1fr;
+    }
+    .silver-item-mask-sm img {
+        height: 360px;
     }
 
 }
