@@ -330,6 +330,13 @@ ul.header-menu li::after {
     line-height: 20px;
 }
 
+.h100 {
+    height: 100%;
+}
+
+.w100 {
+    width: 100%;
+}
 .d-flex {
     display: flex;
 }
