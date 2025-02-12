@@ -185,6 +185,7 @@
 
 .bot-r-sp-mask img{
     height: 720px;
+    object-fit: cover;
 }
 
 .top-sp-big {
