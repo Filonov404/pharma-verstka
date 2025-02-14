@@ -1,0 +1,230 @@
+.top-mamg-mask {
+    position: relative;
+    mask-image: url(../images/mask/mamograf-top-mask.png);
+    mask-repeat: no-repeat;
+    mask-size: 98% 98%;
+    mask-position: center;
+}
+
+.top-mamg-mask img {
+    width: 100%;
+    height: 640px;
+    object-fit: cover;
+}
+
+
+.top-mamg-dec::before {
+    position: absolute;
+    content: '';
+    background: center / contain no-repeat url(../images/icons/3stars.svg);
+    top: 13%;
+    left: 7%;
+    width: 168px;
+    height: 48px;
+}
+
+.top-mamg-dec::after {
+    position: absolute;
+    content: '';
+    background: center / contain no-repeat url(../images/icons/Plus.svg);
+    bottom: 13%;
+    right: 6%;
+    width: 48px;
+    height: 48px;
+}
+
+.mamg-img {
+    position: relative;
+}
+
+.mamg-dec {
+    position: absolute;
+    top: 6%;
+    left: 27%;
+    border-radius: 100px;
+    font-size: 12px;
+    z-index: 1;
+    background: #ffffff5c;
+}
+
+.grid-mamg-mask {
+    position: relative;
+    mask-image: url(../images/mask/mamg-grid.png);
+    mask-repeat: no-repeat;
+    mask-size: 98% 98%;
+    mask-position: center;
+}
+
+.mamg-grid-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-mamg-mask img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.grid-mamg-dec {
+    position: relative;
+}
+
+.grid-mamg-dec::after {
+    position: absolute;
+    content: '';
+    background: center / contain no-repeat url(../images/icons/Plus.svg);
+    bottom: 15%;
+    right: 9%;
+    width: 48px;
+    height: 48px;
+}
+
+.mamg_text {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.get-part-text {
+    flex-grow: 1;
+}
+
+.get-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.doc.top-sp-dec.bot-dec-sm {
+    position: relative;
+}
+
+.doc.top-sp-dec.bot-dec-sm::after {
+    top: 12%;
+    left: 17%;
+}
+
+.mamg-bot-l-mask {
+    position: relative;
+    mask-image: url(../images/mask/mamg-bottom-l-mask.png);
+    mask-repeat: no-repeat;
+    mask-size: 98% 98%;
+    mask-position: center;
+    height: 100%;
+}
+
+.mamg-bot-r-mask {
+    position: relative;
+    mask-image: url(../images/mask/mamg-bot-r-mask.png);
+    mask-repeat: no-repeat;
+    mask-size: 98% 98%;
+    mask-position: center;
+    height: 100%;
+}
+
+.mamg-bot-r-mask img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.get-img.top-sp-dec.bot-dec-sm {
+    position: relative;
+}
+
+.mamg-dec1.star-decor {
+    position: absolute;
+    content: '';
+    left: 13%;
+    top: 16%;
+    height: 48px;
+    width: 48px;
+}
+
+.get-img.top-sp-dec.bottom-l {
+    position: relative;
+}
+.mamg-dec1.mamg-big-i-dec {
+    left: 10%;
+}
+
+.get-img.top-sp-dec.bottom-l::before {
+    right: 10%;
+    bottom: 10%;
+}
+@media (max-width: 1200px) {
+    .mamg-grid-block {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 860px) {
+    .mamg.star-decor-el.bottom-sp-d1 {
+        left: 10%;
+    }
+    .mamg-bot-r-mask img,
+    .doc.top-sp-dec.bot-dec-sm.h100 {
+        height: 440px;
+        width: 100%;
+    }
+    .grid-mamg-mask img {
+        height: 390px;
+        object-fit: cover;
+    }
+    .grid-mamg-dec::after {
+        width: 24px;
+        height: 24px;
+    }
+    .mamg-grid-block {
+        grid-template-columns: 1fr;
+    }
+    .top-mamg-mask img {
+        height: 390px;
+    }
+    .top-mamg-mask {
+        mask-image: url(../images/mask/mamg-top-maskmob.png);
+    }
+
+    .mamg-b {
+        mask-image: url(../images/mask/silver-mask1.png);
+    }
+
+    .mamg-dec1.star-decor {
+        position: absolute;
+        content: '';
+        left: 13%;
+        top: 16%;
+        width: 24px;
+        height: 24px;
+    }
+    .mamg-b img,
+    .mamg-sm img {
+        height: 320px;
+    }
+    .top-mamg-dec::before {
+        top: 15%;
+        left: 9%;
+        width: 88px;
+        height: 24px;
+    }
+
+    .top-mamg-dec::after {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 550px) {
+    .grid-mamg-mask {
+        mask-image: url(../images/mask/mamg-grid-mob.png);
+    }
+    .top-mamg-dec::after {
+        right: 12%;
+    }
+    .mamg-dec {
+        left: 41%;
+    }
+    .top-mamg-dec::before {
+        left: 21%;
+    }
+    .mamg.media-wrapper {
+        display: grid;
+    }
+}
