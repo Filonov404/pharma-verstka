@@ -18,55 +18,43 @@
                 <a href="/" class="header-logo">
                     <img src="images/icons/Color-Dark-logo.svg" alt="logo">
                 </a>
-                <ul class="header-menu">
-                    <li class="has-dropdown">
-                        <a href="#">Мед оборудование</a>
-                    </li>
-                    <li class="has-dropdown">
-                        <a href="#">Продукты для здоровья</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">Косметические средства и бады</a>
-                            </li>
-                            <li>
-                                <a href="#">Средства санитарной обработки широкого спектра</a>
-                            </li>
-                            <li>
-                                <a href="#">Не химические средства пролонгации срока годности продуктов</a>
-                            </li>
-                        </ul>
 
-                    </li>
-                    <li class="has-dropdown">
-                        <a href="#">Коллоиды</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">Косметические средства и бады</a>
-                            </li>
-                            <li>
-                                <a href="#">Средства санитарной обработки широкого спектра</a>
-                            </li>
-                            <li>
-                                <a href="#">Не химические средства пролонгации срока годности продуктов</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Life Packs</a>
-                    </li>
-                    <li>
-                        <a href="#">Гомеопатия</a>
-                    </li>
-                    <li>
-                        <a href="#">Наука</a>
-                    </li>
-                    <li>
-                        <a href="#">Медиацентр</a>
-                    </li>
-                    <li>
-                        <a href="#">Контакты</a>
-                    </li>
-                </ul>
+                <nav class="navbar">
+
+                    <ul class="header-menu menu" id="menu">
+                        <li>
+                            <a href="#">Мед оборудование</a>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">Продукты для здоровья</a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a href="#">Косметические средства и бады</a></li>
+                                <li><a href="#">Средства санитарной обработки широкого спектра</a></li>
+                                <li><a href="#">Не химические средства пролонгации срока годности продуктов</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">Коллоиды</a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a href="#">Косметические средства и бады</a></li>
+                                <li><a href="#">Средства санитарной обработки широкого спектра</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Life Packs</a></li>
+                        <li>
+                            <a href="#">Гомеопатия</a>
+                        </li>
+                        <li>
+                            <a href="#">Наука</a>
+                        </li>
+                        <li>
+                            <a href="#">Медиацентр</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
                 <div class="header-subs">
                     <div class="dropdown js-dropdown js-lang" data-dropdown-type="closing">
                         <button class="dropdown__button js-dropdown-toggler js-lang-display">Ru</button>
@@ -92,10 +80,7 @@
                         <span></span>
                     </div>
                 </div>
-
             </div>
-
-
         </div>
     </header>
 
@@ -129,12 +114,21 @@
                             </div>
                         </div>
                     </div>
-                    <div class="top-section-img-decor">
-                        <!-- маска -->
-                        <div class="top-section-img">
-                            <img src="/images/main-page/111.png" alt="">
+                    <div class="flex-1 main-top-img">
+                        <div class="star-decor-el mamg-dec bold-text">
+                            Si14 Pharma
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.0411 5H12.9589L13.1144 5.81193C13.6049 8.37373 15.6263 10.3951 18.1881 10.8856L19 11.0411V12.9589L18.1881 13.1144C15.6263 13.6049 13.6049 15.6263 13.1144 18.1881L12.9589 19H11.0411L10.8856 18.1881C10.3951 15.6263 8.37373 13.6049 5.81193 13.1144L5 12.9589V11.0411L5.81193 10.8856C8.37373 10.3951 10.3951 8.37373 10.8856 5.81193L11.0411 5ZM12 8.57806C11.2197 10.0268 10.0268 11.2197 8.57806 12C10.0268 12.7803 11.2197 13.9732 12 15.4219C12.7803 13.9732 13.9732 12.7803 15.4219 12C13.9732 11.2197 12.7803 10.0268 12 8.57806Z"
+                                    fill="#1A1A1E"></path>
+                            </svg>
                         </div>
-                        <!-- маска -->
+                        <div class="top-mamg-dec main">
+                            <div class="top-img">
+                                <img src="/images/main-page/111.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -242,6 +236,15 @@
                         <img src="images/icons/Plus.svg" alt="">
                     </div>
                     <div class="med-ob-item d-flex">
+                        <div class="main-st-mask-dec">
+                            <div class="main-st-mask">
+                                <img src="images/main-page/spera-kopylova.png" alt="">
+                            </div>
+                        </div>
+                        <div class="med-ob-item-mob">
+                            <img src="images/icons/Plus.svg" alt="">
+                            <img src="images/icons/Plus.svg" alt="">
+                        </div>
                         <div class="med-ob-blur-text">
                             <div class="med-ob-wrap">
                                 <h3 class="subtitle pb-24 text-a-center">
@@ -267,6 +270,16 @@
                         </div>
                     </div>
                     <div class="med-ob-item d-flex">
+                        <div class="main-st-mask-dec">
+                            <div class="main-st-mask">
+                                <img src="images/mamograf/mamorraf-top-img.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="med-ob-item-mob">
+                            <img src="images/icons/Plus.svg" alt="">
+                            <img src="images/icons/Plus.svg" alt="">
+                        </div>
                         <div class="med-ob-blur-text">
                             <div class="med-ob-wrap">
                                 <h3 class="subtitle pb-24 text-a-center">
@@ -582,7 +595,7 @@
             </div>
         </section>
 
-        
+
     </main>
 
     <footer class="footer section-block">
