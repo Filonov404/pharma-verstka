@@ -174,10 +174,11 @@
 
 .silver-item.small img {
     position: absolute;
-    content: '';
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    width: 280px;
+    height: 280px;
 }
 
 .silver-item.small span {
@@ -393,7 +394,6 @@ ul li::after {
 
 .san.gomeopaty-block img {
     position: absolute;
-    content: '';
     width: 100%;
     height: 100%;
 }

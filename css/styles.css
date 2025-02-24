@@ -163,9 +163,18 @@ ul.header-menu li::after {
     transition: all .3s ease;
 }
 
+.subs-btn div,
+.subs-btn svg {
+    transition: all .3s ease;
+}
+
 .subs-btn:hover {
     background: var(--primary-200);
     color: var(--white);
+}
+
+.subs-btn:hover div {
+        color: var(--white);
 }
 
 .subs-dec {
@@ -187,11 +196,11 @@ ul.header-menu li::after {
     display: none;
 }
 
-/* .dropdown-menu.open {
-    padding-top: 32px;
-    display: block;
-} */
-
+@media (max-width: 860px) {
+    .submenu.dropdown-menu {
+        padding-top: 20px;
+    }
+}
 .dropdown-icon {
     transition: all .3s ease;
 }
@@ -413,7 +422,7 @@ ul.header-menu li::after {
 
 .bodrer-round-block {
     padding: clamp(24px, 3vw, 40px);
-    border: 1px solid var(--gray-200);
+    border: 1px solid var(--white);
     border-radius: clamp(40px, 3vw, 60px);
 }
 
@@ -427,6 +436,7 @@ ul.header-menu li::after {
 .blur-block {
     backdrop-filter: blur(20px);
     background: #ffffff5c;
+    -webkit-backdrop-filter: blur(10px)
 }
 
 .transform-180 {
@@ -689,9 +699,16 @@ h3.subtitle {
     height: 24px;
 }
 
+.more-btn:hover {
+
+}
+
+
+
 .star-decor-el {
     border: 1px solid var(--white);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -772,6 +789,7 @@ h3.subtitle {
     }
 
     .med-ob-item {
+
         height: 796px;
     }
 }
@@ -780,6 +798,7 @@ h3.subtitle {
     border-radius: clamp(32px, 3vw, 40px);
     padding: clamp(24px, 3vw, 40px);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--white);
     background: #FFFFFF52;
     display: flex;
@@ -872,6 +891,8 @@ h3.subtitle {
 }
 
 .atomar-item-text {
+    border: 1px solid var(--white);
+    -webkit-backdrop-filter: blur(10px);
     position: absolute;
     width: calc(100% - 80px);
     bottom: 0;
@@ -1057,12 +1078,20 @@ h3.subtitle {
 }
 
 .form-submit {
+    cursor: pointer;
     padding: 26px 20px;
     border-radius: 80px;
-    border: none;
+    border: 1px solid transparent;
     background: var(--primary-100);
     font-family: var(--font-bold);
     color: var(--white);
+    transition: all .3s ease;
+}
+
+.form-submit:hover {
+    border: 1px solid var(--gray-100);
+    background: var(--white);
+    color: var(--black);
 }
 
 .form-input::placeholder {
@@ -1090,6 +1119,7 @@ h3.subtitle {
 
 .confidencial {
     display: flex;
+    gap: 6px;
 }
 
 .confidencial a {

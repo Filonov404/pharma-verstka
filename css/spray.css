@@ -179,10 +179,6 @@
     display: none;
 }
 
-.spray-bot-txt {
-    max-width: 722px;
-}
-
 .bot-r-sp-mask img{
     height: 720px;
     object-fit: cover;
