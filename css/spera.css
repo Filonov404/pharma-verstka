@@ -52,6 +52,17 @@
 
 .mw1160 {
     max-width: 1160px;
+}
+
+.mw960 {
+    max-width: 960px;
+}
+
+.mw684 {
+    max-width: 864px;
+}
+
+.m0a {
     margin: 0 auto;
 }
 
@@ -63,11 +74,6 @@
 .table-text-sp h3,
 .table-text-sp ul {
     flex: 1;
-}
-
-.mw960 {
-    max-width: 960px;
-    margin: 0 auto;
 }
 
 .sper-media-wrapper {
@@ -86,6 +92,12 @@
 
 .num-it-sper {
     min-height: 218px;
+}
+
+.silver-item-mask-sm.sper-img img{
+    height: 600px;
+    object-fit: cover;
+    width: 100%;
 }
 
 @media (max-width: 860px) {
