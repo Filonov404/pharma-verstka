@@ -91,3 +91,13 @@ $("form").submit(function (event) {
         $('.response').append('<div class="sucscess"><div class="modal_title">Заявка принята!</div></div>');
     });
 });
+
+
+new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});

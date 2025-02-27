@@ -379,7 +379,7 @@ ul.header-menu li::after {
 }
 
 .d-flex {
-    display: flex;
+    display: flex!important;
 }
 
 .d-block {
