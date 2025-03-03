@@ -111,7 +111,7 @@
 
 .text-slide-spera h3 {
     font-family: var(--font-black);
-    padding-bottom: clamp(8px, 3vw, 12px);
+    padding-bottom: clamp(6px, 3vw, 8px);
 }
 
 .text-slide-spera p {
@@ -162,6 +162,22 @@
 }
 .wr-btns {
     margin-top: -15px;
+}
+
+.county-deck  {
+    width: 100%!important;
+    border-bottom: 1px solid var(--gray-200);
+    padding-top: clamp(16px, 3vw, 24px);
+    padding-bottom: clamp(16px, 3vw, 24px);
+    transition: all .3s ease;
+}
+
+.county-deck:first-child {
+    border-top: 1px solid var(--gray-200);
+}
+
+.gap-32 {
+    gap: 32px;
 }
 
 @media (max-width: 860px) {
