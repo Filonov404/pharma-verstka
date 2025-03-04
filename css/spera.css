@@ -1,4 +1,4 @@
-.top-section-text.sp {}
+
 
 .top-section-inner-sp {
     display: flex;
@@ -180,9 +180,20 @@
     gap: 32px;
 }
 
+.silver-item-mask-big.sper img {
+    height: 520px;
+}
+
 @media (max-width: 860px) {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 60px!important;
+        height: 60px!important; 
+    }
     .spera-btns {
-        margin: 0 auto 12px auto;
+        width: 150px;
+        margin: 0 auto 20px auto;
     }
     .sper-media-wrapper {
         grid-template-columns: 1fr;
