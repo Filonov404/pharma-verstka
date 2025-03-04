@@ -95,6 +95,7 @@ $("form").submit(function (event) {
 
 new Swiper('.swiper-container', {
     slidesPerView: 1,
+    autoHeight: true,
     spaceBetween: 20,
     navigation: {
         nextEl: '.swiper-button-next',
