@@ -1,0 +1,36 @@
+.top-section-t.pac {
+    max-width: 682px;
+    padding-right: 40px;
+}
+
+.form-submit.pac {
+    max-width: 172px;
+}
+
+.bot-r-sp-mask.pac img {
+    width: 100%;
+}
+
+.pacs-title {
+    max-width: 83%;
+    margin: 0 auto;
+}
+@media (max-width: 1400px) {
+    .top-section-t.pac {
+        padding: 0;
+        max-width: 440px;
+    }
+}
+@media (max-width: 860px) {
+    .spray-gred_4.sp.pb-20 div{
+        width: 100%;
+    }
+
+    .pacs-title {
+        max-width: 100%;
+    }
+    .top-section-t.pac {
+        max-width: 100%;
+        width: 100%;
+    }
+}

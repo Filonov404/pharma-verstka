@@ -4,1244 +4,1234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сферa</title>
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Подключение стилей Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Подключение скрипта Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Главная</title>
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/styles.css">
-        <!-- Подключение стилей Swiper -->
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-        <!-- Подключение скрипта Swiper -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    </head>
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <a href="/" class="header-logo">
+                    <img src="images/icons/Color-Dark-logo.svg" alt="logo">
+                </a>
 
-    <body>
+                <nav class="navbar">
 
-        <header class="header">
-            <div class="container">
-                <div class="header-wrapper">
-                    <a href="/" class="header-logo">
-                        <img src="images/icons/Color-Dark-logo.svg" alt="logo">
-                    </a>
-
-                    <nav class="navbar">
-
-                        <ul class="header-menu menu" id="menu">
-                            <li>
-                                <a href="#">Мед оборудование</a>
-                            </li>
-                            <li class="has-dropdown">
-                                <a href="#">Продукты для здоровья</a>
-                                <ul class="submenu dropdown-menu">
-                                    <li><a href="#">Косметические средства и бады</a></li>
-                                    <li><a href="#">Средства санитарной обработки широкого спектра</a></li>
-                                    <li><a href="#">Не химические средства пролонгации срока годности продуктов</a></li>
-                                </ul>
-                            </li>
-                            <li class="has-dropdown">
-                                <a href="#">Коллоиды</a>
-                                <ul class="submenu dropdown-menu">
-                                    <li><a href="#">Косметические средства и бады</a></li>
-                                    <li><a href="#">Средства санитарной обработки широкого спектра</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Life Packs</a></li>
-                            <li>
-                                <a href="#">Гомеопатия</a>
-                            </li>
-                            <li>
-                                <a href="#">Наука</a>
-                            </li>
-                            <li>
-                                <a href="#">Медиацентр</a>
-                            </li>
-                            <li>
-                                <a href="#">Контакты</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="header-subs">
-                        <div class="dropdown js-dropdown js-lang" data-dropdown-type="closing">
-                            <button class="dropdown__button js-dropdown-toggler js-lang-display">Ru</button>
-                            <div class="dropdown__box js-dropdown-box">
-                                <ul>
-                                    <li><a href="#en" class="js-lang-toggler">En</a></li>
-                                    <li><a href="#ru" class="js-lang-toggler">Ru</a></li>
-                                </ul>
-                            </div>
+                    <ul class="header-menu menu" id="menu">
+                        <li>
+                            <a href="#">Мед оборудование</a>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">Продукты для здоровья</a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a href="#">Косметические средства и бады</a></li>
+                                <li><a href="#">Средства санитарной обработки широкого спектра</a></li>
+                                <li><a href="#">Не химические средства пролонгации срока годности продуктов</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">Коллоиды</a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a href="#">Косметические средства и бады</a></li>
+                                <li><a href="#">Средства санитарной обработки широкого спектра</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Life Packs</a></li>
+                        <li>
+                            <a href="#">Гомеопатия</a>
+                        </li>
+                        <li>
+                            <a href="#">Наука</a>
+                        </li>
+                        <li>
+                            <a href="#">Медиацентр</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-subs">
+                    <div class="dropdown js-dropdown js-lang" data-dropdown-type="closing">
+                        <button class="dropdown__button js-dropdown-toggler js-lang-display">Ru</button>
+                        <div class="dropdown__box js-dropdown-box">
+                            <ul>
+                                <li><a href="#en" class="js-lang-toggler">En</a></li>
+                                <li><a href="#ru" class="js-lang-toggler">Ru</a></li>
+                            </ul>
                         </div>
-                        <a href="#" class="subs-btn">
-                            <div>Подписаться</div>
-                            <div class="subs-dec">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                    </div>
+                    <a href="#" class="subs-btn">
+                        <div>Подписаться</div>
+                        <div class="subs-dec">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 12.227C10 11.6591 10.3661 11.1694 10.7678 10.7678C11.1694 10.3661 11.6591 10 12.227 10H18V8H12.227C11.6591 8 11.1694 7.63385 10.7678 7.23223C10.3661 6.83061 10 6.34094 10 5.77296V0H8V5.77296C8 6.34094 7.63385 6.83061 7.23223 7.23223C6.83061 7.63385 6.34094 8 5.77296 8H0V10H5.77296C6.34094 10 6.83061 10.3661 7.23223 10.7678C7.63385 11.1694 8 11.6591 8 12.227V18H10V12.227Z"
+                                    fill="#1A1A1E" />
+                            </svg>
+                        </div>
+                    </a>
+                    <div class="burger">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="top-section san">
+            <div class="container">
+                <div class="top-section-inner-sp">
+                    <div class="top-section-text sp">
+                        <h1 class="main-title pb-24">Сфера Копылова</h1>
+                        <p class="bold-text pb-32 mamg-txt lh-30">Революция в резонансно-частотной терапии</p>
+                        <button class="form-submit mamo">Купить франшизу</button>
+                    </div>
+                    <div class="mamg-img">
+                        <div class="flex-1">
+                            <div class="star-decor-el mamg-dec bold-text">
+                                Сфера
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M10 12.227C10 11.6591 10.3661 11.1694 10.7678 10.7678C11.1694 10.3661 11.6591 10 12.227 10H18V8H12.227C11.6591 8 11.1694 7.63385 10.7678 7.23223C10.3661 6.83061 10 6.34094 10 5.77296V0H8V5.77296C8 6.34094 7.63385 6.83061 7.23223 7.23223C6.83061 7.63385 6.34094 8 5.77296 8H0V10H5.77296C6.34094 10 6.83061 10.3661 7.23223 10.7678C7.63385 11.1694 8 11.6591 8 12.227V18H10V12.227Z"
-                                        fill="#1A1A1E" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M11.0411 5H12.9589L13.1144 5.81193C13.6049 8.37373 15.6263 10.3951 18.1881 10.8856L19 11.0411V12.9589L18.1881 13.1144C15.6263 13.6049 13.6049 15.6263 13.1144 18.1881L12.9589 19H11.0411L10.8856 18.1881C10.3951 15.6263 8.37373 13.6049 5.81193 13.1144L5 12.9589V11.0411L5.81193 10.8856C8.37373 10.3951 10.3951 8.37373 10.8856 5.81193L11.0411 5ZM12 8.57806C11.2197 10.0268 10.0268 11.2197 8.57806 12C10.0268 12.7803 11.2197 13.9732 12 15.4219C12.7803 13.9732 13.9732 12.7803 15.4219 12C13.9732 11.2197 12.7803 10.0268 12 8.57806Z"
+                                        fill="#1A1A1E"></path>
                                 </svg>
                             </div>
-                        </a>
-                        <div class="burger">
-                            <span></span>
+                            <div class="top-mamg-dec">
+                                <div class="top-mamg-mask">
+                                    <img src="images/spera/spera-top.png" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
-
-        <main>
-            <section class="top-section san">
-                <div class="container">
-                    <div class="top-section-inner-sp">
-                        <div class="top-section-text sp">
-                            <h1 class="main-title pb-24">Сфера Копылова</h1>
-                            <p class="bold-text pb-32 mamg-txt lh-30">Революция в резонансно-частотной терапии</p>
-                            <button class="form-submit mamo">Купить франшизу</button>
-                        </div>
-                        <div class="mamg-img">
-                            <div class="flex-1">
-                                <div class="star-decor-el mamg-dec bold-text">
-                                    Сфера
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M11.0411 5H12.9589L13.1144 5.81193C13.6049 8.37373 15.6263 10.3951 18.1881 10.8856L19 11.0411V12.9589L18.1881 13.1144C15.6263 13.6049 13.6049 15.6263 13.1144 18.1881L12.9589 19H11.0411L10.8856 18.1881C10.3951 15.6263 8.37373 13.6049 5.81193 13.1144L5 12.9589V11.0411L5.81193 10.8856C8.37373 10.3951 10.3951 8.37373 10.8856 5.81193L11.0411 5ZM12 8.57806C11.2197 10.0268 10.0268 11.2197 8.57806 12C10.0268 12.7803 11.2197 13.9732 12 15.4219C12.7803 13.9732 13.9732 12.7803 15.4219 12C13.9732 11.2197 12.7803 10.0268 12 8.57806Z"
-                                            fill="#1A1A1E"></path>
-                                    </svg>
-                                </div>
-                                <div class="top-mamg-dec">
-                                    <div class="top-mamg-mask">
-                                        <img src="images/spera/spera-top.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="section-border"></div>
-            <section class="section-block">
-                <div class="container">
-                    <h2 class="block-section-title pb-24">Клиника улучшения здоровья с инновационным оборудованием</h2>
-                    <p class="sp_text bold-text pb-60 text-a-center lh-30">
-                        Сфера Копылова — это инновационные
-                        резонансно-частотные установки для диагностики и терапии, основанные на измерении и коррекции
-                        вибрационных частот человеческого тела.
-                    </p>
-                    <div class="d-grid-3 gap-20 silver-application-item pb-20">
-                        <div class="decor-star-wrapper atomar">
-                            <div class="star-decor atomar sp"></div>
-                            <div class="silver-item-mask-sm"><img src="images/spera/spera-top.png" alt=""></div>
-                            <div class="atomar-item-text sp">
-                                <h3 class="subtitle text-a-center">Сфера для обследования</h3>
-                            </div>
-                        </div>
-                        <div class="decor-star-wrapper atomar">
-                            <div class="star-decor atomar sp"></div>
-                            <div class="silver-item-mask-sm"><img src="images/spera/spera2.png" alt=""></div>
-                            <div class="atomar-item-text sp">
-                                <h3 class="subtitle text-a-center">Коррекционная сфера</h3>
-                            </div>
-                        </div>
-                        <div class="decor-star-wrapper atomar">
-                            <div class="star-decor atomar sp"></div>
-                            <div class="silver-item-mask-sm"><img src="images/spera/spera3.png" alt=""></div>
-                            <div class="atomar-item-text sp">
-                                <h3 class="subtitle text-a-center">Сфера тонких настроек</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section-block">
-                <div class="container">
-                    <div class="spacer-block pb-20"></div>
-                    <h2 class="block-section-title pb-20 sp-t">Сфера Копылова — <br> Ваш путь к здоровью <br> и
-                        активному
-                        долголетию</h2>
-                    <div class="silver-bt-bullets sp pb-60">
-                        <div class="star-decor-el el">Раннее выявление заболеваний</div>
-                        <div class="star-decor-el el">Коррекция нарушений в работе органов</div>
-                        <div class="star-decor-el el">Комплексное воздействие</div>
-                        <div class="star-decor-el el">Восстановление энергетического баланса</div>
-                        <div class="star-decor-el el">Предотвращение развития заболеваний</div>
-                        <div class="star-decor-el el">Неинвазивность</div>
-                        <div class="star-decor-el el">Доступность и удобство</div>
-                        <div class="star-decor-el el">Лечение широкого спектра заболеваний</div>
-                    </div>
-
-
-
-                    <div class="spray-gred_4 sp">
-                        <div class="border-pad-40">
-                            <div class="silver-item-top sper">
-                                <img src="images/spera/sp-gr1.png" alt="">
-                                <img src="images/spera/sp-gr5.png" alt="">
-                            </div>
-                            <div class="pb-32"></div>
-                            <h3 class="subtitle pb-24">Сфера для обследования</h3>
-                            <span class="pb-24 d-block">Эта сфера оборудована МРТ-подобным сканером в звукоизолированной
-                                камере для детального
-                                измерения вибрация тела.</span>
-                            <span>Специализированное программное обеспечение анализирует данные, выявляя отклонения от
-                                базовых частот и вибраций.</span>
-                        </div>
-                        <div class="border-pad-40">
-                            <div class="silver-item-top sper">
-                                <img src="images/spera/sp-gr4.png" alt="">
-                                <img src="images/spera/sp-gr4.png" alt="">
-                            </div>
-                            <div class="pb-32"></div>
-                            <h3 class="subtitle pb-24">Корреляционная сфера</h3>
-                            <span>По функционалу схожа с первой сферой, но оснащена системой из более чем 90
-                                низкочастотных динамиков для локализированного воздействия на определенные участки
-                                тела.</span>
-                        </div>
-                        <div class="border-pad-40">
-                            <div class="silver-item-top sper">
-                                <img src="images/spera/sp-gr2.png" alt="">
-                                <img src="images/spera/sp-gr2.png" alt="">
-                            </div>
-                            <div class="pb-32"></div>
-                            <h3 class="subtitle pb-24">Сфера тонких настроек</h3>
-                            <span>Яйцеобразная сфера для полного погружения клиента, заполненная водой и оборудованная
-                                высокочастотными и низкочастотными динамиками для синхронизации частот человека.
-                            </span>
-                        </div>
-
-                        <div class="border-pad-40 pb-20 sp-bot-gr-big">
-                            <h3 class="subtitle pb-24">Как это работает?</h3>
-                            <div class="d-flex flex-col pb-24 gap-24 lh-30">
-                                <span class="flex-1 d-block">
-                                    Сфера Копылова основана на принципах резонансной частотной
-                                    терапии. Она использует технологии сканирования и анализа вибраций человеческого
-                                    тела для диагностики состояния здоровья и предлагает методы коррекции частот.
-                                </span>
-                                <span class="flex-1 d-block">
-                                    Основная идея сферы заключается в том, что каждый орган и
-                                    система в организме имеют свои характеристические частоты вибраций, и дисбаланс в
-                                    этих частотах может быть связан с различными заболеваниями или неполадками в
-                                    организме.
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section-block">
-                <div class="container">
-                    <div class="spacer-block pb-20"></div>
-                    <h2 class="block-section-title pb-20">Процесс работы сферы включает следующие шаги</h2>
-                    <div class="mamg media-wrapper sper gap-20">
-                        <div class="border-pad-40">
-                            <div class="main-title pb-12">1</div>
-                            <h3 class="subtitle pb-24">Сканирование вибраций тела</h3>
-                            <span>Пациент проходит сканирование, во время которого сфера анализирует частоты различных
-                                органов и систем в организме.</span>
-                        </div>
-                        <div class="border-pad-40">
-                            <div class="main-title pb-12">2</div>
-                            <h3 class="subtitle pb-24">Диагностика состояния здоровья</h3>
-                            <span>На основе результатов сфера выявляет возможные дисбалансы и проблемы в организме
-                                пациента.</span>
-                        </div>
-                        <div class="border-pad-40">
-                            <div class="main-title pb-12">3</div>
-                            <h3 class="subtitle pb-24">Коррекция частот</h3>
-                            <span>После диагностики сфера предлагает методы коррекции частот через воздействие на
-                                определенные зоны тела при помощи резонансной пушки.</span>
-                        </div>
-                        <div class="border-pad-40">
-                            <div class="main-title pb-12">4</div>
-                            <h3 class="subtitle pb-24">Мониторинг и повторное сканирование</h3>
-                            <span>После коррекции производится мониторинг для отслеживания изменений в состоянии
-                                здоровья. Повторные сканирования могут быть проведены для оценки эффективности коррекции
-                                и динамики изменений.</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section-block pb-80">
-                <div class="container">
-                    <div class="spacer-block pb-20"></div>
-                    <h2 class="block-section-title mw1160 pb-24">Какую глобальную проблему людей решает сфера?</h2>
-                    <p class="spray-text2 bold-text pb-60 text-a-center lh-30">Мы приглашаем дистрибьюторов,
-                        заинтересованных в качественных и востребованных продуктах для здоровья, к сотрудничеству с
-                        нашей
-                        компанией.</p>
-                    <div class="d-flex gap-20 sper-h spray-botton-grid">
-                        <div class="border-pad-40 sper-bot-txt">
-                            <div class="d-flex col h100">
-                                <h3 class="subtitle pb-24">
-                                    Что дает сфера Копылова
-                                </h3>
-                                <div class="get-part-text pb-20">
-                                    <p class="pb-24">Сфера Копылова направлена на решение глобальной проблемы
-                                        современного общества — повышения качества жизни через улучшение физического и
-                                        духовного здоровья.</p>
-                                    <p class="bold-text pb-24">Она предлагает инновационный подход к раннему выявлению и
-                                        коррекции нарушений в работе органов и систем человека на основе анализа
-                                        резонансных частот.</p>
-                                    <p>Это позволяет эффективно предотвращать развитие многих заболеваний, устранять уже
-                                        существующие проблемы и способствует общему улучшению самочувствия, укреплению
-                                        здоровья и продлению активного долголетия.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="d-flex flex-col gap-20 w100 sper__img">
-                            <div class="flex-1 top-san-img top-sp-big ">
-                                <div class="mamg star-decor-el bottom-sp-d1 bold-text">
-                                    Si14 Pharma
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M11.0411 5H12.9589L13.1144 5.81193C13.6049 8.37373 15.6263 10.3951 18.1881 10.8856L19 11.0411V12.9589L18.1881 13.1144C15.6263 13.6049 13.6049 15.6263 13.1144 18.1881L12.9589 19H11.0411L10.8856 18.1881C10.3951 15.6263 8.37373 13.6049 5.81193 13.1144L5 12.9589V11.0411L5.81193 10.8856C8.37373 10.3951 10.3951 8.37373 10.8856 5.81193L11.0411 5ZM12 8.57806C11.2197 10.0268 10.0268 11.2197 8.57806 12C10.0268 12.7803 11.2197 13.9732 12 15.4219C12.7803 13.9732 13.9732 12.7803 15.4219 12C13.9732 11.2197 12.7803 10.0268 12 8.57806Z"
-                                            fill="#1A1A1E"></path>
-                                    </svg>
-                                </div>
-
-                                <div class="star-decor-el bottom-sp-d2 bold-text">
-                                    Духовное здоровье
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M11.0411 5H12.9589L13.1144 5.81193C13.6049 8.37373 15.6263 10.3951 18.1881 10.8856L19 11.0411V12.9589L18.1881 13.1144C15.6263 13.6049 13.6049 15.6263 13.1144 18.1881L12.9589 19H11.0411L10.8856 18.1881C10.3951 15.6263 8.37373 13.6049 5.81193 13.1144L5 12.9589V11.0411L5.81193 10.8856C8.37373 10.3951 10.3951 8.37373 10.8856 5.81193L11.0411 5ZM12 8.57806C11.2197 10.0268 10.0268 11.2197 8.57806 12C10.0268 12.7803 11.2197 13.9732 12 15.4219C12.7803 13.9732 13.9732 12.7803 15.4219 12C13.9732 11.2197 12.7803 10.0268 12 8.57806Z"
-                                            fill="#1A1A1E"></path>
-                                    </svg>
-                                </div>
-                                <div class="star-decor-el bottom-sp-d3 bold-text">
-                                    Физическое здоровье
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M11.0411 5H12.9589L13.1144 5.81193C13.6049 8.37373 15.6263 10.3951 18.1881 10.8856L19 11.0411V12.9589L18.1881 13.1144C15.6263 13.6049 13.6049 15.6263 13.1144 18.1881L12.9589 19H11.0411L10.8856 18.1881C10.3951 15.6263 8.37373 13.6049 5.81193 13.1144L5 12.9589V11.0411L5.81193 10.8856C8.37373 10.3951 10.3951 8.37373 10.8856 5.81193L11.0411 5ZM12 8.57806C11.2197 10.0268 10.0268 11.2197 8.57806 12C10.0268 12.7803 11.2197 13.9732 12 15.4219C12.7803 13.9732 13.9732 12.7803 15.4219 12C13.9732 11.2197 12.7803 10.0268 12 8.57806Z"
-                                            fill="#1A1A1E"></path>
-                                    </svg>
-                                </div>
-
-                                <div class="sper-img1 get-img top-sp-dec bottom-l">
-                                    <div class="mamg-bot-l-mask">
-                                        <img class="get-img w100" src="images/spera/sper1.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="spray-block2 w100 h100">
-
-                                <div class="sper-img2 doc top-sp-dec bot-dec-sm h100">
-                                    <div class="mamg-bot-r-mask">
-                                        <img class="w100" src="images/spera/sper2.png" alt="">
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section-block">
-                <div class="container">
-                    <div class="spacer-block pb-20"></div>
-                    <h2 class="block-section-title pb-60">кому необходимы наши продукты?</h2>
-                </div>
-                <div class="table-items">
-                    <!-- start cycle -->
-                    <div class="table-item">
-                        <div class="container">
-                            <div class="d-flex aic gap-48">
-                                <img class="table-i-san" src="images/spera/sp-table1.png" alt="">
-                                <div class="table-text-sp aic flex-1 sper">
-                                    <h3 class="subtitle pb-12">Инфекционные заболевания</h3>
-                                    <ul class="lh-30">
-                                        <li>Болезнь Лайма, риккетсиоз</li>
-                                        <li>Инфекция Helicobacter pylori</li>
-                                        <li>Острая и хроническая железистая лихорадка Пфейффера</li>
-                                        <li>Цитомегалия хроническая</li>
-                                    </ul>
-                                    <ul class="lh-30">
-                                        <li>Гриппоподобная инфекция</li>
-                                        <li>Вирус Эбола / Марбургская вирусная инфекция</li>
-                                        <li>Лихорадка денге</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="table-item">
-                        <div class="container">
-                            <div class="d-flex aic gap-48">
-                                <img class="table-i-san" src="images/spera/sp-table2.png" alt="">
-                                <div class="table-text-sp aic flex-1 sper">
-                                    <h3 class="subtitle pb-12">Аллергические заболевания</h3>
-                                    <ul class="lh-30">
-                                        <li>Аллергия верхних дыхательных путей</li>
-                                        <li>Кожная аллергия</li>
-                                    </ul>
-                                    <ul class="lh-30">
-                                        <li>Аллергия</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="table-item">
-                        <div class="container">
-                            <div class="d-flex aic gap-48">
-                                <img class="table-i-san" src="images/spera/sp-table3.png" alt="">
-                                <div class="table-text-sp aic flex-1 sper">
-                                    <h3 class="subtitle pb-12">Гормональные и эндокринные нарушения</h3>
-                                    <ul class="lh-30">
-                                        <li>Щитовидная железа / паращитовидная железа</li>
-                                        <li>Гормональная дисфункция у женщины</li>
-                                        <li>Гормональная дисфункция у мужчины</li>
-                                        <li>Гипертиреоз (гиперактивная щитовидная железа)</li>
-                                    </ul>
-                                    <ul class="lh-30">
-                                        <li>Гипотиреоз (недостаточно активная щитовидная железа)</li>
-                                        <li>Аденома гипофиза</li>
-                                        <li>Аденома щитовидной железы</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="table-item">
-                        <div class="container">
-                            <div class="d-flex aic gap-48">
-                                <img class="table-i-san" src="images/spera/sp-table4.png" alt="">
-                                <div class="table-text-sp aic flex-1 sper">
-                                    <h3 class="subtitle pb-12">Анемии и кровеносные заболевания</h3>
-                                    <ul class="lh-30">
-                                        <li>Почечная анемия</li>
-                                        <li>Анемия железодефицитная</li>
-                                        <li>Анемия, дефицит витамина B12</li>
-                                        <li>Анемия, дефицит витамина B6</li>
-                                        <li>Анемия, дефицит фолиевой кислоты</li>
-                                        <li>Полицитемия</li>
-                                    </ul>
-                                    <ul class="lh-30">
-                                        <li>Болезни кровеносной системы</li>
-                                        <li>Артериосклероз</li>
-                                        <li>Высокое кровяное давление (гипертония)</li>
-                                        <li>Почечная гипертензия</li>
-                                        <li>Нарушения венозного кровообращения (варикоз)</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="table-item">
-                        <div class="container">
-                            <div class="d-flex aic gap-48">
-                                <img class="table-i-san" src="images/spera/sp-table5.png" alt="">
-                                <div class="table-text-sp aic flex-1 sper">
-                                    <h3 class="subtitle pb-12">Сердечно-сосудистые заболевания</h3>
-                                    <ul class="lh-30">
-                                        <li>Левосторонняя сердечная недостаточность</li>
-                                        <li>Правосторонняя сердечная недостаточность</li>
-                                    </ul>
-                                    <ul class="lh-30">
-                                        <li>Стенокардия</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- end cycle -->
-            </section>
-
-            <section class="section-block">
-                <div class="container">
-                    <div class="spacer-block pb-20"></div>
-                    <h2 class="block-section-title pb-60">Преимущества Сферы Копылова
-                    </h2>
-                    <div class="d-grid-3 gap-20 silver-application-item pb-20">
-                        <div class="decor-star-wrapper atomar">
-                            <div class="star-decor san atomar"></div>
-                            <div class="silver-item-mask-sm"><img src="images/spera/spe-gr1.png" alt=""></div>
-                            <div class="atomar-item-text">
-                                <h3 class="subtitle pb-12">Уникальность подхода</h3>
-                                <span class="pb-24 d-block">Использование резонансных частот для диагностики и лечения
-                                    представляет собой новаторский подход, отличающийся от традиционных медицинских
-                                    практик.</span>
-                            </div>
-                        </div>
-                        <div class="decor-star-wrapper atomar">
-                            <div class="star-decor san atomar"></div>
-                            <div class="silver-item-mask-sm"><img src="images/spera/spe-gr6.png" alt=""></div>
-                            <div class="atomar-item-text">
-                                <h3 class="subtitle pb-12">Неинвазивность</h3>
-                                <span class="pb-24 d-block">Методика безопасна и не требует вмешательств в тело, что
-                                    минимизирует риски для пациентов.</span>
-                            </div>
-                        </div>
-                        <div class="decor-star-wrapper atomar">
-                            <div class="star-decor san atomar"></div>
-                            <div class="silver-item-mask-sm"><img src="images/spera/spe-gr4.png" alt=""></div>
-                            <div class="atomar-item-text">
-                                <h3 class="subtitle pb-12">Возможность раннего выявления заболеваний</h3>
-                                <span class="pb-24 d-block">Точное измерение частот вибраций тела позволяет обнаруживать
-                                    нарушения на ранних стадиях, до появления клинических симптомов.</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="d-flex flex-col gap-20 pb-20">
-                        <div class="flex-1 decor-star-wrapper atomar">
-                            <div class="star-decor big-san atomar"></div>
-                            <div class="silver-item-mask-big"><img src="images/spera/spe-gr10.png" alt=""></div>
-                            <div class="atomar-item-text">
-                                <h3 class="subtitle pb-12">Комплексное воздействие</h3>
-                                <span class="pb-24 d-block">Сфера способна не только диагностировать, но и
-                                    корректировать частоты, влияя на причину заболевания, а не только на
-                                    симптомы.</span>
-                            </div>
-                        </div>
-                        <div class="flex-1 decor-star-wrapper atomar">
-                            <div class="star-decor big-san atomar"></div>
-                            <div class="silver-item-mask-big"><img src="images/spera/spe-gr2.png" alt=""></div>
-                            <div class="atomar-item-text">
-                                <h3 class="subtitle pb-12">Персонализированный подход</h3>
-                                <span class="pb-24 d-block">Терапия и диагностика адаптируются под индивидуальные
-                                    особенности каждого человека, учитывая уникальные частоты его тела.</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-grid-3 gap-20 silver-application-item pb-20">
-                        <div class="decor-star-wrapper atomar">
-                            <div class="star-decor san atomar"></div>
-                            <div class="silver-item-mask-sm"><img src="images/spera/spe-gr8.png" alt=""></div>
-                            <div class="atomar-item-text">
-                                <h3 class="subtitle pb-12">Повышение общего благосостояния</h3>
-                                <span class="pb-24 d-block">Помимо лечения заболеваний, использование сферы Копылова
-                                    способствует улучшению энергетического баланса и психоэмоционального
-                                    состояния.</span>
-                            </div>
-                        </div>
-                        <div class="decor-star-wrapper atomar">
-                            <div class="star-decor san atomar"></div>
-                            <div class="silver-item-mask-sm"><img src="images/spera/spe-gr7.png" alt=""></div>
-                            <div class="atomar-item-text">
-                                <h3 class="subtitle pb-12">ПРогресс в лечении и профилактике</h3>
-                                <span class="pb-24 d-block">Новаторская технология открывает перспективы для развития
-                                    методов профилактики заболеваний и способствует продвижению научных исследований в
-                                    области медицины.</span>
-                            </div>
-                        </div>
-                        <div class="decor-star-wrapper atomar">
-                            <div class="star-decor san atomar"></div>
-                            <div class="silver-item-mask-sm"><img src="images/spera/spe-gr5.png" alt=""></div>
-                            <div class="atomar-item-text">
-                                <h3 class="subtitle pb-12">Доступность и удобство</h3>
-                                <span class="pb-24 d-block">Использование сферы потенциально может быть более доступным
-                                    и удобным для широкого круга людей по сравнению с услугами дорогостоящих клиник,
-                                    которые могут быть ограничены по географии и стоимости.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section-block">
-                <div class="container">
-                    <div class="spacer-block pb-20"></div>
-                    <h2 class="block-section-title pb-20">Как проходит процесс?</h2>
-                    <p class="mw960 text-a-center bold-text pb-60">Весь процесс нацелен на максимально комфортное и
-                        безопасное
-                        воздействие на организм, с целью
-                        восстановления и оптимизации его функционирования. Процесс использования «Сферы Копылова» для
-                        диагностики и коррекции частот тела человека может быть представлен следующими основными
-                        этапами:</p>
-                    <div class="sper-media-wrapper gap-20">
-                        <div class="border-pad-40 sper-item">
-                            <div class="num-it-sper">
-                                <div class="main-title pb-12">1</div>
-                                <h3 class="subtitle pb-24">Первичная консультация и анкетирование</h3>
-                            </div>
-                            <span>На начальном этапе проводится сбор анамнеза и обсуждение ожиданий клиента от
-                                процедуры. Это помогает специалистам подготовиться к сеансу и адаптировать процедуру под
-                                индивидуальные потребности клиента.</span>
-                        </div>
-                        <div class="border-pad-40 sper-item">
-                            <div class="num-it-sper">
-                                <div class="main-title pb-12">2</div>
-                                <h3 class="subtitle pb-24">Обследование в первой сфере</h3>
-                            </div>
-                            <span>Клиент помещается в звукоизолированную сферу для обследования, оборудованную
-                                специальным МРТ-подобным сканером. Во время процедуры измеряются вибрационные частоты
-                                тела клиента. Данные передаются на анализ специализированному ПО.</span>
-                        </div>
-                        <div class="border-pad-40 sper-item">
-                            <div class="num-it-sper">
-                                <div class="main-title pb-12">3</div>
-                                <h3 class="subtitle pb-24">Анализ полученных данных</h3>
-                            </div>
-                            <span>Программное обеспечение анализирует данные, сравнивая их с базовыми частотами
-                                здорового организма, и выявляет возможные отклонения.</span>
-                        </div>
-                        <div class="border-pad-40 sper-item">
-                            <div class="num-it-sper">
-                                <div class="main-title pb-12">4</div>
-                                <h3 class="subtitle pb-24">Коррекция в корреляционной сфере</h3>
-                            </div>
-                            <span>Сеанс в сфере тонких настроек: для полного погружения и синхронизации сознания и тела
-                                клиент может пройти процедуру в яйцеобразной сфере, заполненной водой. Высокочастотные и
-                                низкочастотные динамики создают в воде резонансные волны, оказывающие комплексное
-                                воздействие на организм.</span>
-                        </div>
-                        <div class="border-pad-40 sper-item">
-                            <div class="num-it-sper">
-                                <div class="main-title pb-12">5</div>
-                                <h3 class="subtitle pb-24">Оценка результатов и дальнейшие рекомендации</h3>
-                            </div>
-                            <span>После проведения всех необходимых процедур специалисты оценивают изменения в состоянии
-                                клиента и дают рекомендации по дальнейшему поддержанию достигнутых результатов.</span>
-                        </div>
-                        <div class="border-pad-40 sper-item">
-                            <div class="num-it-sper">
-                                <div class="main-title pb-12">6</div>
-                                <h3 class="subtitle pb-24">Повторные сеансы</h3>
-                            </div>
-                            <span>В зависимости от индивидуальных потребностей и целей клиента, могут быть рекомендованы
-                                дополнительные сеансы для укрепления и поддержания результатов.</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section-block">
-                <div class="container">
-                    <div class="spacer-block pb-20"></div>
-                    <h2 class="block-section-title pb-20 sp-t">Услуги клиники</h2>
-                    <p class="mw960 text-a-center bold-text pb-60">Продолжительность таких программ может варьироваться
-                        от нескольких дней до нескольких недель в зависимости от потребностей клиента и целей программы.
-                    </p>
-                    <div class="spray-gred_4 sp">
-                        <div class="border-pad-40">
-                            <div class="silver-item-top sper">
-                                <img src="images/spera/sper-uslugi4.png" alt="">
-                                <img src="images/spera/sper-uslugi1.png" alt="">
-                            </div>
-                            <div class="pb-32"></div>
-                            <h3 class="subtitle pb-24">Диагностика</h3>
-                            <span class="pb-24 d-block">Обследование частот тела. Анализ резонансных частот для оценки
-                                физического и духовного здоровья. Подготовка индивидуального отчета с
-                                рекомендациями.</span>
-                        </div>
-                        <div class="border-pad-40">
-                            <div class="silver-item-top sper">
-                                <img src="images/spera/sper-uslugi2.png" alt="">
-                                <img src="images/spera/sper-uslugi3.png" alt="">
-                            </div>
-                            <div class="pb-32"></div>
-                            <h3 class="subtitle pb-24">Терапия</h3>
-                            <span>Коррекция частот с помощью резонансной пушки. Настраиваемая терапия для синхронизации
-                                вибраций тела.</span>
-                        </div>
-                        <div class="border-pad-40">
-                            <div class="silver-item-top sper">
-                                <img src="images/spera/sper-uslugi6.png" alt="">
-                                <img src="images/spera/sper-uslugi5.png" alt="">
-                            </div>
-                            <div class="pb-32"></div>
-                            <h3 class="subtitle pb-24">Комплексные программы</h3>
-                            <span>Включают в себя диагностику и терапию, а также другие дополнительные услуги: например,
-                                обследования классических анализов, а также альтернативных решений.</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section-block">
-                <div class="container">
-                    <h2 class="block-section-title pb-20 sp-t">Быстрый старт вашего бизнеса</h2>
-                    <div class="d-grid-3 gap-20 silver-application-item pb-20">
-                        <div class="decor-star-wrapper atomar">
-                            <div class="star-decor atomar sp"></div>
-                            <div class="silver-item-mask-sm sper-img"><img src="images/spera/sp-gr4.png" alt=""></div>
-                            <div class="atomar-item-text sp">
-                                <h3 class="text-a-center subtitle">Всё необходимое оборудование и аппаратура</h3>
-                            </div>
-                        </div>
-                        <div class="decor-star-wrapper atomar">
-                            <div class="star-decor atomar sp"></div>
-                            <div class="silver-item-mask-sm sper-img"><img src="images/spera/sper-us1.png" alt=""></div>
-                            <div class="atomar-item-text sp">
-                                <h3 class="text-a-center subtitle">Обучение персонала компании</h3>
-                            </div>
-                        </div>
-                        <div class="decor-star-wrapper atomar">
-                            <div class="star-decor atomar sp"></div>
-                            <div class="silver-item-mask-sm sper-img"><img src="images/spera/sper-us2.png" alt=""></div>
-                            <div class="atomar-item-text sp">
-                                <h3 class="text-a-center subtitle">Готовые решения для привлечения клиентов</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section-block">
-                <div class="container">
-                    <div class="spacer-block pb-20"></div>
-                    <h2 class="block-section-title pb-60 mw684 m0a">Роадмап запуска Сферы Копылова</h2>
-
-                    <div class="sper-media-wrapper2 gap-20">
-
-                        <div class="border-pad-40 sper-item">
-                            <div class="num-it-sper">
-                                <div class="main-title pb-12">1</div>
-                                <h3 class="subtitle pb-24">Заполнение анкеты и подписание договора</h3>
-                            </div>
-                            <span>После покупки франшизы вам предоставят анкету для заполнения, в которой вы
-                                укажете все необходимые данные. После заполнения анкеты вы подпишете договор о
-                                франшизе.
-                            </span>
-                        </div>
-                        <div class="border-pad-40 sper-item">
-                            <div class="num-it-sper">
-                                <div class="main-title pb-12">2</div>
-                                <h3 class="subtitle pb-24">Обучение и подготовка</h3>
-                            </div>
-                            <span>Вам будет предоставлен доступ к обучающим материалам и программам. Вы пройдете
-                                обучение по всем аспектам
-                                работы с резонансно-частотной
-                                установкой «Сфера», включая
-                                оборудование, программное
-                                обеспечение, клинические
-                                протоколы, маркетинг и управление клиентами.
-                            </span>
-                        </div>
-                        <div class="border-pad-40 sper-item">
-                            <div class="num-it-sper">
-                                <div class="main-title pb-12">3</div>
-                                <h3 class="subtitle pb-24">Подготовка помещения
-                                </h3>
-                            </div>
-                            <span>Вы начнете подготовку
-                                помещения для клиники. Это может включать в себя
-                                ремонтные работы, закупку
-                                мебели и оборудования, а также настройку инфраструктуры для работы клиники.
-                            </span>
-                        </div>
-                        <div class="border-pad-40 sper-item">
-                            <div class="num-it-sper">
-                                <div class="main-title pb-12">4</div>
-                                <h3 class="subtitle pb-24">Установка оборудования
-                                </h3>
-                            </div>
-                            <span>Специалисты приедут на место,
-                                чтобы помочь с установкой
-                                резонансно-частотных установок «Сфера». Они также проведут настройку всего необходимого
-                                программного обеспечения.
-                            </span>
-                        </div>
-                        <div class="border-pad-40 sper-item">
-                            <div class="num-it-sper">
-                                <div class="main-title pb-12">5</div>
-                                <h3 class="subtitle pb-24">Тестирование и настройка системы</h3>
-                            </div>
-                            <span>После установки оборудования будет проведено тестирование
-                                и настройка системы, чтобы
-                                убедиться в ее правильной
-                                работе и готовности к приему
-                                первых клиентов.
-                            </span>
-                        </div>
-                        <div class="border-pad-40 sper-item">
-                            <div class="num-it-sper">
-                                <div class="main-title pb-12">6</div>
-                                <h3 class="subtitle pb-24">Запуск рекламной кампании</h3>
-                            </div>
-                            <span>Вы начнете запуск рекламной
-                                кампании для привлечения
-                                клиентов. Это может включать в себя рекламу в интернете,
-                                социальных сетях, на радио,
-                                телевидении, а также
-                                распространение рекламных
-                                материалов в местных
-                                сообществах
-                            </span>
-                        </div>
-                        <div class="border-pad-40 sper-item">
-                            <div class="num-it-sper">
-                                <div class="main-title pb-12">7</div>
-                                <h3 class="subtitle pb-24">Первые клиенты и работа</h3>
-                            </div>
-                            <span>После открытия клиники вы
-                                готовы принимать первых
-                                клиентов. Вы будете предоставлять услуги
-                                диагностики и терапии с использованием резонансно
-                                частотной установки «Сфера» и обеспечивать высокий
-                                уровень обслуживания
-                                клиентов.
-                            </span>
-                        </div>
-                        <div class="border-pad-40 sper-item">
-                            <div class="num-it-sper">
-                                <div class="main-title pb-12">8</div>
-                                <h3 class="subtitle pb-24">Постоянная поддержка и развитие</h3>
-                            </div>
-                            <span>Вам будет предоставлена
-                                постоянная поддержка со стороны франчайзера, который поможет вам развивать бизнес,
-                                решать проблемы и внедрять нововведения для улучшения сервиса и услуг.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section-block">
-                <div class="container">
-                    <div class="spacer-block pb-20"></div>
-                    <h2 class="block-section-title pb-24 m0a">Анализ рынка</h2>
-
-                    <div class="spera-slider swiper-container">
-                        <div class="wr-btns">
-                            <div class="spera-btns">
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                            </div>
-                        </div>
-                        <div class="swiper-wrapper">
-                            <div class="spera-slide swiper-slide">
-                                <p class="pb-60 bold-text text-a-center d-block">Предполагаемый интерес к «Сфере
-                                    Копылова» по возрастным группам</p>
-                                <div class="d-flex flex-col gap-20">
-                                    <div class="border-pad-40 img-slide-pera">
-                                        <img src="images/spera/spera-siler3.png" alt="">
-                                    </div>
-                                    <div class="border-pad-40 text-slide-spera">
-                                        <h3>Возрастные группы 44-54 и 35-44</h3>
-                                        <p>Продемонстрировали наивысший уровень интереса к «Сфере». Это может быть
-                                            обусловлено повышенной заботой об улучшении качества жизни и предотвращении
-                                            заболеваний на более поздних этапах жизни.</p>
-                                        <h3>Младшие возрастные группы 18-24 и 25-34</h3>
-                                        <p>Показали меньший уровень интереса, что может быть связано с меньшей
-                                            озабоченностью здоровьем в молодом возрасте и ориентацией на более доступные
-                                            и
-                                            понятные технологии.</p>
-                                        <h3>Возрастная группа 65+</h3>
-                                        <p>Также проявила значительный интерес, что можно объяснить стремлением к
-                                            поддержанию здоровья и активности в пожилом возрасте, хотя некоторые
-                                            ограничения
-                                            могут быть связаны с доступностью и осведомленностью об инновациях.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="spera-slide swiper-slide">
-                                <p class="pb-60 bold-text text-a-center d-block">Предполагаемый интерес к «Сфере
-                                    Копылова» в странах СНГ</p>
-                                <div class="d-flex flex-col gap-20">
-                                    <div class="border-pad-40 img-slide-pera">
-                                        <img src="images/spera/spera-siler1.png" alt="">
-                                    </div>
-                                    <div class="border-pad-40 text-slide-spera">
-                                        <h3>Уровень развития здравоохранения</h3>
-                                        <p>Страны с высокоразвитой медицинской инфраструктурой могут проявлять больший
-                                            интерес к
-                                            инновационным технологиям.</p>
-                                        <h3>Интерес к альтернативной медицине</h3>
-                                        <p>В странах с развитым сектором альтернативной и интегративной медицины может
-                                            быть выше
-                                            интерес к новым подходам к лечению и диагностике.</p>
-                                        <h3>ВВП на душу населения</h3>
-                                        <p>Страны с высоким уровнем дохода населения могут проявлять большую готовность
-                                            инвестировать в здоровье.</p>
-                                        <h3>Демографические факторы</h3>
-                                        <p>Страны с возрастающим числом пожилых людей могут испытывать повышенный спрос
-                                            на
-                                            медицинские инновации.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="spera-slide swiper-slide">
-                                <p class="pb-60 bold-text text-a-center d-block">Предполагаемый интерес к Сфере Копылова
-                                    по странам</p>
-                                <div class="d-flex flex-col gap-20">
-                                    <div class="border-pad-40 img-slide-pera">
-                                        <img src="images/spera/spera-siler2.png" alt="">
-                                    </div>
-                                    <div class=" text-slide-spera">
-                                        <div class="d-flex county-deck aic gap-32">
-                                            <img src="images/spera/sper-coutrys1.png" alt="">
-                                            <div class="flex-1">
-                                                <h3>США и Канада</h3>
-                                                <span>Высокий уровень медицинских исследований и инвестиций в
-                                                    здравоохранение, сильный интерес к альтернативной медицине</span>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex county-deck aic gap-32">
-                                            <img src="images/spera/sper-coutrys5.png" alt="">
-                                            <div class="flex-1">
-                                                <h3>Европейские страны</h3>
-                                                <p class="bold-text">Особенно Германия, Франция, Швейцария</p>
-                                                <span>Высокий уровень технологического развития, значительные инвестиции
-                                                    в здравоохранение, стареющее население</span>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex county-deck aic gap-32">
-                                            <img src="images/spera/sper-coutrys2.png" alt="">
-                                            <div class="flex-1">
-                                                <h3>Япония и Южная Корея</h3>
-                                                <span>Высокий уровень технологического развития, значительные инвестиции
-                                                    в здравоохранение, стареющее население</span>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex county-deck aic gap-32">
-                                            <img src="images/spera/sper-coutrys3.png" alt="">
-                                            <div class="flex-1">
-                                                <h3>Китай и Индия</h3>
-                                                <span>Быстрорастущие экономики с увеличивающимися инвестициями в
-                                                    здравоохранение и открытостью к инновациям</span>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex county-deck aic gap-32">
-                                            <img src="images/spera/sper-coutrys4.png" alt="">
-                                            <div class="flex-1">
-                                                <h3>Бразилия и Мексика</h3>
-                                                <span>Растущий интерес к медицинским инновациям на фоне усилий по
-                                                    улучшению здравоохранения</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section-block">
-                <div class="container">
-                    <div class="spacer-block pb-20"></div>
-                    <h2 class="block-section-title pb-60">С каждым годом количество <br>
-                        запросов, которые наш продукт способен
-                        удовлетворить, неуклонно растет</h2>
-
-
-                    <div class="d-flex flex-col gap-20 pb-20">
-                        <div class="flex-1 decor-star-wrapper atomar">
-                            <div class="star-decor big-san atomar"></div>
-                            <div class="silver-item-mask-big sper"><img src="images/spera/sper-4grid2.png" alt=""></div>
-                            <div class="atomar-item-text">
-                                <h3 class="subtitle pb-12">Увеличение продолжительности жизни
-                                    и старение населения
-                                </h3>
-                                <span class="pb-24 d-block">С учетом старения населения во многих странах мира,
-                                    увеличивается спрос на медицинские услуги, связанные с уходом за пожилыми людьми и
-                                    лечением хронических заболеваний. Эти тенденции открывают новые возможности для
-                                    инновационных проектов, таких как «Сфера Копылова».</span>
-                            </div>
-                        </div>
-                        <div class="flex-1 decor-star-wrapper atomar">
-                            <div class="star-decor big-san atomar"></div>
-                            <div class="silver-item-mask-big sper"><img src="images/spera/sper-4grid3.png" alt=""></div>
-                            <div class="atomar-item-text">
-                                <h3 class="subtitle pb-12">Персонализированная
-                                    медицина</h3>
-                                <span class="pb-24 d-block">Благодаря развитию геномики и биоинформатики, медицина
-                                    становится более персонализированной, с лечением, нацеленным на индивидуальные
-                                    особенности пациента.</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-col gap-20 pb-20">
-                        <div class="flex-1 decor-star-wrapper atomar">
-                            <div class="star-decor big-san atomar"></div>
-                            <div class="silver-item-mask-big sper"><img src="images/spera/sper-4grid4.png" alt=""></div>
-                            <div class="atomar-item-text">
-                                <h3 class="subtitle pb-12">Искусственный интеллект и большие данные
-                                </h3>
-                                <span class="pb-24 d-block">ИИ и машинное обучение преобразуют диагностику, обработку
-                                    медицинских данных и разработку лекарств, делая медицинские процедуры более
-                                    эффективными и точными.</span>
-                            </div>
-                        </div>
-                        <div class="flex-1 decor-star-wrapper atomar">
-                            <div class="star-decor big-san atomar"></div>
-                            <div class="silver-item-mask-big sper">
-                                <img src="images/spera/sper-4grid1.png" alt="">
-                            </div>
-                            <div class="atomar-item-text">
-                                <h3 class="subtitle pb-12">Устойчивое здравоохранение</h3>
-                                <span class="pb-24 d-block">Растет интерес к экологически чистым и устойчивым
-                                    медицинским технологиям и практикам, снижающим отпечаток на окружающую среду.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="section-block">
-                <div class="container">
-                    <div class="spacer-block pb-20"></div>
-                    <h2 class="block-section-title pb-24 m0a">Резонансная терапия — зарождающийся тренд во всем мире
-                    </h2>
-
-                    <div class="spera-slider swiper-container">
-                        <div class="wr-btns">
-                            <div class="spera-btns">
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                            </div>
-                        </div>
-                        <div class="swiper-wrapper">
-                            <div class="spera-slide2 swiper-slide">
-                                <p class="pb-60 bold-text text-a-center d-block">Корректированный глобальный тренд по
-                                    запросам на тему «Резонансная терапия» и инновации с 2018 по 2024 год</p>
-                                <div class="d-flex flex-col gap-20">
-                                    <div class="border-pad-40 img-slide-pera">
-                                        <img src="images/spera/spera-graph1.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="spera-slide2 swiper-slide">
-                                <p class="pb-60 bold-text text-a-center d-block">На этом графике представлен тренд
-                                    запросов на тему «Инновационные медицинские технологии» с 2018 по 2024 год</p>
-                                <div class="d-flex flex-col gap-20">
-                                    <div class="border-pad-40 img-slide-pera">
-                                        <img src="images/spera/spera-graph2.svg" alt="">
-                                    </div>
-                                    <div class="border-pad-40 text-slide-spera sper_txt">
-                                        <span>
-                                            Видно, что интерес к инновациям в медицине значительно возрос в 2020 году,
-                                            что, вероятно, связано с пандемией COVID-19 и усилением поиска новых решений
-                                            в области здравоохранения.
-                                        </span>
-                                        <span>
-                                            После небольшого снижения в 2021 году интерес продолжает расти, что
-                                            подтверждает стабильный спрос на инновационные медицинские технологии и
-                                            отражает постоянное стремление к улучшению качества медицинских услуг.
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section-block">
-                <div class="container">
-                    <div class="spacer-block pb-20"></div>
-                    <h2 class="block-section-title pb-24 m0a">Резонансная терапия — зарождающийся тренд во всем мире
-                    </h2>
-                    <div class="spray-gred_4 pb-20">
-                        <div class="border-pad-40">
-                            <div class="sper-w100">
-                                <img src="images/spera/sper2col1.png" alt="">
-                            </div>
-                            <div class="pb-32"></div>
-                            <h3 class="subtitle pb-12">Богатый состав минералов</h3>
-                            <span>Адриатическое море славится высоким содержанием ценных минералов и микроэлементов,
-                                таких
-                                как магний, кальций, калий и сульфаты. Эти вещества:</span>
-                            <ul class="number-list lh-30">
-                                <li>Способствуют мягкому очищению слизистой носа</li>
-                                <li>Увлажняют ткани, помогая восстановить естественный баланс</li>
-                                <li>Обладают легким противовоспалительным действием</li>
-                            </ul>
-                        </div>
-                        <div class="border-pad-40">
-                            <div class="sper-w100">
-                                <img src="images/spera/sper2col2.png" alt="">
-                            </div>
-                            <div class="pb-32"></div>
-                            <h3 class="subtitle pb-12">Оптимальная соленость</h3>
-                            <span>Концентрация соли в воде Адриатического моря идеально подходит для создания
-                                изотонических
-                                растворов. Это делает спрей безопасным для использования даже у младенцев и людей с
-                                чувствительной слизистой носа.</span>
-                        </div>
-                    </div>
-                    <div class="border-pad-40 d-flex flex-col gap-48">
-                        <div class="left-txt-wr">
-                            <span class="main-title">
-                                $3,2 млрд. — рост на 76%
-                            </span>
-                        </div>
-                        <div class="right-txt-wr">
-                            <h3>
-                                Мы проводили AB-тестирование по лидогенерации
-                                и предоставляем готовые решения для лидогена
-                            </h3>
-                            <p>
-                                На рынке Германии
-                                на обследование в Мюнхене
-                                мы смогли получить
-                                более 200 заявок
-                                на сумму не более €500.
-                            </p>
-                            <span>
-                                Это подтверждает эффективность наших методов лидогенерации и готовность предоставить
-                                подобные решения нашим франчайзи.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section-block">
-                <div class="container">
-                    <div class="spacer-block pb-20"></div>
-                    <h2 class="block-section-title pb-24 m0a">Резонансная терапия — зарождающийся тренд во всем мире
-                    </h2>
-
-                    <div class="border-pad-40 d-flex flex-col gap-48">
-                        <div class="top-sper-dec flex-1">
-                            <div class="sper-mask-flag">
-                                <img src="images/spera/sper-flag.png" alt="">
-                            </div>
-                        </div>
-                        <div class="right-txt-wr flex-1">
-                            <h3>
-                                Мы проводили AB-тестирование по лидогенерации
-                                и предоставляем готовые решения для лидогена
-                            </h3>
-                            <p>
-                                На рынке Германии
-                                на обследование в Мюнхене
-                                мы смогли получить
-                                более 200 заявок
-                                на сумму не более €500.
-                            </p>
-                            <span>
-                                Это подтверждает эффективность наших методов лидогенерации и готовность предоставить
-                                подобные решения нашим франчайзи.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section-block form sper">
-                <div class="container">
-                    <div class="border-pad-40">
-                        <form class="d-flex flex-col form-subscribe gap-20">
-                            <h2 class="block-section-title form-title sper">
-                                Получить расчет прибыли франшизы
-                            </h2>
-                            <div class="form-fields sper">
-                                <div class="form-field d-flex flex-col gap-20 pb-16">
-                                    <input class="form-input" type="email" name="email" placeholder="Email">
-                                    <button class="form-submit" type="submit">Подписаться</button>
-                                </div>
-                                <div class="confidencial sper">
-                                    <span>
-                                        Нажимая кнопку, вы соглашаетесь с условиями 
-                                    </span>
-                                    <a href="#" class=""> политики конфиденциальности</a>
-                                </div>
-                            </div>
-                            <div class="response"></div>
-                        </form>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer section-block">
+        </section>
+        <div class="section-border"></div>
+        <section class="section-block">
             <div class="container">
-                <div class="wrap-footer">
-                    <div class="top-footer pb-60">
-                        <div class="footer-list-item">
-                            <h3 class="footer-title-item pb-20">Медицинское оборудование</h3>
-                            <ul>
-                                <li class="pb-20">
-                                    <a href="#">Сфера Копылова</a>
-                                </li>
-                                <li class="pb-20">
-                                    <a href="#">Маммограф Копылова</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer-list-item">
-                            <h3 class="footer-title-item pb-20">Продукты для здоровья</h3>
-                            <ul>
-                                <li class="pb-20">
-                                    <a href="#">Черногорские спреи для носа</a>
-                                </li>
-                                <li class="pb-20">
-                                    <a href="#">Спирулина</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="footer-list-item">
-                            <h3 class="footer-title-item pb-20">Продукты с атомарными коллоидами металлов</h3>
-                            <ul>
-                                <li class="pb-20">
-                                    <a href="#">СКосметические средства и бады</a>
-                                </li>
-                                <li class="pb-20">
-                                    <a href="#">Средства санитарной обработки широкого спектра</a>
-                                </li>
-                                <li class="pb-20">
-                                    <a href="#">Не химические средства пролонгации срока годности продуктов</a>
-                                </li>
-                            </ul>
+                <h2 class="block-section-title pb-24">Клиника улучшения здоровья с инновационным оборудованием</h2>
+                <p class="sp_text bold-text pb-60 text-a-center lh-30">
+                    Сфера Копылова — это инновационные
+                    резонансно-частотные установки для диагностики и терапии, основанные на измерении и коррекции
+                    вибрационных частот человеческого тела.
+                </p>
+                <div class="d-grid-3 gap-20 silver-application-item pb-20">
+                    <div class="decor-star-wrapper atomar">
+                        <div class="star-decor atomar sp"></div>
+                        <div class="silver-item-mask-sm"><img src="images/spera/spera-top.png" alt=""></div>
+                        <div class="atomar-item-text sp">
+                            <h3 class="subtitle text-a-center">Сфера для обследования</h3>
                         </div>
                     </div>
-                    <div class="title-items-link">
-                        <div class="footer-list-item">
-                            <h3 class="footer-title-item pb-20">
-                                <a href="#">Life Packs</a>
-                            </h3>
-                            <h3 class="footer-title-item pb-20">
-                                <a href="#">
-                                    Наука
-                                </a>
-                            </h3>
-                        </div>
-                        <div class="footer-list-item">
-                            <h3 class="footer-title-item pb-20">
-                                <a href="#">Гомеопатия</a>
-                            </h3>
-                            <h3 class="footer-title-item pb-20">
-                                <a href="#">
-                                    Медиацентр
-                                </a>
-                            </h3>
-                        </div>
-                        <div class="footer-list-item">
-                            <h3 class="footer-title-item pb-20">
-                                <a href="#">Контакты</a>
-                            </h3>
+                    <div class="decor-star-wrapper atomar">
+                        <div class="star-decor atomar sp"></div>
+                        <div class="silver-item-mask-sm"><img src="images/spera/spera2.png" alt=""></div>
+                        <div class="atomar-item-text sp">
+                            <h3 class="subtitle text-a-center">Коррекционная сфера</h3>
                         </div>
                     </div>
-                </div>
-
-                <div class="bottom-footer">
-                    <p class="pb-20">Si14 Pharma, 2025</p>
-                    <div class="d-flex wrap-wrap bottom-footer inner">
-                        <a href="">
-                            Si14 AG Aktiengesellschaft "Si14 AG", Si14 AG Law AG, Baarerstrasse 11, 6300 Zug, Schweiz
-                        </a>
-                        <a href="#">
-                            IBAN: ME25 5804 20000000 1400 14
-                        </a>
-                        <a href="#">
-                            BIC/Swift der Bank: AZMNMEPGXXX
-                        </a>
-                        <a href="#">
-                            Bank: ADRIATIC BANK AD PODGORICA
-                        </a>
+                    <div class="decor-star-wrapper atomar">
+                        <div class="star-decor atomar sp"></div>
+                        <div class="silver-item-mask-sm"><img src="images/spera/spera3.png" alt=""></div>
+                        <div class="atomar-item-text sp">
+                            <h3 class="subtitle text-a-center">Сфера тонких настроек</h3>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </section>
+        <section class="section-block">
+            <div class="container">
+                <div class="spacer-block pb-20"></div>
+                <h2 class="block-section-title pb-20 sp-t">Сфера Копылова — <br> Ваш путь к здоровью <br> и
+                    активному
+                    долголетию</h2>
+                <div class="silver-bt-bullets sp pb-60">
+                    <div class="star-decor-el el">Раннее выявление заболеваний</div>
+                    <div class="star-decor-el el">Коррекция нарушений в работе органов</div>
+                    <div class="star-decor-el el">Комплексное воздействие</div>
+                    <div class="star-decor-el el">Восстановление энергетического баланса</div>
+                    <div class="star-decor-el el">Предотвращение развития заболеваний</div>
+                    <div class="star-decor-el el">Неинвазивность</div>
+                    <div class="star-decor-el el">Доступность и удобство</div>
+                    <div class="star-decor-el el">Лечение широкого спектра заболеваний</div>
+                </div>
 
-        <script src="js/jquery.min.js"></script>
-        <script src="js/main.js"></script>
-    </body>
 
-    </html>
+
+                <div class="spray-gred_4 sp">
+                    <div class="border-pad-40">
+                        <div class="silver-item-top sper">
+                            <img src="images/spera/sp-gr1.png" alt="">
+                            <img src="images/spera/sp-gr5.png" alt="">
+                        </div>
+                        <div class="pb-32"></div>
+                        <h3 class="subtitle pb-24">Сфера для обследования</h3>
+                        <span class="pb-24 d-block">Эта сфера оборудована МРТ-подобным сканером в звукоизолированной
+                            камере для детального
+                            измерения вибрация тела.</span>
+                        <span>Специализированное программное обеспечение анализирует данные, выявляя отклонения от
+                            базовых частот и вибраций.</span>
+                    </div>
+                    <div class="border-pad-40">
+                        <div class="silver-item-top sper">
+                            <img src="images/spera/sp-gr4.png" alt="">
+                            <img src="images/spera/sp-gr4.png" alt="">
+                        </div>
+                        <div class="pb-32"></div>
+                        <h3 class="subtitle pb-24">Корреляционная сфера</h3>
+                        <span>По функционалу схожа с первой сферой, но оснащена системой из более чем 90
+                            низкочастотных динамиков для локализированного воздействия на определенные участки
+                            тела.</span>
+                    </div>
+                    <div class="border-pad-40">
+                        <div class="silver-item-top sper">
+                            <img src="images/spera/sp-gr2.png" alt="">
+                            <img src="images/spera/sp-gr2.png" alt="">
+                        </div>
+                        <div class="pb-32"></div>
+                        <h3 class="subtitle pb-24">Сфера тонких настроек</h3>
+                        <span>Яйцеобразная сфера для полного погружения клиента, заполненная водой и оборудованная
+                            высокочастотными и низкочастотными динамиками для синхронизации частот человека.
+                        </span>
+                    </div>
+
+                    <div class="border-pad-40 pb-20 sp-bot-gr-big">
+                        <h3 class="subtitle pb-24">Как это работает?</h3>
+                        <div class="d-flex flex-col pb-24 gap-24 lh-30">
+                            <span class="flex-1 d-block">
+                                Сфера Копылова основана на принципах резонансной частотной
+                                терапии. Она использует технологии сканирования и анализа вибраций человеческого
+                                тела для диагностики состояния здоровья и предлагает методы коррекции частот.
+                            </span>
+                            <span class="flex-1 d-block">
+                                Основная идея сферы заключается в том, что каждый орган и
+                                система в организме имеют свои характеристические частоты вибраций, и дисбаланс в
+                                этих частотах может быть связан с различными заболеваниями или неполадками в
+                                организме.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block">
+            <div class="container">
+                <div class="spacer-block pb-20"></div>
+                <h2 class="block-section-title pb-20">Процесс работы сферы включает следующие шаги</h2>
+                <div class="mamg media-wrapper sper gap-20">
+                    <div class="border-pad-40">
+                        <div class="main-title pb-12">1</div>
+                        <h3 class="subtitle pb-24">Сканирование вибраций тела</h3>
+                        <span>Пациент проходит сканирование, во время которого сфера анализирует частоты различных
+                            органов и систем в организме.</span>
+                    </div>
+                    <div class="border-pad-40">
+                        <div class="main-title pb-12">2</div>
+                        <h3 class="subtitle pb-24">Диагностика состояния здоровья</h3>
+                        <span>На основе результатов сфера выявляет возможные дисбалансы и проблемы в организме
+                            пациента.</span>
+                    </div>
+                    <div class="border-pad-40">
+                        <div class="main-title pb-12">3</div>
+                        <h3 class="subtitle pb-24">Коррекция частот</h3>
+                        <span>После диагностики сфера предлагает методы коррекции частот через воздействие на
+                            определенные зоны тела при помощи резонансной пушки.</span>
+                    </div>
+                    <div class="border-pad-40">
+                        <div class="main-title pb-12">4</div>
+                        <h3 class="subtitle pb-24">Мониторинг и повторное сканирование</h3>
+                        <span>После коррекции производится мониторинг для отслеживания изменений в состоянии
+                            здоровья. Повторные сканирования могут быть проведены для оценки эффективности коррекции
+                            и динамики изменений.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-block pb-80">
+            <div class="container">
+                <div class="spacer-block pb-20"></div>
+                <h2 class="block-section-title mw1160 pb-24">Какую глобальную проблему людей решает сфера?</h2>
+                <p class="spray-text2 bold-text pb-60 text-a-center lh-30">Мы приглашаем дистрибьюторов,
+                    заинтересованных в качественных и востребованных продуктах для здоровья, к сотрудничеству с
+                    нашей
+                    компанией.</p>
+                <div class="d-flex gap-20 sper-h spray-botton-grid">
+                    <div class="border-pad-40 sper-bot-txt">
+                        <div class="d-flex col h100">
+                            <h3 class="subtitle pb-24">
+                                Что дает сфера Копылова
+                            </h3>
+                            <div class="get-part-text pb-20">
+                                <p class="pb-24">Сфера Копылова направлена на решение глобальной проблемы
+                                    современного общества — повышения качества жизни через улучшение физического и
+                                    духовного здоровья.</p>
+                                <p class="bold-text pb-24">Она предлагает инновационный подход к раннему выявлению и
+                                    коррекции нарушений в работе органов и систем человека на основе анализа
+                                    резонансных частот.</p>
+                                <p>Это позволяет эффективно предотвращать развитие многих заболеваний, устранять уже
+                                    существующие проблемы и способствует общему улучшению самочувствия, укреплению
+                                    здоровья и продлению активного долголетия.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-col gap-20 w100 sper__img">
+                        <div class="flex-1 top-san-img top-sp-big ">
+                            <div class="mamg star-decor-el bottom-sp-d1 bold-text">
+                                Si14 Pharma
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M11.0411 5H12.9589L13.1144 5.81193C13.6049 8.37373 15.6263 10.3951 18.1881 10.8856L19 11.0411V12.9589L18.1881 13.1144C15.6263 13.6049 13.6049 15.6263 13.1144 18.1881L12.9589 19H11.0411L10.8856 18.1881C10.3951 15.6263 8.37373 13.6049 5.81193 13.1144L5 12.9589V11.0411L5.81193 10.8856C8.37373 10.3951 10.3951 8.37373 10.8856 5.81193L11.0411 5ZM12 8.57806C11.2197 10.0268 10.0268 11.2197 8.57806 12C10.0268 12.7803 11.2197 13.9732 12 15.4219C12.7803 13.9732 13.9732 12.7803 15.4219 12C13.9732 11.2197 12.7803 10.0268 12 8.57806Z"
+                                        fill="#1A1A1E"></path>
+                                </svg>
+                            </div>
+
+                            <div class="star-decor-el bottom-sp-d2 bold-text">
+                                Духовное здоровье
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M11.0411 5H12.9589L13.1144 5.81193C13.6049 8.37373 15.6263 10.3951 18.1881 10.8856L19 11.0411V12.9589L18.1881 13.1144C15.6263 13.6049 13.6049 15.6263 13.1144 18.1881L12.9589 19H11.0411L10.8856 18.1881C10.3951 15.6263 8.37373 13.6049 5.81193 13.1144L5 12.9589V11.0411L5.81193 10.8856C8.37373 10.3951 10.3951 8.37373 10.8856 5.81193L11.0411 5ZM12 8.57806C11.2197 10.0268 10.0268 11.2197 8.57806 12C10.0268 12.7803 11.2197 13.9732 12 15.4219C12.7803 13.9732 13.9732 12.7803 15.4219 12C13.9732 11.2197 12.7803 10.0268 12 8.57806Z"
+                                        fill="#1A1A1E"></path>
+                                </svg>
+                            </div>
+                            <div class="star-decor-el bottom-sp-d3 bold-text">
+                                Физическое здоровье
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M11.0411 5H12.9589L13.1144 5.81193C13.6049 8.37373 15.6263 10.3951 18.1881 10.8856L19 11.0411V12.9589L18.1881 13.1144C15.6263 13.6049 13.6049 15.6263 13.1144 18.1881L12.9589 19H11.0411L10.8856 18.1881C10.3951 15.6263 8.37373 13.6049 5.81193 13.1144L5 12.9589V11.0411L5.81193 10.8856C8.37373 10.3951 10.3951 8.37373 10.8856 5.81193L11.0411 5ZM12 8.57806C11.2197 10.0268 10.0268 11.2197 8.57806 12C10.0268 12.7803 11.2197 13.9732 12 15.4219C12.7803 13.9732 13.9732 12.7803 15.4219 12C13.9732 11.2197 12.7803 10.0268 12 8.57806Z"
+                                        fill="#1A1A1E"></path>
+                                </svg>
+                            </div>
+
+                            <div class="sper-img1 get-img top-sp-dec bottom-l">
+                                <div class="mamg-bot-l-mask">
+                                    <img class="get-img w100" src="images/spera/sper1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spray-block2 w100 h100">
+
+                            <div class="sper-img2 doc top-sp-dec bot-dec-sm h100">
+                                <div class="mamg-bot-r-mask">
+                                    <img class="w100" src="images/spera/sper2.png" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-block">
+            <div class="container">
+                <div class="spacer-block pb-20"></div>
+                <h2 class="block-section-title pb-60">кому необходимы наши продукты?</h2>
+            </div>
+            <div class="table-items">
+                <!-- start cycle -->
+                <div class="table-item">
+                    <div class="container">
+                        <div class="d-flex aic gap-48">
+                            <img class="table-i-san" src="images/spera/sp-table1.png" alt="">
+                            <div class="table-text-sp aic flex-1 sper">
+                                <h3 class="subtitle pb-12">Инфекционные заболевания</h3>
+                                <ul class="lh-30">
+                                    <li>Болезнь Лайма, риккетсиоз</li>
+                                    <li>Инфекция Helicobacter pylori</li>
+                                    <li>Острая и хроническая железистая лихорадка Пфейффера</li>
+                                    <li>Цитомегалия хроническая</li>
+                                </ul>
+                                <ul class="lh-30">
+                                    <li>Гриппоподобная инфекция</li>
+                                    <li>Вирус Эбола / Марбургская вирусная инфекция</li>
+                                    <li>Лихорадка денге</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-item">
+                    <div class="container">
+                        <div class="d-flex aic gap-48">
+                            <img class="table-i-san" src="images/spera/sp-table2.png" alt="">
+                            <div class="table-text-sp aic flex-1 sper">
+                                <h3 class="subtitle pb-12">Аллергические заболевания</h3>
+                                <ul class="lh-30">
+                                    <li>Аллергия верхних дыхательных путей</li>
+                                    <li>Кожная аллергия</li>
+                                </ul>
+                                <ul class="lh-30">
+                                    <li>Аллергия</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-item">
+                    <div class="container">
+                        <div class="d-flex aic gap-48">
+                            <img class="table-i-san" src="images/spera/sp-table3.png" alt="">
+                            <div class="table-text-sp aic flex-1 sper">
+                                <h3 class="subtitle pb-12">Гормональные и эндокринные нарушения</h3>
+                                <ul class="lh-30">
+                                    <li>Щитовидная железа / паращитовидная железа</li>
+                                    <li>Гормональная дисфункция у женщины</li>
+                                    <li>Гормональная дисфункция у мужчины</li>
+                                    <li>Гипертиреоз (гиперактивная щитовидная железа)</li>
+                                </ul>
+                                <ul class="lh-30">
+                                    <li>Гипотиреоз (недостаточно активная щитовидная железа)</li>
+                                    <li>Аденома гипофиза</li>
+                                    <li>Аденома щитовидной железы</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-item">
+                    <div class="container">
+                        <div class="d-flex aic gap-48">
+                            <img class="table-i-san" src="images/spera/sp-table4.png" alt="">
+                            <div class="table-text-sp aic flex-1 sper">
+                                <h3 class="subtitle pb-12">Анемии и кровеносные заболевания</h3>
+                                <ul class="lh-30">
+                                    <li>Почечная анемия</li>
+                                    <li>Анемия железодефицитная</li>
+                                    <li>Анемия, дефицит витамина B12</li>
+                                    <li>Анемия, дефицит витамина B6</li>
+                                    <li>Анемия, дефицит фолиевой кислоты</li>
+                                    <li>Полицитемия</li>
+                                </ul>
+                                <ul class="lh-30">
+                                    <li>Болезни кровеносной системы</li>
+                                    <li>Артериосклероз</li>
+                                    <li>Высокое кровяное давление (гипертония)</li>
+                                    <li>Почечная гипертензия</li>
+                                    <li>Нарушения венозного кровообращения (варикоз)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-item">
+                    <div class="container">
+                        <div class="d-flex aic gap-48">
+                            <img class="table-i-san" src="images/spera/sp-table5.png" alt="">
+                            <div class="table-text-sp aic flex-1 sper">
+                                <h3 class="subtitle pb-12">Сердечно-сосудистые заболевания</h3>
+                                <ul class="lh-30">
+                                    <li>Левосторонняя сердечная недостаточность</li>
+                                    <li>Правосторонняя сердечная недостаточность</li>
+                                </ul>
+                                <ul class="lh-30">
+                                    <li>Стенокардия</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- end cycle -->
+        </section>
+
+        <section class="section-block">
+            <div class="container">
+                <div class="spacer-block pb-20"></div>
+                <h2 class="block-section-title pb-60">Преимущества Сферы Копылова
+                </h2>
+                <div class="d-grid-3 gap-20 silver-application-item pb-20">
+                    <div class="decor-star-wrapper atomar">
+                        <div class="star-decor san atomar"></div>
+                        <div class="silver-item-mask-sm"><img src="images/spera/spe-gr1.png" alt=""></div>
+                        <div class="atomar-item-text">
+                            <h3 class="subtitle pb-12">Уникальность подхода</h3>
+                            <span class="pb-24 d-block">Использование резонансных частот для диагностики и лечения
+                                представляет собой новаторский подход, отличающийся от традиционных медицинских
+                                практик.</span>
+                        </div>
+                    </div>
+                    <div class="decor-star-wrapper atomar">
+                        <div class="star-decor san atomar"></div>
+                        <div class="silver-item-mask-sm"><img src="images/spera/spe-gr6.png" alt=""></div>
+                        <div class="atomar-item-text">
+                            <h3 class="subtitle pb-12">Неинвазивность</h3>
+                            <span class="pb-24 d-block">Методика безопасна и не требует вмешательств в тело, что
+                                минимизирует риски для пациентов.</span>
+                        </div>
+                    </div>
+                    <div class="decor-star-wrapper atomar">
+                        <div class="star-decor san atomar"></div>
+                        <div class="silver-item-mask-sm"><img src="images/spera/spe-gr4.png" alt=""></div>
+                        <div class="atomar-item-text">
+                            <h3 class="subtitle pb-12">Возможность раннего выявления заболеваний</h3>
+                            <span class="pb-24 d-block">Точное измерение частот вибраций тела позволяет обнаруживать
+                                нарушения на ранних стадиях, до появления клинических симптомов.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-col gap-20 pb-20">
+                    <div class="flex-1 decor-star-wrapper atomar">
+                        <div class="star-decor big-san atomar"></div>
+                        <div class="silver-item-mask-big"><img src="images/spera/spe-gr10.png" alt=""></div>
+                        <div class="atomar-item-text">
+                            <h3 class="subtitle pb-12">Комплексное воздействие</h3>
+                            <span class="pb-24 d-block">Сфера способна не только диагностировать, но и
+                                корректировать частоты, влияя на причину заболевания, а не только на
+                                симптомы.</span>
+                        </div>
+                    </div>
+                    <div class="flex-1 decor-star-wrapper atomar">
+                        <div class="star-decor big-san atomar"></div>
+                        <div class="silver-item-mask-big"><img src="images/spera/spe-gr2.png" alt=""></div>
+                        <div class="atomar-item-text">
+                            <h3 class="subtitle pb-12">Персонализированный подход</h3>
+                            <span class="pb-24 d-block">Терапия и диагностика адаптируются под индивидуальные
+                                особенности каждого человека, учитывая уникальные частоты его тела.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-grid-3 gap-20 silver-application-item pb-20">
+                    <div class="decor-star-wrapper atomar">
+                        <div class="star-decor san atomar"></div>
+                        <div class="silver-item-mask-sm"><img src="images/spera/spe-gr8.png" alt=""></div>
+                        <div class="atomar-item-text">
+                            <h3 class="subtitle pb-12">Повышение общего благосостояния</h3>
+                            <span class="pb-24 d-block">Помимо лечения заболеваний, использование сферы Копылова
+                                способствует улучшению энергетического баланса и психоэмоционального
+                                состояния.</span>
+                        </div>
+                    </div>
+                    <div class="decor-star-wrapper atomar">
+                        <div class="star-decor san atomar"></div>
+                        <div class="silver-item-mask-sm"><img src="images/spera/spe-gr7.png" alt=""></div>
+                        <div class="atomar-item-text">
+                            <h3 class="subtitle pb-12">ПРогресс в лечении и профилактике</h3>
+                            <span class="pb-24 d-block">Новаторская технология открывает перспективы для развития
+                                методов профилактики заболеваний и способствует продвижению научных исследований в
+                                области медицины.</span>
+                        </div>
+                    </div>
+                    <div class="decor-star-wrapper atomar">
+                        <div class="star-decor san atomar"></div>
+                        <div class="silver-item-mask-sm"><img src="images/spera/spe-gr5.png" alt=""></div>
+                        <div class="atomar-item-text">
+                            <h3 class="subtitle pb-12">Доступность и удобство</h3>
+                            <span class="pb-24 d-block">Использование сферы потенциально может быть более доступным
+                                и удобным для широкого круга людей по сравнению с услугами дорогостоящих клиник,
+                                которые могут быть ограничены по географии и стоимости.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-block">
+            <div class="container">
+                <div class="spacer-block pb-20"></div>
+                <h2 class="block-section-title pb-20">Как проходит процесс?</h2>
+                <p class="mw960 text-a-center bold-text pb-60">Весь процесс нацелен на максимально комфортное и
+                    безопасное
+                    воздействие на организм, с целью
+                    восстановления и оптимизации его функционирования. Процесс использования «Сферы Копылова» для
+                    диагностики и коррекции частот тела человека может быть представлен следующими основными
+                    этапами:</p>
+                <div class="sper-media-wrapper gap-20">
+                    <div class="border-pad-40 sper-item">
+                        <div class="num-it-sper">
+                            <div class="main-title pb-12">1</div>
+                            <h3 class="subtitle pb-24">Первичная консультация и анкетирование</h3>
+                        </div>
+                        <span>На начальном этапе проводится сбор анамнеза и обсуждение ожиданий клиента от
+                            процедуры. Это помогает специалистам подготовиться к сеансу и адаптировать процедуру под
+                            индивидуальные потребности клиента.</span>
+                    </div>
+                    <div class="border-pad-40 sper-item">
+                        <div class="num-it-sper">
+                            <div class="main-title pb-12">2</div>
+                            <h3 class="subtitle pb-24">Обследование в первой сфере</h3>
+                        </div>
+                        <span>Клиент помещается в звукоизолированную сферу для обследования, оборудованную
+                            специальным МРТ-подобным сканером. Во время процедуры измеряются вибрационные частоты
+                            тела клиента. Данные передаются на анализ специализированному ПО.</span>
+                    </div>
+                    <div class="border-pad-40 sper-item">
+                        <div class="num-it-sper">
+                            <div class="main-title pb-12">3</div>
+                            <h3 class="subtitle pb-24">Анализ полученных данных</h3>
+                        </div>
+                        <span>Программное обеспечение анализирует данные, сравнивая их с базовыми частотами
+                            здорового организма, и выявляет возможные отклонения.</span>
+                    </div>
+                    <div class="border-pad-40 sper-item">
+                        <div class="num-it-sper">
+                            <div class="main-title pb-12">4</div>
+                            <h3 class="subtitle pb-24">Коррекция в корреляционной сфере</h3>
+                        </div>
+                        <span>Сеанс в сфере тонких настроек: для полного погружения и синхронизации сознания и тела
+                            клиент может пройти процедуру в яйцеобразной сфере, заполненной водой. Высокочастотные и
+                            низкочастотные динамики создают в воде резонансные волны, оказывающие комплексное
+                            воздействие на организм.</span>
+                    </div>
+                    <div class="border-pad-40 sper-item">
+                        <div class="num-it-sper">
+                            <div class="main-title pb-12">5</div>
+                            <h3 class="subtitle pb-24">Оценка результатов и дальнейшие рекомендации</h3>
+                        </div>
+                        <span>После проведения всех необходимых процедур специалисты оценивают изменения в состоянии
+                            клиента и дают рекомендации по дальнейшему поддержанию достигнутых результатов.</span>
+                    </div>
+                    <div class="border-pad-40 sper-item">
+                        <div class="num-it-sper">
+                            <div class="main-title pb-12">6</div>
+                            <h3 class="subtitle pb-24">Повторные сеансы</h3>
+                        </div>
+                        <span>В зависимости от индивидуальных потребностей и целей клиента, могут быть рекомендованы
+                            дополнительные сеансы для укрепления и поддержания результатов.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-block">
+            <div class="container">
+                <div class="spacer-block pb-20"></div>
+                <h2 class="block-section-title pb-20 sp-t">Услуги клиники</h2>
+                <p class="mw960 text-a-center bold-text pb-60">Продолжительность таких программ может варьироваться
+                    от нескольких дней до нескольких недель в зависимости от потребностей клиента и целей программы.
+                </p>
+                <div class="spray-gred_4 sp">
+                    <div class="border-pad-40">
+                        <div class="silver-item-top sper">
+                            <img src="images/spera/sper-uslugi4.png" alt="">
+                            <img src="images/spera/sper-uslugi1.png" alt="">
+                        </div>
+                        <div class="pb-32"></div>
+                        <h3 class="subtitle pb-24">Диагностика</h3>
+                        <span class="pb-24 d-block">Обследование частот тела. Анализ резонансных частот для оценки
+                            физического и духовного здоровья. Подготовка индивидуального отчета с
+                            рекомендациями.</span>
+                    </div>
+                    <div class="border-pad-40">
+                        <div class="silver-item-top sper">
+                            <img src="images/spera/sper-uslugi2.png" alt="">
+                            <img src="images/spera/sper-uslugi3.png" alt="">
+                        </div>
+                        <div class="pb-32"></div>
+                        <h3 class="subtitle pb-24">Терапия</h3>
+                        <span>Коррекция частот с помощью резонансной пушки. Настраиваемая терапия для синхронизации
+                            вибраций тела.</span>
+                    </div>
+                    <div class="border-pad-40">
+                        <div class="silver-item-top sper">
+                            <img src="images/spera/sper-uslugi6.png" alt="">
+                            <img src="images/spera/sper-uslugi5.png" alt="">
+                        </div>
+                        <div class="pb-32"></div>
+                        <h3 class="subtitle pb-24">Комплексные программы</h3>
+                        <span>Включают в себя диагностику и терапию, а также другие дополнительные услуги: например,
+                            обследования классических анализов, а также альтернативных решений.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block">
+            <div class="container">
+                <h2 class="block-section-title pb-20 sp-t">Быстрый старт вашего бизнеса</h2>
+                <div class="d-grid-3 gap-20 silver-application-item pb-20">
+                    <div class="decor-star-wrapper atomar">
+                        <div class="star-decor atomar sp"></div>
+                        <div class="silver-item-mask-sm sper-img"><img src="images/spera/sp-gr4.png" alt=""></div>
+                        <div class="atomar-item-text sp">
+                            <h3 class="text-a-center subtitle">Всё необходимое оборудование и аппаратура</h3>
+                        </div>
+                    </div>
+                    <div class="decor-star-wrapper atomar">
+                        <div class="star-decor atomar sp"></div>
+                        <div class="silver-item-mask-sm sper-img"><img src="images/spera/sper-us1.png" alt=""></div>
+                        <div class="atomar-item-text sp">
+                            <h3 class="text-a-center subtitle">Обучение персонала компании</h3>
+                        </div>
+                    </div>
+                    <div class="decor-star-wrapper atomar">
+                        <div class="star-decor atomar sp"></div>
+                        <div class="silver-item-mask-sm sper-img"><img src="images/spera/sper-us2.png" alt=""></div>
+                        <div class="atomar-item-text sp">
+                            <h3 class="text-a-center subtitle">Готовые решения для привлечения клиентов</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-block">
+            <div class="container">
+                <div class="spacer-block pb-20"></div>
+                <h2 class="block-section-title pb-60 mw684 m0a">Роадмап запуска Сферы Копылова</h2>
+
+                <div class="sper-media-wrapper2 gap-20">
+
+                    <div class="border-pad-40 sper-item">
+                        <div class="num-it-sper">
+                            <div class="main-title pb-12">1</div>
+                            <h3 class="subtitle pb-24">Заполнение анкеты и подписание договора</h3>
+                        </div>
+                        <span>После покупки франшизы вам предоставят анкету для заполнения, в которой вы
+                            укажете все необходимые данные. После заполнения анкеты вы подпишете договор о
+                            франшизе.
+                        </span>
+                    </div>
+                    <div class="border-pad-40 sper-item">
+                        <div class="num-it-sper">
+                            <div class="main-title pb-12">2</div>
+                            <h3 class="subtitle pb-24">Обучение и подготовка</h3>
+                        </div>
+                        <span>Вам будет предоставлен доступ к обучающим материалам и программам. Вы пройдете
+                            обучение по всем аспектам
+                            работы с резонансно-частотной
+                            установкой «Сфера», включая
+                            оборудование, программное
+                            обеспечение, клинические
+                            протоколы, маркетинг и управление клиентами.
+                        </span>
+                    </div>
+                    <div class="border-pad-40 sper-item">
+                        <div class="num-it-sper">
+                            <div class="main-title pb-12">3</div>
+                            <h3 class="subtitle pb-24">Подготовка помещения
+                            </h3>
+                        </div>
+                        <span>Вы начнете подготовку
+                            помещения для клиники. Это может включать в себя
+                            ремонтные работы, закупку
+                            мебели и оборудования, а также настройку инфраструктуры для работы клиники.
+                        </span>
+                    </div>
+                    <div class="border-pad-40 sper-item">
+                        <div class="num-it-sper">
+                            <div class="main-title pb-12">4</div>
+                            <h3 class="subtitle pb-24">Установка оборудования
+                            </h3>
+                        </div>
+                        <span>Специалисты приедут на место,
+                            чтобы помочь с установкой
+                            резонансно-частотных установок «Сфера». Они также проведут настройку всего необходимого
+                            программного обеспечения.
+                        </span>
+                    </div>
+                    <div class="border-pad-40 sper-item">
+                        <div class="num-it-sper">
+                            <div class="main-title pb-12">5</div>
+                            <h3 class="subtitle pb-24">Тестирование и настройка системы</h3>
+                        </div>
+                        <span>После установки оборудования будет проведено тестирование
+                            и настройка системы, чтобы
+                            убедиться в ее правильной
+                            работе и готовности к приему
+                            первых клиентов.
+                        </span>
+                    </div>
+                    <div class="border-pad-40 sper-item">
+                        <div class="num-it-sper">
+                            <div class="main-title pb-12">6</div>
+                            <h3 class="subtitle pb-24">Запуск рекламной кампании</h3>
+                        </div>
+                        <span>Вы начнете запуск рекламной
+                            кампании для привлечения
+                            клиентов. Это может включать в себя рекламу в интернете,
+                            социальных сетях, на радио,
+                            телевидении, а также
+                            распространение рекламных
+                            материалов в местных
+                            сообществах
+                        </span>
+                    </div>
+                    <div class="border-pad-40 sper-item">
+                        <div class="num-it-sper">
+                            <div class="main-title pb-12">7</div>
+                            <h3 class="subtitle pb-24">Первые клиенты и работа</h3>
+                        </div>
+                        <span>После открытия клиники вы
+                            готовы принимать первых
+                            клиентов. Вы будете предоставлять услуги
+                            диагностики и терапии с использованием резонансно
+                            частотной установки «Сфера» и обеспечивать высокий
+                            уровень обслуживания
+                            клиентов.
+                        </span>
+                    </div>
+                    <div class="border-pad-40 sper-item">
+                        <div class="num-it-sper">
+                            <div class="main-title pb-12">8</div>
+                            <h3 class="subtitle pb-24">Постоянная поддержка и развитие</h3>
+                        </div>
+                        <span>Вам будет предоставлена
+                            постоянная поддержка со стороны франчайзера, который поможет вам развивать бизнес,
+                            решать проблемы и внедрять нововведения для улучшения сервиса и услуг.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block">
+            <div class="container">
+                <div class="spacer-block pb-20"></div>
+                <h2 class="block-section-title pb-24 m0a">Анализ рынка</h2>
+
+                <div class="spera-slider swiper-container">
+                    <div class="wr-btns">
+                        <div class="spera-btns">
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="spera-slide swiper-slide">
+                            <p class="pb-60 bold-text text-a-center d-block">Предполагаемый интерес к «Сфере
+                                Копылова» по возрастным группам</p>
+                            <div class="d-flex flex-col gap-20">
+                                <div class="border-pad-40 img-slide-pera">
+                                    <img src="images/spera/spera-siler3.png" alt="">
+                                </div>
+                                <div class="border-pad-40 text-slide-spera">
+                                    <h3>Возрастные группы 44-54 и 35-44</h3>
+                                    <p>Продемонстрировали наивысший уровень интереса к «Сфере». Это может быть
+                                        обусловлено повышенной заботой об улучшении качества жизни и предотвращении
+                                        заболеваний на более поздних этапах жизни.</p>
+                                    <h3>Младшие возрастные группы 18-24 и 25-34</h3>
+                                    <p>Показали меньший уровень интереса, что может быть связано с меньшей
+                                        озабоченностью здоровьем в молодом возрасте и ориентацией на более доступные
+                                        и
+                                        понятные технологии.</p>
+                                    <h3>Возрастная группа 65+</h3>
+                                    <p>Также проявила значительный интерес, что можно объяснить стремлением к
+                                        поддержанию здоровья и активности в пожилом возрасте, хотя некоторые
+                                        ограничения
+                                        могут быть связаны с доступностью и осведомленностью об инновациях.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spera-slide swiper-slide">
+                            <p class="pb-60 bold-text text-a-center d-block">Предполагаемый интерес к «Сфере
+                                Копылова» в странах СНГ</p>
+                            <div class="d-flex flex-col gap-20">
+                                <div class="border-pad-40 img-slide-pera">
+                                    <img src="images/spera/spera-siler1.png" alt="">
+                                </div>
+                                <div class="border-pad-40 text-slide-spera">
+                                    <h3>Уровень развития здравоохранения</h3>
+                                    <p>Страны с высокоразвитой медицинской инфраструктурой могут проявлять больший
+                                        интерес к
+                                        инновационным технологиям.</p>
+                                    <h3>Интерес к альтернативной медицине</h3>
+                                    <p>В странах с развитым сектором альтернативной и интегративной медицины может
+                                        быть выше
+                                        интерес к новым подходам к лечению и диагностике.</p>
+                                    <h3>ВВП на душу населения</h3>
+                                    <p>Страны с высоким уровнем дохода населения могут проявлять большую готовность
+                                        инвестировать в здоровье.</p>
+                                    <h3>Демографические факторы</h3>
+                                    <p>Страны с возрастающим числом пожилых людей могут испытывать повышенный спрос
+                                        на
+                                        медицинские инновации.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spera-slide swiper-slide">
+                            <p class="pb-60 bold-text text-a-center d-block">Предполагаемый интерес к Сфере Копылова
+                                по странам</p>
+                            <div class="d-flex flex-col gap-20">
+                                <div class="border-pad-40 img-slide-pera">
+                                    <img src="images/spera/spera-siler2.png" alt="">
+                                </div>
+                                <div class=" text-slide-spera">
+                                    <div class="d-flex county-deck aic gap-32">
+                                        <img src="images/spera/sper-coutrys1.png" alt="">
+                                        <div class="flex-1">
+                                            <h3>США и Канада</h3>
+                                            <span>Высокий уровень медицинских исследований и инвестиций в
+                                                здравоохранение, сильный интерес к альтернативной медицине</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex county-deck aic gap-32">
+                                        <img src="images/spera/sper-coutrys5.png" alt="">
+                                        <div class="flex-1">
+                                            <h3>Европейские страны</h3>
+                                            <p class="bold-text">Особенно Германия, Франция, Швейцария</p>
+                                            <span>Высокий уровень технологического развития, значительные инвестиции
+                                                в здравоохранение, стареющее население</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex county-deck aic gap-32">
+                                        <img src="images/spera/sper-coutrys2.png" alt="">
+                                        <div class="flex-1">
+                                            <h3>Япония и Южная Корея</h3>
+                                            <span>Высокий уровень технологического развития, значительные инвестиции
+                                                в здравоохранение, стареющее население</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex county-deck aic gap-32">
+                                        <img src="images/spera/sper-coutrys3.png" alt="">
+                                        <div class="flex-1">
+                                            <h3>Китай и Индия</h3>
+                                            <span>Быстрорастущие экономики с увеличивающимися инвестициями в
+                                                здравоохранение и открытостью к инновациям</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex county-deck aic gap-32">
+                                        <img src="images/spera/sper-coutrys4.png" alt="">
+                                        <div class="flex-1">
+                                            <h3>Бразилия и Мексика</h3>
+                                            <span>Растущий интерес к медицинским инновациям на фоне усилий по
+                                                улучшению здравоохранения</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-block">
+            <div class="container">
+                <div class="spacer-block pb-20"></div>
+                <h2 class="block-section-title pb-60">С каждым годом количество <br>
+                    запросов, которые наш продукт способен
+                    удовлетворить, неуклонно растет</h2>
+
+
+                <div class="d-flex flex-col gap-20 pb-20">
+                    <div class="flex-1 decor-star-wrapper atomar">
+                        <div class="star-decor big-san atomar"></div>
+                        <div class="silver-item-mask-big sper"><img src="images/spera/sper-4grid2.png" alt=""></div>
+                        <div class="atomar-item-text">
+                            <h3 class="subtitle pb-12">Увеличение продолжительности жизни
+                                и старение населения
+                            </h3>
+                            <span class="pb-24 d-block">С учетом старения населения во многих странах мира,
+                                увеличивается спрос на медицинские услуги, связанные с уходом за пожилыми людьми и
+                                лечением хронических заболеваний. Эти тенденции открывают новые возможности для
+                                инновационных проектов, таких как «Сфера Копылова».</span>
+                        </div>
+                    </div>
+                    <div class="flex-1 decor-star-wrapper atomar">
+                        <div class="star-decor big-san atomar"></div>
+                        <div class="silver-item-mask-big sper"><img src="images/spera/sper-4grid3.png" alt=""></div>
+                        <div class="atomar-item-text">
+                            <h3 class="subtitle pb-12">Персонализированная
+                                медицина</h3>
+                            <span class="pb-24 d-block">Благодаря развитию геномики и биоинформатики, медицина
+                                становится более персонализированной, с лечением, нацеленным на индивидуальные
+                                особенности пациента.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-col gap-20 pb-20">
+                    <div class="flex-1 decor-star-wrapper atomar">
+                        <div class="star-decor big-san atomar"></div>
+                        <div class="silver-item-mask-big sper"><img src="images/spera/sper-4grid4.png" alt=""></div>
+                        <div class="atomar-item-text">
+                            <h3 class="subtitle pb-12">Искусственный интеллект и большие данные
+                            </h3>
+                            <span class="pb-24 d-block">ИИ и машинное обучение преобразуют диагностику, обработку
+                                медицинских данных и разработку лекарств, делая медицинские процедуры более
+                                эффективными и точными.</span>
+                        </div>
+                    </div>
+                    <div class="flex-1 decor-star-wrapper atomar">
+                        <div class="star-decor big-san atomar"></div>
+                        <div class="silver-item-mask-big sper">
+                            <img src="images/spera/sper-4grid1.png" alt="">
+                        </div>
+                        <div class="atomar-item-text">
+                            <h3 class="subtitle pb-12">Устойчивое здравоохранение</h3>
+                            <span class="pb-24 d-block">Растет интерес к экологически чистым и устойчивым
+                                медицинским технологиям и практикам, снижающим отпечаток на окружающую среду.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section-block">
+            <div class="container">
+                <div class="spacer-block pb-20"></div>
+                <h2 class="block-section-title pb-24 m0a">Резонансная терапия — зарождающийся тренд во всем мире
+                </h2>
+
+                <div class="spera-slider swiper-container">
+                    <div class="wr-btns">
+                        <div class="spera-btns">
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="spera-slide2 swiper-slide">
+                            <p class="pb-60 bold-text text-a-center d-block">Корректированный глобальный тренд по
+                                запросам на тему «Резонансная терапия» и инновации с 2018 по 2024 год</p>
+                            <div class="d-flex flex-col gap-20">
+                                <div class="border-pad-40 img-slide-pera">
+                                    <img src="images/spera/spera-graph1.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spera-slide2 swiper-slide">
+                            <p class="pb-60 bold-text text-a-center d-block">На этом графике представлен тренд
+                                запросов на тему «Инновационные медицинские технологии» с 2018 по 2024 год</p>
+                            <div class="d-flex flex-col gap-20">
+                                <div class="border-pad-40 img-slide-pera">
+                                    <img src="images/spera/spera-graph2.svg" alt="">
+                                </div>
+                                <div class="border-pad-40 text-slide-spera sper_txt">
+                                    <span>
+                                        Видно, что интерес к инновациям в медицине значительно возрос в 2020 году,
+                                        что, вероятно, связано с пандемией COVID-19 и усилением поиска новых решений
+                                        в области здравоохранения.
+                                    </span>
+                                    <span>
+                                        После небольшого снижения в 2021 году интерес продолжает расти, что
+                                        подтверждает стабильный спрос на инновационные медицинские технологии и
+                                        отражает постоянное стремление к улучшению качества медицинских услуг.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block">
+            <div class="container">
+                <div class="spacer-block pb-20"></div>
+                <h2 class="block-section-title pb-24 m0a">Резонансная терапия — зарождающийся тренд во всем мире
+                </h2>
+                <div class="spray-gred_4 pb-20">
+                    <div class="border-pad-40">
+                        <div class="sper-w100">
+                            <img src="images/spera/sper2col1.png" alt="">
+                        </div>
+                        <div class="pb-32"></div>
+                        <h3 class="subtitle pb-12">Богатый состав минералов</h3>
+                        <span>Адриатическое море славится высоким содержанием ценных минералов и микроэлементов,
+                            таких
+                            как магний, кальций, калий и сульфаты. Эти вещества:</span>
+                        <ul class="number-list lh-30">
+                            <li>Способствуют мягкому очищению слизистой носа</li>
+                            <li>Увлажняют ткани, помогая восстановить естественный баланс</li>
+                            <li>Обладают легким противовоспалительным действием</li>
+                        </ul>
+                    </div>
+                    <div class="border-pad-40">
+                        <div class="sper-w100">
+                            <img src="images/spera/sper2col2.png" alt="">
+                        </div>
+                        <div class="pb-32"></div>
+                        <h3 class="subtitle pb-12">Оптимальная соленость</h3>
+                        <span>Концентрация соли в воде Адриатического моря идеально подходит для создания
+                            изотонических
+                            растворов. Это делает спрей безопасным для использования даже у младенцев и людей с
+                            чувствительной слизистой носа.</span>
+                    </div>
+                </div>
+                <div class="border-pad-40 d-flex flex-col gap-48">
+                    <div class="left-txt-wr">
+                        <span class="main-title">
+                            $3,2 млрд. — рост на 76%
+                        </span>
+                    </div>
+                    <div class="right-txt-wr">
+                        <h3>
+                            Мы проводили AB-тестирование по лидогенерации
+                            и предоставляем готовые решения для лидогена
+                        </h3>
+                        <p>
+                            На рынке Германии
+                            на обследование в Мюнхене
+                            мы смогли получить
+                            более 200 заявок
+                            на сумму не более €500.
+                        </p>
+                        <span>
+                            Это подтверждает эффективность наших методов лидогенерации и готовность предоставить
+                            подобные решения нашим франчайзи.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block">
+            <div class="container">
+                <div class="spacer-block pb-20"></div>
+                <h2 class="block-section-title pb-24 m0a">Резонансная терапия — зарождающийся тренд во всем мире
+                </h2>
+
+                <div class="border-pad-40 d-flex flex-col gap-48">
+                    <div class="top-sper-dec flex-1">
+                        <div class="sper-mask-flag">
+                            <img src="images/spera/sper-flag.png" alt="">
+                        </div>
+                    </div>
+                    <div class="right-txt-wr flex-1">
+                        <h3>
+                            Мы проводили AB-тестирование по лидогенерации
+                            и предоставляем готовые решения для лидогена
+                        </h3>
+                        <p>
+                            На рынке Германии
+                            на обследование в Мюнхене
+                            мы смогли получить
+                            более 200 заявок
+                            на сумму не более €500.
+                        </p>
+                        <span>
+                            Это подтверждает эффективность наших методов лидогенерации и готовность предоставить
+                            подобные решения нашим франчайзи.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-block form sper">
+            <div class="container">
+                <div class="border-pad-40">
+                    <form class="d-flex flex-col form-subscribe gap-20">
+                        <h2 class="block-section-title form-title sper">
+                            Получить расчет прибыли франшизы
+                        </h2>
+                        <div class="form-fields sper">
+                            <div class="form-field d-flex flex-col gap-20 pb-16">
+                                <input class="form-input" type="email" name="email" placeholder="Email">
+                                <button class="form-submit" type="submit">Подписаться</button>
+                            </div>
+                            <div class="confidencial sper">
+                                <span>
+                                    Нажимая кнопку, вы соглашаетесь с условиями
+                                </span>
+                                <a href="#" class=""> политики конфиденциальности</a>
+                            </div>
+                        </div>
+                        <div class="response"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer section-block">
+        <div class="container">
+            <div class="wrap-footer">
+                <div class="top-footer pb-60">
+                    <div class="footer-list-item">
+                        <h3 class="footer-title-item pb-20">Медицинское оборудование</h3>
+                        <ul>
+                            <li class="pb-20">
+                                <a href="#">Сфера Копылова</a>
+                            </li>
+                            <li class="pb-20">
+                                <a href="#">Маммограф Копылова</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-list-item">
+                        <h3 class="footer-title-item pb-20">Продукты для здоровья</h3>
+                        <ul>
+                            <li class="pb-20">
+                                <a href="#">Черногорские спреи для носа</a>
+                            </li>
+                            <li class="pb-20">
+                                <a href="#">Спирулина</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-list-item">
+                        <h3 class="footer-title-item pb-20">Продукты с атомарными коллоидами металлов</h3>
+                        <ul>
+                            <li class="pb-20">
+                                <a href="#">СКосметические средства и бады</a>
+                            </li>
+                            <li class="pb-20">
+                                <a href="#">Средства санитарной обработки широкого спектра</a>
+                            </li>
+                            <li class="pb-20">
+                                <a href="#">Не химические средства пролонгации срока годности продуктов</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="title-items-link">
+                    <div class="footer-list-item">
+                        <h3 class="footer-title-item pb-20">
+                            <a href="#">Life Packs</a>
+                        </h3>
+                        <h3 class="footer-title-item pb-20">
+                            <a href="#">
+                                Наука
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="footer-list-item">
+                        <h3 class="footer-title-item pb-20">
+                            <a href="#">Гомеопатия</a>
+                        </h3>
+                        <h3 class="footer-title-item pb-20">
+                            <a href="#">
+                                Медиацентр
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="footer-list-item">
+                        <h3 class="footer-title-item pb-20">
+                            <a href="#">Контакты</a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-footer">
+                <p class="pb-20">Si14 Pharma, 2025</p>
+                <div class="d-flex wrap-wrap bottom-footer inner">
+                    <a href="">
+                        Si14 AG Aktiengesellschaft "Si14 AG", Si14 AG Law AG, Baarerstrasse 11, 6300 Zug, Schweiz
+                    </a>
+                    <a href="#">
+                        IBAN: ME25 5804 20000000 1400 14
+                    </a>
+                    <a href="#">
+                        BIC/Swift der Bank: AZMNMEPGXXX
+                    </a>
+                    <a href="#">
+                        Bank: ADRIATIC BANK AD PODGORICA
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
