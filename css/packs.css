@@ -15,6 +15,32 @@
     max-width: 83%;
     margin: 0 auto;
 }
+
+.star-decor-el.bottom-sp-d4,
+.star-decor-el.bottom-sp-d5, 
+.star-decor-el.bottom-sp-d6 {
+    position: absolute;
+    background: #FFFFFF52;
+    border-radius: 100px;
+    z-index: 1;
+    font-size: 12px;
+    width: max-content;
+}
+
+.star-decor-el.bottom-sp-d4 {
+    right: -10%;
+    top: 18%;
+}
+
+.star-decor-el.bottom-sp-d5 {
+    left: 10%;
+    bottom: 10%;
+}
+
+.star-decor-el.bottom-sp-d6 {
+    right: 27%;
+    bottom: 10%;
+}
 @media (max-width: 1400px) {
     .top-section-t.pac {
         padding: 0;
@@ -24,6 +50,10 @@
 @media (max-width: 860px) {
     .spray-gred_4.sp.pb-20 div{
         width: 100%;
+    }
+    .star-decor-el.bottom-sp-d1.pac {
+        top: 7%;
+        left: 10%;
     }
 
     .pacs-title {
