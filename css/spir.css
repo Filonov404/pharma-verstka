@@ -185,7 +185,7 @@ b {
 }
 
 .pt-80 {
-    padding-top: clamp(72px, 3vw, 80px);
+    padding-top: clamp(48px, 3vw, 80px);
 }
 
 .pb-48 {
