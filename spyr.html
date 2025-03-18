@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спирулинa</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Подключение стилей Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Подключение скрипта Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <a href="/" class="header-logo">
+                    <img src="images/icons/Color-Dark-logo.svg" alt="logo">
+                </a>
+
+                <nav class="navbar">
+
+                    <ul class="header-menu menu" id="menu">
+                        <li>
+                            <a href="#">Мед оборудование</a>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">Продукты для здоровья</a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a href="#">Косметические средства и бады</a></li>
+                                <li><a href="#">Средства санитарной обработки широкого спектра</a></li>
+                                <li><a href="#">Не химические средства пролонгации срока годности продуктов</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">Коллоиды</a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a href="#">Косметические средства и бады</a></li>
+                                <li><a href="#">Средства санитарной обработки широкого спектра</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Life Packs</a></li>
+                        <li>
+                            <a href="#">Гомеопатия</a>
+                        </li>
+                        <li>
+                            <a href="#">Наука</a>
+                        </li>
+                        <li>
+                            <a href="#">Медиацентр</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-subs">
+                    <div class="dropdown js-dropdown js-lang" data-dropdown-type="closing">
+                        <button class="dropdown__button js-dropdown-toggler js-lang-display">Ru</button>
+                        <div class="dropdown__box js-dropdown-box">
+                            <ul>
+                                <li><a href="#en" class="js-lang-toggler">En</a></li>
+                                <li><a href="#ru" class="js-lang-toggler">Ru</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="subs-btn">
+                        <div>Подписаться</div>
+                        <div class="subs-dec">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 12.227C10 11.6591 10.3661 11.1694 10.7678 10.7678C11.1694 10.3661 11.6591 10 12.227 10H18V8H12.227C11.6591 8 11.1694 7.63385 10.7678 7.23223C10.3661 6.83061 10 6.34094 10 5.77296V0H8V5.77296C8 6.34094 7.63385 6.83061 7.23223 7.23223C6.83061 7.63385 6.34094 8 5.77296 8H0V10H5.77296C6.34094 10 6.83061 10.3661 7.23223 10.7678C7.63385 11.1694 8 11.6591 8 12.227V18H10V12.227Z"
+                                    fill="#1A1A1E" />
+                            </svg>
+                        </div>
+                    </a>
+                    <div class="burger">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="return-block border-b border-t">
+            <div class="container">
+                <div class="d-flex gap-20 aic pb-20 pt-20 ">
+                    <a href="#">
+                        <div class="arr-right transform-180"></div>
+                    </a>
+                    <div class="back-img"
+                        style="background: center / contain no-repeat url(images/spray/spray-back.png);">
+                    </div>
+                    <div class="back-title bold-text">Продукты для здоровья</div>
+                </div>
+            </div>
+        </div>
+        <section class="top-section san">
+            <div class="container">
+                <div class="top-section-inner san">
+                    <div class="top-section-text san">
+                        <h1 class="main-title pb-24">сила природы для вашего здоровья!</h1>
+                        <p class="bold-text pb-32">Мы создаём уникальные продукты для вашего здоровья: спирулину и
+                            фикоцианин. Наше производство расположено в экологически чистом регионе и использует
+                            новейшие технологии для сохранения всех полезных свойств природы</p>
+                        <div class="d-flex gap-20">
+                            <a href="#" class="subs-btn">
+                                <div>Спирулина</div>
+                                <div class="arr-r">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
+                                        fill="none">
+                                        <path
+                                            d="M34.5388 22.2841C34.263 22.6789 33.8487 22.9999 33.367 22.9999L8 23V25L33.3733 24.9999C33.8495 25.0055 34.2654 25.3244 34.5388 25.7158C34.9998 26.3758 35.2043 27.3813 34.6351 27.9506L25.2929 37.2928L26.7071 38.7071L41.4142 24L26.7071 9.29285L25.2929 10.7071L34.6429 20.0571C35.2026 20.6277 34.9977 21.6271 34.5388 22.2841Z"
+                                            fill="#1A1A1E" />
+                                    </svg>
+                                </div>
+                            </a>
+                            <a href="#" class="subs-btn">
+                                <div>Фикоцианин</div>
+                                <div class="arr-r">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
+                                        fill="none">
+                                        <path
+                                            d="M34.5388 22.2841C34.263 22.6789 33.8487 22.9999 33.367 22.9999L8 23V25L33.3733 24.9999C33.8495 25.0055 34.2654 25.3244 34.5388 25.7158C34.9998 26.3758 35.2043 27.3813 34.6351 27.9506L25.2929 37.2928L26.7071 38.7071L41.4142 24L26.7071 9.29285L25.2929 10.7071L34.6429 20.0571C35.2026 20.6277 34.9977 21.6271 34.5388 22.2841Z"
+                                            fill="#1A1A1E" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="top-section-grid gap-20 d-flex flex-col">
+                        <div class="top-san-img san flex-1">
+                            <div class="star-decor-el top-sp-d1 d1">
+                                Спирулина
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M11.0411 5H12.9589L13.1144 5.81193C13.6049 8.37373 15.6263 10.3951 18.1881 10.8856L19 11.0411V12.9589L18.1881 13.1144C15.6263 13.6049 13.6049 15.6263 13.1144 18.1881L12.9589 19H11.0411L10.8856 18.1881C10.3951 15.6263 8.37373 13.6049 5.81193 13.1144L5 12.9589V11.0411L5.81193 10.8856C8.37373 10.3951 10.3951 8.37373 10.8856 5.81193L11.0411 5ZM12 8.57806C11.2197 10.0268 10.0268 11.2197 8.57806 12C10.0268 12.7803 11.2197 13.9732 12 15.4219C12.7803 13.9732 13.9732 12.7803 15.4219 12C13.9732 11.2197 12.7803 10.0268 12 8.57806Z"
+                                        fill="#1A1A1E"></path>
+                                </svg>
+                            </div>
+
+                            <div class="top-san-dec">
+                                <div class="top-san-mask">
+                                    <img src="images/spir/spir1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="top-san-img top flex-1">
+                            <div class="star-decor-el top-sp-d1 d2">
+                                Фикоцианин
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M11.0411 5H12.9589L13.1144 5.81193C13.6049 8.37373 15.6263 10.3951 18.1881 10.8856L19 11.0411V12.9589L18.1881 13.1144C15.6263 13.6049 13.6049 15.6263 13.1144 18.1881L12.9589 19H11.0411L10.8856 18.1881C10.3951 15.6263 8.37373 13.6049 5.81193 13.1144L5 12.9589V11.0411L5.81193 10.8856C8.37373 10.3951 10.3951 8.37373 10.8856 5.81193L11.0411 5ZM12 8.57806C11.2197 10.0268 10.0268 11.2197 8.57806 12C10.0268 12.7803 11.2197 13.9732 12 15.4219C12.7803 13.9732 13.9732 12.7803 15.4219 12C13.9732 11.2197 12.7803 10.0268 12 8.57806Z"
+                                        fill="#1A1A1E"></path>
+                                </svg>
+                            </div>
+                            <div class="top-sp-dec decor-none">
+                                <div class="top-sp-mask2">
+                                    <img src="images/spir/spir2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="section-border"></div>
+        <section class="section-block">
+            <div class="container">
+                <h2 class="block-section-title pb-20">Si14 Pharma — гармония природы и технологий</h2>
+                <p class="mamg_text bold-text pb-32 text-a-center lh-30">Спрей&nbsp;Meeresnase&nbsp;— это не просто
+                    морская вода.
+                    Методика основана на измерении электрических потенциалов в биологически активных точках, которые
+                    отражают состояние молочных желез. Полученные данные обрабатываются компьютером и выводятся в
+                    графическом виде для анализа.</p>
+                <div class="mamg media-wrapper gap-20">
+                    <div class="border-pad-40 spir-img-text">
+                        <img class="mb-32" src="images/spir/spir6.png" alt="">
+                        <p>Наша миссия — сделать здоровье доступным для каждого через использование натуральных
+                            продуктов с доказанной эффективностью.</p>
+                    </div>
+                    <div class="border-pad-40 spir-img-text">
+                        <img class="mb-32" src="images/spir/spir3.png" alt="">
+                        <p>Мы гордимся своим экологически чистым производством в Черногории.</p>
+                    </div>
+                    <div class="border-pad-40 spir-img-text">
+                        <img class="mb-32" src="images/spir/spir5.png" alt="">
+                        <p>Мы используем замкнутый цикл производства, который включает чистую воду из горных источников,
+                            отсутствие химических добавок и строгое соблюдение стандартов качества.</p>
+                    </div>
+                    <div class="border-pad-40 spir-img-text">
+                        <img class="mb-32" src="images/spir/spir4.png" alt="">
+                        <p>Наша передовая технология экстракции фикоцианина сохраняет 100% природных свойств
+                            фикоцианина, обеспечивая высокую концентрацию продукта.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block">
+            <div class="container">
+                <div class="top-section-inner-sp spir">
+                    <div class="mamg-img spir">
+                        <div class="flex-1">
+                            <div class="top-mamg-dec spir">
+                                <div class="top-mamg-mask spir">
+                                    <img src="images/spir/spir11.png" alt="">
+                                </div>
+                                <div class="round-items">
+                                    <div class="circle circle1">
+                                        <span>Улучшение
+                                            состояния кожи,
+                                            волос и ногтей</span>
+                                    </div>
+                                    <div class="circle circle2">
+                                        <span>Нормализация
+                                            выработки
+                                            инсулина и снижение
+                                            тяги к еде
+                                        </span>
+                                    </div>
+                                    <div class="circle circle3">
+                                        <span>Укрепление
+                                            иммунной
+                                            системы
+                                        </span>
+                                    </div>
+                                    <div class="circle circle4">
+                                        <span>Поддержка
+                                            метаболизма
+                                        </span>
+                                    </div>
+                                    <div class="circle circle5">
+                                        <span>Выведение
+                                            токсинов
+                                        </span>
+                                    </div>
+                                    <div class="circle circle6">
+                                        <span>Понижает уровень
+                                            холестерина в крови
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spir-text">
+                        <div class="spir-text-inner">
+                            <h2 class="big-subtitle pb-24">Спирулина</h2>
+                            <span>Спирулина — это суперфуд, содержащий до 60% белка, витамины (B1, B2, B3, A, E, K),
+                                минералы (железо, магний, цинк) и полиненасыщенные жирные кислоты.</span>
+                            <span>Она укрепляет иммунитет, выводит токсины и наполняет энергией.</span>
+                            <span><b>Добавляйте спирулину в смузи, соки, салаты или используйте её как ежедневную
+                                    добавку для здоровья всей семьи.</b></span>
+                            <button class="form-submit pac pt-32">Купить</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block">
+            <div class="container">
+                <div class="top-section-inner-sp spir">
+                    <div class="spir-text">
+                        <div class="spir-text-inner">
+                            <h2 class="big-subtitle pb-24">Фикоцианин</h2>
+                            <span>Фикоцианин — это пигментный белок из спирулины, мощный антиоксидант, замедляющий
+                                процессы старения и защищающий клетки организма от стресса.</span>
+                            <span><b>Идеально подходит для добавления в напитки, спортивное питание или косметические
+                                    средства.</b></span>
+                            <button class="form-submit pac pt-32">Купить</button>
+                        </div>
+                    </div>
+                    <div class="mamg-img spir">
+                        <div class="flex-1">
+                            <div class="top-mamg-dec spir">
+                                <div class="top-mamg-mask spir">
+                                    <img src="images/spir/spir12.png" alt="">
+                                </div>
+                                <div class="round-items">
+                                    <div class="circle circle_2 circle1">
+                                        <span>Противовоспалительное
+                                            действие</span>
+                                    </div>
+                                    <div class="circle circle_2 circle2">
+                                        <span>Защита печени
+                                            и стимуляция
+                                            её регенерации
+                                        </span>
+                                    </div>
+                                    <div class="circle circle_2 circle3">
+                                        <span>Нейтрализация
+                                            свободных
+                                            радикалов
+                                        </span>
+                                    </div>
+                                    <div class="circle circle_2 circle4">
+                                        <span>Замедление
+                                            старения
+                                        </span>
+                                    </div>
+                                    <div class="circle circle_2 circle5">
+                                        <span>Улучшение
+                                            процесса
+                                            пищеварения
+                                        </span>
+                                    </div>
+                                    <div class="circle circle_2 circle6">
+                                        <span>Улучшение
+                                            когнитивных функций
+                                            и профилактика
+                                            нейродегенеративных
+                                            заболеваний
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block">
+            <div class="container">
+                <div class="spacer-block pb-20"></div>
+                <h2 class="block-section-title pb-60">Почему Si14 Pharma</h2>
+
+                <div class="d-flex flex-col gap-20 pb-20">
+                    <div class="flex-1 decor-star-wrapper atomar">
+                        <div class="star-decor big-san atomar"></div>
+                        <div class="silver-item-mask-big"><img src="images/spir/spir-503.png" alt=""></div>
+                        <div class="atomar-item-text">
+                            <h3 class="subtitle pb-12">Высокое качество, подтверждённое лабораторными исследованиями
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="flex-1 decor-star-wrapper atomar">
+                        <div class="star-decor big-san atomar"></div>
+                        <div class="silver-item-mask-big"><img src="images/spir/spir-504.png" alt=""></div>
+                        <div class="atomar-item-text">
+                            <h3 class="subtitle pb-12">Экологически чистое сырьё без химикатов</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-col gap-20 pb-20">
+                    <div class="flex-1 decor-star-wrapper atomar">
+                        <div class="star-decor big-san atomar"></div>
+                        <div class="silver-item-mask-big"><img src="images/spir/spir-502.png" alt=""></div>
+                        <div class="atomar-item-text">
+                            <h3 class="subtitle pb-12">Полный контроль на всех этапах производства</h3>
+                        </div>
+                    </div>
+                    <div class="flex-1 decor-star-wrapper atomar">
+                        <div class="star-decor big-san atomar"></div>
+                        <div class="silver-item-mask-big"><img src="images/spir/spir-501.png" alt=""></div>
+                        <div class="atomar-item-text">
+                            <h3 class="subtitle pb-12">Уникальные технологии, которые сохраняют максимум полезных
+                                веществ</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block pb-80">
+            <div class="container">
+                <div class="spacer-block pb-20"></div>
+                <div class="d-flex gap-20 pt-80">
+                    <div class="flex-1 border-pad-40 spray-bot-txt">
+                        <div class="d-flex col h100">
+                            <h2 class="big-subtitle pb-24">
+                                Научные исследования
+                            </h2>
+                            <div class="get-part-text pb-20">
+                                <p class="pb-24">Многочисленные исследования доказывают пользу спирулины и фикоцианина
+                                    для здоровья человека.</p>
+                                <p>Мы сотрудничаем с ведущими научными институтами для создания продуктов, которые
+                                    действительно работают.</p>
+                            </div>
+                            <div class="form-submit sp-kp">Исследования и публикации</div>
+                        </div>
+                    </div>
+                    <div class="flex-1 border-pad-40 spray-bot-txt">
+                        <div class="d-flex col h100">
+                            <h2 class="big-subtitle pb-48 d-block">
+                                Научные исследования
+                            </h2>
+                            <div class="blog-links">
+                                <a href="#" class="d-flex jc-sb aic gap-20 pb-24 mb-24">
+                                    <h3 class="subtitle">
+                                        5 причин добавить спирулину в ваш рацион
+                                    </h3>
+                                    <div class="arr-right"></div>
+                                </a>
+                                <a href="#" class="d-flex jc-sb aic gap-20 pb-24 mb-24">
+                                    <h3 class="subtitle">
+                                        Как антиоксиданты защищают наш организм
+                                    </h3>
+                                    <div class="arr-right"></div>
+                                </a>
+                                <a href="#" class="d-flex jc-sb aic gap-20 pb-24 mb-24">
+                                    <h3 class="subtitle">
+                                        Роль фикоцианина в поддержании молодости кожи
+                                    </h3>
+                                    <div class="arr-right"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer section-block">
+        <div class="container">
+            <div class="wrap-footer">
+                <div class="top-footer pb-60">
+                    <div class="footer-list-item">
+                        <h3 class="footer-title-item pb-20">Медицинское оборудование</h3>
+                        <ul>
+                            <li class="pb-20">
+                                <a href="#">Сфера Копылова</a>
+                            </li>
+                            <li class="pb-20">
+                                <a href="#">Маммограф Копылова</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-list-item">
+                        <h3 class="footer-title-item pb-20">Продукты для здоровья</h3>
+                        <ul>
+                            <li class="pb-20">
+                                <a href="#">Черногорские спреи для носа</a>
+                            </li>
+                            <li class="pb-20">
+                                <a href="#">Спирулина</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-list-item">
+                        <h3 class="footer-title-item pb-20">Продукты с атомарными коллоидами металлов</h3>
+                        <ul>
+                            <li class="pb-20">
+                                <a href="#">СКосметические средства и бады</a>
+                            </li>
+                            <li class="pb-20">
+                                <a href="#">Средства санитарной обработки широкого спектра</a>
+                            </li>
+                            <li class="pb-20">
+                                <a href="#">Не химические средства пролонгации срока годности продуктов</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="title-items-link">
+                    <div class="footer-list-item">
+                        <h3 class="footer-title-item pb-20">
+                            <a href="#">Life Packs</a>
+                        </h3>
+                        <h3 class="footer-title-item pb-20">
+                            <a href="#">
+                                Наука
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="footer-list-item">
+                        <h3 class="footer-title-item pb-20">
+                            <a href="#">Гомеопатия</a>
+                        </h3>
+                        <h3 class="footer-title-item pb-20">
+                            <a href="#">
+                                Медиацентр
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="footer-list-item">
+                        <h3 class="footer-title-item pb-20">
+                            <a href="#">Контакты</a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-footer">
+                <p class="pb-20">Si14 Pharma, 2025</p>
+                <div class="d-flex wrap-wrap bottom-footer inner">
+                    <a href="">
+                        Si14 AG Aktiengesellschaft "Si14 AG", Si14 AG Law AG, Baarerstrasse 11, 6300 Zug, Schweiz
+                    </a>
+                    <a href="#">
+                        IBAN: ME25 5804 20000000 1400 14
+                    </a>
+                    <a href="#">
+                        BIC/Swift der Bank: AZMNMEPGXXX
+                    </a>
+                    <a href="#">
+                        Bank: ADRIATIC BANK AD PODGORICA
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

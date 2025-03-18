@@ -183,6 +183,10 @@
     border-top: 1px solid var(--gray-200);
 }
 
+.county-deck:last-child {
+    border: none;
+}
+
 .gap-32 {
     gap: 32px;
 }
