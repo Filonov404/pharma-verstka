@@ -6,6 +6,9 @@
 @import "spera.css";
 @import "packs.css";
 @import "spir.css";
+@import "catalog.css";
+@import "oxy.css";
+
 
 
 /* colors */
@@ -41,6 +44,7 @@ body {
 
 .no-scroll {
     position: fixed;
+    width: -webkit-fill-available;
 }
 
 a {

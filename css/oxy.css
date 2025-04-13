@@ -1,0 +1,237 @@
+.mamg-bot-r-mask.oxy {
+    height: 720px;
+    mask-image: url(../images/mask/mask-top-oxy.png);
+}
+
+
+.star-decor-el.oxy-d1,
+.star-decor-el.oxy-d2,
+.star-decor-el.oxy-d3 {
+    z-index: 23;
+    position: absolute;
+    border-radius: 80px;
+    font-size: 12px;
+    border: 1px solid var(--white);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 16px;
+    background: var(--White-32);
+}
+
+.star-decor-el.oxy-d1 {
+    top: 4%;
+    right: -5%;
+}
+
+.star-decor-el.oxy-d2 {
+    top: 43%;
+    right: -29%;
+}
+
+.star-decor-el.oxy-d3 {
+    bottom: 6%;
+    left: 12%;
+}
+
+
+.oxy.top-section-grid {
+    height: 720px;
+    position: relative;
+}
+
+.d-flex.col.flex-1.gap-20.oxy {
+    max-width: 573px;
+    width: 100%;
+}
+
+.top-section-text.oxy {
+    max-width: 632px;
+    width: 100%;
+}
+
+.top-section-inner.oxy {
+    display: flex;
+    justify-content: initial;
+    align-items: flex-start;
+    gap: 20px;
+    line-height: 150%;
+}
+
+.top-oxy-mask {
+    position: relative;
+    mask-image: url(../images/mask/top-oxy-mask2.png);
+    mask-repeat: no-repeat;
+    mask-size: 98% 98%;
+    mask-position: center;
+    height: 466px;
+}
+
+.top-oxy-mask img {
+    width: 573px;
+    height: 466px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.d-flex.col.flex-1.gap-20.oxy::after {
+    position: absolute;
+    content: '';
+    background: center / contain no-repeat url(../images/icons/Plus.svg);
+    left: 79%;
+    top: 11%;
+    width: 48px;
+    height: 48px;
+}
+
+.d-flex.col.flex-1.gap-20.oxy {
+    position: relative;
+}
+
+.bottom-oxy-text {
+    text-align: center;
+    background: var(--White-32);
+    padding: 32px 48px;
+    border-radius: 40px;
+}
+
+.form-submit.oxy {
+    max-width: 172px;
+}
+
+.atomar-item.oxy {
+    height: 760px;
+}
+
+.block-instuction {
+    padding-top: 35px;
+}
+
+.d-grid-4 {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.catalog-img.oxy {
+    mask-image: url(../images/mask/card-mg-mask.png);
+    height: 320px;
+}
+
+.catalog-img.oxy img {
+    height: 320px;
+}
+
+.catalog-item-card.oxy h3,
+.catalog-item-card.oxy p {
+    padding-bottom: 6px;
+    display: block;
+}
+
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+.border-40 {
+    border-radius: clamp(32px, 3vw, 40px);
+}
+
+.gap-80-20 {
+    gap: clamp(20px, 4vw, 80px);
+}
+
+.more-btn.oxy {
+    max-width: 710px;
+    border: 1px solid var(--gray-200);
+    margin: 0 auto;
+}
+
+@media (max-width: 960px) {
+    .d-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 860px) {
+    .top-san-img.oxy {
+        width: 100%;
+    }
+
+    .mamg-bot-r-mask.oxy {
+        height: initial;
+    }
+
+    .star-decor-el.oxy-d1 {
+        top: 6%;
+        right: 8%;
+    }
+
+    .star-decor-el.oxy-d2 {
+        top: 97%;
+        right: 5%;
+    }
+
+    .star-decor-el.oxy-d3 {
+        bottom: 32%;
+        left: 5%;
+    }
+
+    .d-flex.col.flex-1.gap-20.oxy::after {
+        width: 24px;
+        height: 24px;
+    }
+
+    .mamg-bot-r-mask.oxy {
+        height: 440px;
+        mask-image: url(../images/mask/mask-top-oxy-mob.png);
+    }
+
+    .top-oxy-mask {
+        mask-image: url(../images/mask/top-oxy-mask2-mob.png);
+        height: 390px;
+    }
+
+    .doc.top-sp-dec.bot-dec-sm.h100.oxy {
+        position: relative;
+    }
+
+    .doc.top-sp-dec.bot-dec-sm.h100.oxy::after {
+        top: 11%;
+        left: 14%;
+    }
+
+    .d-flex.col.flex-1.gap-20.oxy::after {
+        left: 82%;
+        top: 9%;
+    }
+
+    .bottom-oxy-text {
+        padding: 20px 24px;
+    }
+
+    .atomar-item.oxy {
+        height: initial;
+    }
+
+    .catalog-img.oxy {
+        height: 142px;
+    }
+
+    .catalog-item-card.oxy {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .oxy-cert img {
+        height: 404px;
+    }
+    .media-wrapper.oxy {
+        grid-template-columns: 1fr;
+    }
+    .form-submit.oxy {
+        width: 100%;
+        max-width: 100%;
+    }
+}

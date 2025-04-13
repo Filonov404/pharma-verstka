@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Каталог</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+
+            header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 20px;
+                background: #fff;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            .logo {
+                font-weight: bold;
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+            }
+            .catalog-btn {
+                background: red;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+
+            .search-input {
+                padding: 8px 15px;
+                border-radius: 10px;
+                border: 1px solid #ccc;
+                width: 40%;
+            }
+
+            .burger {
+                display: none;
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+                position: relative;
+            }
+
+            .burger span,
+            .burger span::before,
+            .burger span::after {
+                content: "";
+                display: block;
+                background: #000;
+                height: 3px;
+                width: 100%;
+                position: absolute;
+                transition: 0.3s ease;
+            }
+
+            .burger span {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .burger span::before {
+                top: -10px;
+                position: absolute;
+            }
+            .burger span::after {
+                top: 10px;
+                position: absolute;
+            }
+
+            .burger.open-burger span {
+                background: transparent;
+            }
+            .burger.open-burger span::before {
+                transform: rotate(45deg);
+                top: 0;
+            }
+            .burger.open-burger span::after {
+                transform: rotate(-45deg);
+                top: 0;
+            }
+
+            .menu-wrapper {
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background: #f8f8f8;
+                display: none;
+                z-index: 100;
+            }
+
+            .menu-wrapper.open {
+                display: flex;
+            }
+
+            .catalog-menu {
+                display: flex;
+                width: 100%;
+            }
+
+            .menu-left,
+            .menu-right {
+                padding: 20px;
+                width: 50%;
+            }
+
+            .menu-left ul,
+            .menu-right ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .menu-left li,
+            .menu-right li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+                cursor: pointer;
+            }
+
+            .menu-left img,
+            .menu-right img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+
+            .menu-right {
+                display: none;
+            }
+
+            .menu-right.active {
+                display: block;
+            }
+
+            .back-btn {
+                display: none;
+                cursor: pointer;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+
+            @media (max-width: 768px) {
+                .catalog-btn {
+                    display: none;
+                }
+                .burger {
+                    display: block;
+                }
+                .menu-wrapper {
+                    flex-direction: column;
+                }
+                .catalog-menu {
+                    flex-direction: row;
+                    width: 200%;
+                    transition: transform 0.3s ease;
+                }
+
+                .menu-left,
+                .menu-right {
+                    width: 100%;
+                    padding: 20px;
+                }
+
+                .menu-wrapper.mobile-second .catalog-menu {
+                    transform: translateX(-50%);
+                }
+
+                .back-btn {
+                    display: block;
+                }
+
+                .search-input {
+                    display: none;
+                }
+            }
+            .container {
+                max-width: 1220px;
+                margin: 0 auto;
+                padding: 0 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">Si14Pharma</div>
+            <button class="catalog-btn">Каталог</button>
+            <div class="burger"><span></span></div>
+            <input
+                type="text"
+                class="search-input"
+                placeholder="Поиск продуктов"
+            />
+        </header>
+
+        <div class="menu-wrapper" id="menuWrapper">
+            <div class="catalog-menu">
+                <!-- Левая колонка -->
+                <div class="container">
+                    <div class="menu-left">
+                        <ul class="main-categories">
+                            <li class="main-item" data-target="sub1">
+                                <img src="bads.png" /><span>БАДЫ</span>
+                            </li>
+                            <li class="main-item" data-target="sub2">
+                                <img src="cosmetics.png" /><span>КОСМЕТИКА</span>
+                            </li>
+                            <li class="main-item" data-target="sub3">
+                                <img src="life.png" /><span>LIFE PACKS</span>
+                            </li>
+                        </ul>
+                </div>
+
+
+                <!-- Правая колонка -->
+                <div class="menu-right">
+                    <div class="back-btn" id="backBtn">← Назад</div>
+
+                    <ul class="sub-categories" id="sub1">
+                        <li><img src="magnesium.jpg" /><span>Магний</span></li>
+                        <li><img src="copper.jpg" /><span>Медь</span></li>
+                    </ul>
+                    <ul class="sub-categories" id="sub2" style="display: none">
+                        <li><img src="cream.jpg" /><span>Крем</span></li>
+                    </ul>
+                    <ul class="sub-categories" id="sub3" style="display: none">
+                        <li><img src="pack.jpg" /><span>Пакет</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const burger = document.querySelector(".burger");
+            const catalogBtn = document.querySelector(".catalog-btn");
+            const menuWrapper = document.getElementById("menuWrapper");
+            const mainItems = document.querySelectorAll(".main-item");
+            const subLists = document.querySelectorAll(".sub-categories");
+            const backBtn = document.getElementById("backBtn");
+            const menuRight = document.querySelector(".menu-right");
+
+            const isMobile = () => window.innerWidth <= 768;
+
+            const openMenu = () => {
+                menuWrapper.classList.add("open");
+                menuWrapper.classList.remove("mobile-second");
+                burger.classList.add("open-burger");
+                menuRight.classList.remove("active");
+                subLists.forEach((list) => (list.style.display = "none"));
+            };
+
+            const closeMenu = () => {
+                menuWrapper.classList.remove("open", "mobile-second");
+                burger.classList.remove("open-burger");
+                menuRight.classList.remove("active");
+                subLists.forEach((list) => (list.style.display = "none"));
+            };
+
+            catalogBtn.addEventListener("click", openMenu);
+
+            burger.addEventListener("click", () => {
+                if (menuWrapper.classList.contains("open")) {
+                    closeMenu();
+                } else {
+                    openMenu();
+                }
+            });
+
+            mainItems.forEach((item) => {
+                item.addEventListener("click", () => {
+                    const target = item.getAttribute("data-target");
+
+                    subLists.forEach((list) => {
+                        list.style.display =
+                            list.id === target ? "block" : "none";
+                    });
+
+                    if (isMobile()) {
+                        menuWrapper.classList.add("mobile-second");
+                        menuRight.classList.add("active"); // 💥 вот это нужно!
+                    } else {
+                        menuRight.classList.add("active");
+                    }
+                });
+            });
+
+            backBtn.addEventListener("click", () => {
+                menuWrapper.classList.remove("mobile-second");
+            });
+
+            document.addEventListener("click", (e) => {
+                if (
+                    !menuWrapper.contains(e.target) &&
+                    !burger.contains(e.target) &&
+                    !catalogBtn.contains(e.target)
+                ) {
+                    closeMenu();
+                }
+            });
+
+            window.addEventListener("resize", () => {
+                if (!isMobile()) {
+                    menuWrapper.classList.remove("mobile-second");
+                }
+            });
+        </script>
+    </body>
+</html>
