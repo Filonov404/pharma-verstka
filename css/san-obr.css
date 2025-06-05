@@ -359,7 +359,7 @@ ul li::after {
     gap: 20px;
 }
 
-.san-patent-inner div{
+.san-patent-inner div {
     flex: 1;
 }
 
@@ -539,13 +539,16 @@ ul li::after {
     .top-san-mask img {
         height: 440px;
     }
+
     .top-san-mask {
         mask-image: url(../images/mask/top-san-mask-mob.png);
     }
+
     .top-san-cert img {
         height: 452px;
         border-radius: 48px;
     }
+
     .top-san-d2 {
         right: 50%;
         top: 97%;
@@ -585,6 +588,7 @@ ul li::after {
         width: 48px;
         height: 48px;
     }
+
     .san.gomeopaty-block {
         padding: 40px 60px;
     }
@@ -592,17 +596,43 @@ ul li::after {
     .d-grid-3.silver-application-item {
         grid-template-columns: 1fr;
     }
+
     .silver-item-mask-sm img {
         height: 360px;
     }
+
     .section-block.san {
         padding: 50px 0;
     }
+
     .silver-item-mask-big,
     .silver-item-mask-sm {
         mask-image: url(../images/mask/san-grid-mob.png)
     }
+
     .silver-item-mask-big img {
         height: 360px;
     }
+}
+
+.red-text {
+    color: var(--primary-100);
+}
+
+.new-form__btn {
+    cursor: pointer;
+    padding: 26px 20px;
+    border-radius: 80px;
+    width: 100%;
+    border: 1px solid transparent;
+    background: var(--primary-100);
+    font-family: var(--font-bold);
+    color: var(--white);
+    transition: all .3s ease;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+
 }
