@@ -235,3 +235,11 @@
         max-width: 100%;
     }
 }
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.lh150 {
+    line-height: 150%;
+}

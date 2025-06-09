@@ -7,6 +7,8 @@
     <title>Главная</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -90,8 +92,8 @@
                         <h1 class="main-title">Технологии <br>будущего<br> для здоровья<br> сегодня</h1>
                         <div class="top-section-items">
                             <div class="top-section-item">
-                                <div class="top-s-b">
-                                    <h3 class="h3-subtitle-pb12">Наша миссия</h3>
+                                <div class="top-s-b pb-12">
+                                    <h3 class="subtitle">Наша миссия</h3>
                                     <img src="images/icons/flag-icon.svg" alt="">
                                 </div>
                                 <div class="bottom-s-b">
@@ -100,8 +102,8 @@
                                 </div>
                             </div>
                             <div class="top-section-item">
-                                <div class="top-s-b">
-                                    <h3 class="h3-subtitle-pb12">Наша Цель</h3>
+                                <div class="top-s-b pb-12">
+                                    <h3 class="subtitle">Наша Цель</h3>
                                     <img src="images/icons/target-icon.svg" alt="">
                                 </div>
                                 <div class="bottom-s-b">
@@ -113,8 +115,26 @@
                         </div>
                     </div>
                     <div class="flex-1 main-top-img">
-                        <div class="star-decor-el mamg-dec bold-text">
+                        <div class="star-decor-el mamg-dec__main dec__main1 bold-text">
                             Si14 Pharma
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.0411 5H12.9589L13.1144 5.81193C13.6049 8.37373 15.6263 10.3951 18.1881 10.8856L19 11.0411V12.9589L18.1881 13.1144C15.6263 13.6049 13.6049 15.6263 13.1144 18.1881L12.9589 19H11.0411L10.8856 18.1881C10.3951 15.6263 8.37373 13.6049 5.81193 13.1144L5 12.9589V11.0411L5.81193 10.8856C8.37373 10.3951 10.3951 8.37373 10.8856 5.81193L11.0411 5ZM12 8.57806C11.2197 10.0268 10.0268 11.2197 8.57806 12C10.0268 12.7803 11.2197 13.9732 12 15.4219C12.7803 13.9732 13.9732 12.7803 15.4219 12C13.9732 11.2197 12.7803 10.0268 12 8.57806Z"
+                                    fill="#1A1A1E"></path>
+                            </svg>
+                        </div>
+                        <div class="star-decor-el mamg-dec__main dec__main2 bold-text">
+                            Электромаммограф
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.0411 5H12.9589L13.1144 5.81193C13.6049 8.37373 15.6263 10.3951 18.1881 10.8856L19 11.0411V12.9589L18.1881 13.1144C15.6263 13.6049 13.6049 15.6263 13.1144 18.1881L12.9589 19H11.0411L10.8856 18.1881C10.3951 15.6263 8.37373 13.6049 5.81193 13.1144L5 12.9589V11.0411L5.81193 10.8856C8.37373 10.3951 10.3951 8.37373 10.8856 5.81193L11.0411 5ZM12 8.57806C11.2197 10.0268 10.0268 11.2197 8.57806 12C10.0268 12.7803 11.2197 13.9732 12 15.4219C12.7803 13.9732 13.9732 12.7803 15.4219 12C13.9732 11.2197 12.7803 10.0268 12 8.57806Z"
+                                    fill="#1A1A1E"></path>
+                            </svg>
+                        </div>
+                        <div class="star-decor-el mamg-dec__main dec__main3 bold-text">
+                            Life Packs
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -236,7 +256,7 @@
                     <div class="med-ob-item d-flex">
                         <div class="main-st-mask-dec">
                             <div class="main-st-mask">
-                                <img src="images/main-page/spera-kopylova.png" alt="">
+                                <img src="images/main-page/mamg-str-img.png" alt="">
                             </div>
                         </div>
                         <div class="med-ob-item-mob">
@@ -355,7 +375,7 @@
             <div class="container">
                 <div class="spacer-block pb-20"></div>
                 <h2 class="block-section-title pb-60">Продукты с атомарными
-                    <br>коллоидами металлов
+                    <br><span class="red-text">коллоидами металлов</span>
                 </h2>
                 <div class="d-grid-3 gap-20 atomar-items">
                     <div class="decor-star-wrapper atomar">
@@ -405,9 +425,9 @@
         <section class="section-block">
             <div class="container">
                 <div class="spacer-block pb-20"></div>
-                <h2 class="block-section-title pb-60">Si14 Life packs</h2>
+                <h2 class="block-section-title pb-60">Si14 Life <span class="red-text">packs</span></h2>
                 <div class="s-114-inner d-flex gap-20">
-                    <div class="s-114 txt bodrer-round-block">
+                    <div class="s-114 txt border-pad-40">
                         <h3 class="subtitle pb-24"> Твой путь к яркой жизни, здоровью и гармонии</h3>
                         <span class="pb-24 d-block">Каждый из нас сталкивается с разными вызовами в жизни: стресс,
                             усталость, снижение иммунитета, желание выглядеть лучше или чувствовать себя энергичнее.
@@ -431,7 +451,7 @@
                                 </div>
                                 <div class="s114-item-txt blur-block bodrer-round-block">
                                     <h3 class="subtitle pb-12">Slim & Fit</h3>
-                                    <span class="d-block bold-text">Похудение и контроль веса</span>
+                                    <span class="d-block new-text__font">Похудение и контроль веса</span>
                                 </div>
                             </div>
                         </div>
@@ -443,7 +463,7 @@
                                 </div>
                                 <div class="s114-item-txt blur-block bodrer-round-block">
                                     <h3 class="subtitle pb-12">Timeless Glow</h3>
-                                    <span class="d-block bold-text">Улучшение внешнего вида</span>
+                                    <span class="d-block new-text__font">Улучшение внешнего вида</span>
                                 </div>
                             </div>
                         </div>
@@ -468,7 +488,7 @@
                                 </div>
                                 <div class="s114-item-txt blur-block bodrer-round-block">
                                     <h3 class="subtitle pb-12">Immunity boost</h3>
-                                    <span class="d-block bold-text">Укрепление иммунитета и профилактика
+                                    <span class="d-block new-text__font">Укрепление иммунитета и профилактика
                                         заболеваний</span>
                                 </div>
                             </div>
@@ -481,7 +501,7 @@
                                 </div>
                                 <div class="s114-item-txt blur-block bodrer-round-block">
                                     <h3 class="subtitle pb-12">Detox</h3>
-                                    <span class="d-block bold-text">Детоксикация
+                                    <span class="d-block new-text__font">Детоксикация
                                         и очищение организма</span>
                                 </div>
                             </div>
@@ -494,7 +514,8 @@
                                 </div>
                                 <div class="s114-item-txt blur-block bodrer-round-block">
                                     <h3 class="subtitle pb-12">Anti-stress</h3>
-                                    <span class="d-block bold-text">Улучшение сна, настроения и снижение стресса</span>
+                                    <span class="d-block new-text__font">Улучшение сна, настроения и снижение
+                                        стресса</span>
                                 </div>
                             </div>
                         </div>
@@ -528,7 +549,7 @@
                             эффективность традиционных анаболиков с безопасностью и мягкостью гомеопатического
                             воздействия на организм.
                         </p>
-                        <a href="#" class="gomeopaty-more more-btn text-a-center">Подробнее</>
+                        <a href="#" class="gomeopaty-more more-btn text-a-center">Подробнее</a>
                     </div>
                 </div>
             </div>
@@ -574,22 +595,34 @@
 
         <section class="section-block form">
             <div class="container">
-                <form class="d-flex flex-col form-subscribe bodrer-round-block gap-20">
-                    <h2 class="block-section-title form-title">
-                        Подписка на Si14 Pharma
-                    </h2>
-                    <div class="form-fields">
-                        <div class="form-field d-flex flex-col gap-20 pb-16">
-                            <input class="form-input" type="email" name="email" placeholder="Email">
-                            <button class="form-submit" type="submit">Подписаться</button>
+                <div class="border-pad-40">
+                    <form id="consult-form" class="d-flex flex-col form-subscribe bodrer-round-block gap-20" novalidate>
+                        <h2 class="block-section-title form-title">остались вопросы?</h2>
+                        <div class="form-fields">
+                            <div class="form-field d-flex col pb-16">
+                                <div class="top-form__wr d-flex">
+                                    <div class="input-group flex-1">
+                                        <input class="form-input" type="text" name="name" required>
+                                        <label for="name">Имя</label>
+                                        <div class="form-error"></div>
+                                    </div>
+                                    <div class="input-group flex-1">
+                                        <input class="form-input" type="tel" name="phone" required
+                                            pattern="^\+?[0-9\s\-\(\)]+$" title="Введите корректный номер телефона">
+                                        <label for="phone">Телефон</label>
+                                        <div class="form-error"></div>
+                                    </div>
+                                </div>
+                                <button class="new-form__btn" type="submit">Получить консультацию</button>
+                            </div>
+                            <div class="confidencial">
+                                Нажимая кнопку, вы соглашаетесь с условиями <a href="#" class="">политики
+                                    конфиденциальности</a>
+                            </div>
                         </div>
-                        <div class="confidencial">
-                            Нажимая кнопку, вы соглашаетесь с условиями <a href="#" class="">политики
-                                конфиденциальности</a>
-                        </div>
-                    </div>
-                    <div class="response"></div>
-                </form>
+                        <div class="response"></div>
+                    </form>
+                </div>
             </div>
         </section>
 
@@ -683,6 +716,20 @@
                         Bank: ADRIATIC BANK AD PODGORICA
                     </a>
                 </div>
+            </div>
+        </div>
+        <div class="popup-success" id="popup-success">
+            <div class="popup-content">
+                <button class="popup-close" id="popup-close">×</button>
+                <div class="popup-check"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="24"
+                        viewBox="0 0 33 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11.3534 20.2323L30.6463 0.939453L32.0605 2.35367L11.3534 23.0608L0.646332 12.3537L2.06055 10.9395L11.3534 20.2323Z"
+                            fill="#1A1A1E"></path>
+                    </svg></div>
+                <div class="popup-title">Заявка отправлена</div>
+                <div class="popup-text">Мы скоро свяжемся с&nbsp;вами</div>
+                <button class="popup-btn" id="popup-btn">Закрыть</button>
             </div>
         </div>
     </footer>

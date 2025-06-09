@@ -7,6 +7,8 @@
     <title>Средства сан. обр</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -84,7 +86,7 @@
             <div class="container">
                 <div class="d-flex gap-20 aic pb-20 pt-20 ">
                     <a href="#">
-                        <div class="arr-right transform-180"></div>
+                        <div class="back-btn"></div>
                     </a>
                     <div class="back-img"
                         style="background: center / contain no-repeat url(images/spray/spray-back.png);">
@@ -630,25 +632,34 @@
         </section>
         <section class="section-block form">
             <div class="container">
-                <form class="d-flex flex-col form-subscribe bodrer-round-block gap-20">
-                    <h2 class="block-section-title form-title">
-                        остались вопросы?
-                    </h2>
-                    <div class="form-fields">
-                        <div class="form-field d-flex col gap-20 pb-16">
-                            <div class="top-form__wr d-flex gap-20">
-                                <input class="form-input" type="text" name="name" placeholder="Имя" required>
-                                <input class="form-input" type="tel" name="phone" placeholder="Телефон" required pattern="^\+?[0-9\s\-\(\)]+$" title="Введите корректный номер телефона">
+                <div class="border-pad-40">
+                    <form id="consult-form" class="d-flex flex-col form-subscribe bodrer-round-block gap-20" novalidate>
+                        <h2 class="block-section-title form-title">остались вопросы?</h2>
+                        <div class="form-fields">
+                            <div class="form-field d-flex col pb-16">
+                                <div class="top-form__wr d-flex">
+                                    <div class="input-group flex-1">
+                                        <input class="form-input" type="text" name="name" required>
+                                        <label for="name">Имя</label>
+                                        <div class="form-error"></div>
+                                    </div>
+                                    <div class="input-group flex-1">
+                                        <input class="form-input" type="tel" name="phone" required
+                                            pattern="^\+?[0-9\s\-\(\)]+$" title="Введите корректный номер телефона">
+                                        <label for="phone">Телефон</label>
+                                        <div class="form-error"></div>
+                                    </div>
+                                </div>
+                                <button class="new-form__btn" type="submit">Получить консультацию</button>
                             </div>
-                            <button class="new-form__btn" type="submit">Получить консультацию</button>
+                            <div class="confidencial">
+                                Нажимая кнопку, вы соглашаетесь с условиями <a href="#" class="">политики
+                                    конфиденциальности</a>
+                            </div>
                         </div>
-                        <div class="confidencial">
-                            Нажимая кнопку, вы соглашаетесь с условиями <a href="#" class=""> политики
-                                конфиденциальности</a>
-                        </div>
-                    </div>
-                    <div class="response"></div>
-                </form>
+                        <div class="response"></div>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
@@ -735,6 +746,22 @@
                 </div>
             </div>
         </div>
+
+        <div class="popup-success" id="popup-success">
+            <div class="popup-content">
+                <button class="popup-close" id="popup-close">&times;</button>
+                <div class="popup-check"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="24"
+                        viewBox="0 0 33 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11.3534 20.2323L30.6463 0.939453L32.0605 2.35367L11.3534 23.0608L0.646332 12.3537L2.06055 10.9395L11.3534 20.2323Z"
+                            fill="#1A1A1E" />
+                    </svg></div>
+                <div class="popup-title">Заявка отправлена</div>
+                <div class="popup-text">Мы скоро свяжемся с вами</div>
+                <button class="popup-btn" id="popup-btn">Закрыть</button>
+            </div>
+        </div>
+
     </footer>
     <script src="js/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typograf@7.0/dist/typograf.min.js"></script>

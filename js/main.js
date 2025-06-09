@@ -1,12 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-
-
   const textFixWidows = (html) => {
-  return html.replace(/( |\u00A0|\()([№а-яА-Я])(\.)? /gu, (match, space, letter, dot) => {
-    return `${space}${letter}${dot || ''}\u00A0`;
-  });
-};
+    return html.replace(/( |\u00A0|\()([№а-яА-Я])(\.)? /gu, (match, space, letter, dot) => {
+      return `${space}${letter}${dot || ''}\u00A0`;
+    });
+  };
 
   document.querySelectorAll('p, h1, h2, h3, span, div').forEach(el => {
     if (!el.children.length && el.innerHTML.trim().length > 0) {
@@ -134,29 +132,72 @@ document.addEventListener("DOMContentLoaded", () => {
     ),
   );
 
-  $("form").submit(function (event) {
-    event.preventDefault();
-    var formData = {
-      name: $("input[name=name]").val(),
-      email: $("input[name=email]").val(),
-      tel: $("input[name=tel]").val(),
-    };
-    $.ajax({
-      type: "POST",
-      url: "//jsonplaceholder.typicode.com/posts",
-      data: formData,
-      dataType: "json",
-      encode: true,
-    }).done(function (data) {
-      $(".form-inner").remove();
-      $(".response");
-      $(".response").append(
-        '<div class="sucscess"><div class="modal_title">Заявка принята!</div></div>',
-      );
+
+
+  function initForm(formId) {
+    const form = document.getElementById(formId);
+    const popup = document.getElementById('popup-success');
+    const popupClose = document.getElementById('popup-close');
+    const popupBtn = document.getElementById('popup-btn');
+
+    if (!form) return;
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      let valid = true;
+
+      const emailInput = form.querySelector('input[name="email"]');
+      const emailError = emailInput?.parentNode.querySelector('.form-error');
+      const emailVal = emailInput.value.trim();
+      const emailPattern = /^[\w-.]+@[\w-]+\.[a-z]{2,}$/i;
+
+      if (!emailVal) {
+        emailError.textContent = 'Обязательное поле';
+        emailInput.classList.add('input-error');
+        valid = false;
+      } else if (!emailPattern.test(emailVal)) {
+        emailError.textContent = 'Некорректный email';
+        emailInput.classList.add('input-error');
+        valid = false;
+      } else {
+        emailError.textContent = '';
+        emailInput.classList.remove('input-error');
+      }
+
+      if (!valid) return;
+
+      setTimeout(() => {
+        form.reset();
+        emailInput.classList.remove('input-error');
+        if (popup) popup.classList.add('active');
+      }, 300);
     });
+
+    [popupClose, popupBtn].forEach(el => {
+      if (el) {
+        el.addEventListener('click', function () {
+          if (popup) popup.classList.remove('active');
+        });
+      }
+    });
+
+    form.querySelectorAll('.form-input').forEach(input => {
+      input.addEventListener('input', function () {
+        const error = this.parentNode.querySelector('.form-error');
+        if (error) error.textContent = '';
+        this.classList.remove('input-error');
+      });
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    initForm('#consult-form');
   });
 
-  // Мок-данные (имитация ответа с бэкенда)
+
+
+
   const mockSlidesData = [
     {
       title: "Чувствовать себя лучше!",
@@ -182,9 +223,17 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
 
 
+  new Swiper(".spera-slider", {
+    loop: true,
+    adaptiveHeight: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
   function initSlider() {
     const slidesData = mockSlidesData;
-
     new Swiper(".swiper", {
       loop: true,
       pagination: {
@@ -195,7 +244,6 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       },
     });
-
     const swiperWrapper = document.getElementById("swiper-wrapper");
     if (swiperWrapper) {
       slidesData.forEach((slide) => {
@@ -216,8 +264,147 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  function initPopup() {
+    const popup = document.getElementById('popup-success');
+    const closeBtns = [document.getElementById('popup-close'), document.getElementById('popup-btn')];
+
+    if (!popup) return;
+
+    document.querySelectorAll('.popup-trigger').forEach(btn => {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        popup.classList.add('active');
+      });
+    });
+
+    closeBtns.forEach(btn => {
+      if (btn) btn.addEventListener('click', () => popup.classList.remove('active'));
+    });
+
+    popup.addEventListener('click', function (e) {
+      if (e.target === popup) popup.classList.remove('active');
+    });
+  }
 
 
+  function initProductPopup() {
+    document.querySelectorAll('.card.more-btn').forEach(btn => {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const card = this.closest('.catalog-item-card');
+        const cardImg = card ? card.querySelector('.catalog-img img') : null;
+        const popup = document.getElementById('popup-success');
+        const popupProductImg = popup ? popup.querySelector('.popup-product-img') : null;
+        const popupProductImgTag = popupProductImg ? popupProductImg.querySelector('img') : null;
+
+        if (popup && popupProductImg && popupProductImgTag && cardImg) {
+          popupProductImgTag.src = cardImg.src;
+          popupProductImgTag.alt = cardImg.alt;
+          popupProductImg.style.display = 'block';
+          popup.classList.add('active');
+        }
+      });
+    });
+
+    const closeBtns = [
+      document.getElementById('popup-close'),
+      document.getElementById('popup-btn')
+    ];
+    closeBtns.forEach(btn => {
+      if (btn) btn.addEventListener('click', () => {
+        document.getElementById('popup-success').classList.remove('active');
+        const popup = document.getElementById('popup-success');
+        popup.querySelector('.popup-product-img').style.display = 'none';
+      });
+    });
+
+    const popup = document.getElementById('popup-success');
+    if (popup) {
+      popup.addEventListener('click', function (e) {
+        if (e.target === popup) popup.classList.remove('active');
+      });
+    }
+  }
+
+  function initSubscribeForm() {
+    const form = document.querySelector('.form-subscribe');
+    if (!form) return;
+
+    const emailInput = form.querySelector('input[name="email"]');
+    const response = form.querySelector('.response');
+    const popup = document.getElementById('popup-success');
+    const popupCloseBtns = [popup.querySelector('#popup-close'), popup.querySelector('#popup-btn')];
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const email = emailInput.value.trim();
+
+      if (!email || !validateEmail(email)) {
+        response.textContent = 'Пожалуйста, введите корректный email';
+        response.style.color = 'red';
+        emailInput.classList.add('input-error'); // ← Исправлено!
+        return;
+      }
+      response.textContent = '';
+      emailInput.classList.remove('input-error'); // ← Исправлено!
+      popup.classList.add('active');
+      // form.reset();
+    });
+
+    // Убираем ошибку при вводе
+    emailInput.addEventListener('input', function () {
+      response.textContent = '';
+      emailInput.classList.remove('input-error');
+    });
+
+    popupCloseBtns.forEach(btn => {
+      if (btn) btn.addEventListener('click', () => {
+        popup.classList.remove('active');
+      });
+    });
+    popup.addEventListener('click', function (e) {
+      if (e.target === popup) popup.classList.remove('active');
+    });
+    function validateEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+  }
+
+  function initStyckyHeader() {
+    const header = document.querySelector('.header');
+    let lastScroll = 0;
+    let isSticky = false;
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.scrollY;
+      if (currentScroll > 40) {
+        if (!isSticky) {
+          header.classList.add('sticky');
+          isSticky = true;
+        }
+      } else {
+        if (isSticky) {
+          header.classList.remove('sticky');
+          isSticky = false;
+        }
+      }
+      lastScroll = currentScroll;
+    });
+
+    if (isSticky) {
+      document.body.style.paddingTop = header.offsetHeight + 'px';
+    } else {
+      document.body.style.paddingTop = '';
+    }
+  }
+
+  initStyckyHeader();
+  initSubscribeForm();
+  initProductPopup();
+  initPopup();
   initSlider();
+  initForm();
+
 
 });

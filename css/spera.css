@@ -403,3 +403,81 @@
         grid-template-columns: 1fr;
     }
 }
+
+.spera-decor__item {
+    width: 100%;
+    height: clamp(20px, 3vw, 40px) ;
+    background: url(../images/spera/red-decor-img.png);
+    border-radius: 80px;
+    background-repeat: no-repeat;
+}
+
+.decor__item1 {
+    background-position: 1px 0px;
+}
+
+.decor__item2 {
+    background-position: -50px 0;
+}
+
+.decor__item3 {
+    background-position: -100px 0;
+}
+
+.decor__item4 {
+    background-position: -150px 0;
+}
+
+.decor__item5 {
+    background-position: -121px 0;
+}
+
+.decor__item6 {
+    background-position: -170px 0;
+}
+
+
+.decor__item5 {
+    background-position: -120px 0;
+}
+
+.decor__item6 {
+    background-position: -170px 0;
+}
+
+.decor__item7 {
+   background-position: -150px 0;
+}
+
+.decor__item8 {
+    background-position: -50px 0;
+}
+
+.form-input {
+  width: 100%;
+  font-size: 28px;
+  padding: 0 32px;
+  height: 86px; /* как в макете */
+  line-height: 86px; /* совпадает с высотой */
+  border-radius: 40px;
+  border: 2px solid #d2d2d2;
+  box-sizing: border-box;
+  background: #fff;
+  transition: border 0.2s;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: #ed060f; /* красная рамка при фокусе */
+}
+
+.input-error {
+  border-color: #ed060f !important;
+}
+
+.form-error {
+  color: #ed060f;
+  font-size: 20px;
+  min-height: 24px;
+  margin-top: 4px;
+}
