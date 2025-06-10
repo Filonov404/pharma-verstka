@@ -921,7 +921,7 @@ a.more-btn:hover {
    border: 1px solid var(--white);
    -webkit-backdrop-filter: blur(10px);
    position: absolute;
-   width: calc(100% - 80px);
+   width: calc(100% - 60px);
    bottom: 0;
    content: '';
    padding: clamp(23px, 3vw, 40px);
@@ -1276,7 +1276,7 @@ a.more-btn:hover {
 
    .dropdown-icon {
       position: absolute;
-      right: 40px;
+      right: 0px;
       top: 0;
    }
 
@@ -2027,7 +2027,7 @@ a.more-btn:hover {
    border: 1px solid var(--white);
    -webkit-backdrop-filter: blur(10px);
    position: absolute;
-   width: calc(100% - 80px);
+   width: calc(100% - 60px);
    bottom: 0;
    content: '';
    padding: clamp(23px, 3vw, 40px);
@@ -2058,6 +2058,42 @@ a.more-btn:hover {
 
 
 input[type="email"] {
-  height: 64px;
-  padding: 0 24px;
+   height: 64px;
+   padding: 0 24px;
+}
+
+.mh64 {
+   max-height: 64px;
+}
+
+.form-submit.mh64 {
+   padding: 14px 20px;
+}
+
+.ttfup {
+   text-transform: uppercase;
+}
+
+.black-text {
+   font-family: var(--font-black);
+}
+
+.mw1250 {
+   max-width: 1250px;
+}
+
+.submenu.dropdown-menu.open {
+   display: block;
+}
+
+.dropdown.js-dropdown.js-lang {
+   transition: all .3s ease;
+}
+
+.dropdown.js-dropdown.js-lang:hover {
+   color: #E30613;
+}
+
+.dropdown__box.js-dropdown-box.active {
+   display: block;
 }

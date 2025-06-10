@@ -231,7 +231,16 @@
 }
 
 .item-packs-items {
+    display: flex;
+    gap: 24px;
     overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.item-packs-items::-webkit-scrollbar {
+    display: none;
 }
 
 .spray-bot-txt {
@@ -289,7 +298,7 @@
     .slide-content.atomar-item-text {
         left: 50%;
         width: 90%;
-        top: 60%;
+        top: 49%;
     }
 
     .catalog-items-wrapper {
@@ -497,6 +506,7 @@
     }
 
     .slide-content {
+        position: relative;
         max-width: 100%;
         padding-right: 0;
         text-align: center;
@@ -552,7 +562,7 @@
     .slide-content.atomar-item-text {
         left: 50%;
         width: 90%;
-        top: 50%;
+        top: 45%;
     }
 }
 
@@ -566,7 +576,7 @@
 }
 
 .swiper-pagination-bullet {
-    background: transparent!important;
+    background: transparent !important;
     border: 2px solid transparent;
     border-radius: 12px;
     box-sizing: border-box;
@@ -578,8 +588,52 @@
 }
 
 .slide-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 20% center; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 20% center;
 }
+
+.vitrina-header-wrapper {
+    padding: 18px 0 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 500px) {
+    .slide-content {
+        position: static;
+    }
+
+    .slide-image img {
+        object-position: center;
+    }
+}
+
+.catalog-item-card span {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 95px;
+    max-height: 66px;
+    margin-bottom: 16px;
+}
+
+.atomar-item-text__n {
+    border: 1px solid var(--white);
+    -webkit-backdrop-filter: blur(10px);
+    position: absolute;
+    width: calc(100% - 80px);
+    bottom: 0;
+    content: '';
+    padding: clamp(23px, 3vw, 40px);
+    backdrop-filter: blur(20px);
+    background: #ffffff5c;
+    left: 50%;
+    transform: translate(-50%, -40px);
+    border-radius: 40px;
+}
+

@@ -398,3 +398,9 @@ b {
     text-transform: uppercase;
     padding-bottom: 30px;
 }
+.top-section-text-n {
+    width: 53%;
+}
+.mw-750 {
+    max-width: 750px;
+}
